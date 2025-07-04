@@ -1,0 +1,50 @@
+baseURL = 'https://vivek-shilimkar.github.io/clusters-and-climate/'
+languageCode = 'en-us'
+title = 'Clusters and Climate'
+theme = 'pehtheme'
+
+summaryLength = '20' # <- 20 words are approximately 160 characters
+googleAnalytics = 'G-MEASUREMENT_ID' # <- Your GA-4
+
+[params]
+	# Meta description, not exceeding 160 characters, used for the meta description within the HTML head
+	description = 'When not debugging clusters or decoding currents, I wander the wild.'
+	mainSections = ['climate', 'life', 'diary'] # <- Main sections of the blog
+	defaultContentLanguage = "mr"
+	
+[params.author]
+	name = 'Dr. Vivek Shilimkar'
+	bio = 'Site Reliability Engineer | Climate Scientist | Nature Lover'
+	avatar = '/images/vivek-2.jpg'
+  	twitter = 'https://x.com/DrViKiShi'
+	facebook = 'https://facebook.com/vivekshilimkar'
+  	instagram = 'https://instagram.com/vi.ki.shi'
+
+[pagination]
+	pagerSize = 8 # <- Set the desired number of posts per page 
+
+[menu] # Menu management
+	[[menu.main]]
+		name = 'Home'
+		pageRef = '/'
+		weight = 10
+	[[menu.main]]
+		name = 'About'
+		pageRef = '/about'
+		weight = 15
+	[[menu.main]]
+		name = 'Categories'
+		pageRef = '/categories'
+		weight = 25
+	[[menu.main]]
+		name = 'Tags'
+		pageRef = '/tags'
+		weight = 20
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+  [module.mounts] # Directing the static folder to assets.
+  	source = 'assets'
+  	target = 'static'
