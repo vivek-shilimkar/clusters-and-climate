@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ADK on Clusters and Climate</title>
+    <link>http://localhost:1313/tags/adk/</link>
+    <description>Recent content in ADK on Clusters and Climate</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Jul 2025 00:10:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/adk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An Introduction to Google’s Agent Development Kit (ADK)</title>
+      <link>http://localhost:1313/technology/agent-development-kit/</link>
+      <pubDate>Mon, 07 Jul 2025 00:10:00 +0530</pubDate>
+      <guid>http://localhost:1313/technology/agent-development-kit/</guid>
+      <description>Introduction Google’s Agent Development Kit (ADK) is an open-source framework designed to simplify the creation, training, and evaluation of intelligent agents.</description>
+    </item>
+  </channel>
+</rss>
