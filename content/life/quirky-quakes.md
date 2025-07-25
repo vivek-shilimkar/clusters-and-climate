@@ -1,6 +1,6 @@
 ---
 title: "Quirky Quakes - A tale of Earthquakes"
-date: 2018-06-15
+date: 2018-11-15
 author: Dr. Vivek Shilimkar
 slug: /quirky-quakes/
 description: “What was that?” Before I could even ask her aloud, the floor started shaking again—like riding in a speeding car over endless speed breakers.
@@ -9,7 +9,6 @@ categories:
 image: /images/life/epicenter.jpg
 tags:
   - life
-  - feature
 ---
 
 ## Life in Sapporo

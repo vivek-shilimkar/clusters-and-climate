@@ -1,4 +1,4 @@
-baseURL = 'https://vivek-shilimkar.github.io/clusters-and-climate/'
+baseURL = 'https://clustersandclimate.com/' # <- Your blog's base URL
 languageCode = 'en-us'
 title = 'Clusters and Climate'
 theme = 'pehtheme'
@@ -9,7 +9,7 @@ googleAnalytics = 'G-MEASUREMENT_ID' # <- Your GA-4
 [params]
 	# Meta description, not exceeding 160 characters, used for the meta description within the HTML head
 	description = 'When not debugging clusters or decoding currents, I wander the wild.'
-	mainSections = ['climate', 'life', 'diary'] # <- Main sections of the blog
+	mainSections = ['climate', 'diary', 'life','outdoor','science','technology'] # <- Main sections of the blog
 	defaultContentLanguage = "mr"
 	
 [params.author]
@@ -48,3 +48,8 @@ googleAnalytics = 'G-MEASUREMENT_ID' # <- Your GA-4
   [module.mounts] # Directing the static folder to assets.
   	source = 'assets'
   	target = 'static'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

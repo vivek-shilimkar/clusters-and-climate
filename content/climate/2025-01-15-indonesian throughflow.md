@@ -12,6 +12,7 @@ tags:
   - climate
   - ocean
   - science
+  - feature
 ---
 Climate is one of the most discussed and followed topics around the world. There are many climatic phenomena such as El Nino – La Nina, and their effects are well known worldwide. El Nino – La Nina has been significant for India since it affects the rainfall during monsoon season and, eventually, the water resources in the river and agricultural yield. It is common sense that rainfall affects the water resources in the river. __However, this is the story of a river that can affect rainfall in India during monsoon season. Unlike the rivers on the land, this river flows in the ocean, and it is thousands of times bigger than any river that you know.__ 
 
