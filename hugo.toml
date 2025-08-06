@@ -4,13 +4,19 @@ title = 'Clusters and Climate'
 theme = 'pehtheme'
 
 summaryLength = '20' # <- 20 words are approximately 160 characters
-googleAnalytics = 'G-MEASUREMENT_ID' # <- Your GA-4
+
+# Analytics Configuration (choose one)
+googleAnalytics = 'G-W43KWS3B37' # <- Your Google Analytics 4 measurement ID
 
 [params]
 	# Meta description, not exceeding 160 characters, used for the meta description within the HTML head
 	description = 'When not debugging clusters or decoding currents, I wander the wild.'
 	mainSections = ['climate', 'diary', 'life','outdoor','science','technology'] # <- Main sections of the blog
 	defaultContentLanguage = "mr"
+	
+	# Alternative Analytics Options (uncomment to use)
+	# plausibleDomain = 'clustersandclimate.com' # <- For Plausible Analytics
+	# simpleAnalytics = true # <- For Simple Analytics
 	
 [params.author]
 	name = 'Dr. Vivek Shilimkar'
