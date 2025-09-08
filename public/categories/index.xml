@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Clusters and Climate</title>
+    <link>http://localhost:1313/clusters-and-climate/categories/</link>
+    <description>Recent content in Categories on Clusters and Climate</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/clusters-and-climate/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Climate</title>
+      <link>http://localhost:1313/clusters-and-climate/categories/climate/</link>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/clusters-and-climate/categories/climate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Science</title>
+      <link>http://localhost:1313/clusters-and-climate/categories/science/</link>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/clusters-and-climate/categories/science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>http://localhost:1313/clusters-and-climate/categories/technology/</link>
+      <pubDate>Fri, 25 Jul 2025 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/clusters-and-climate/categories/technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Life</title>
+      <link>http://localhost:1313/clusters-and-climate/categories/life/</link>
+      <pubDate>Sat, 05 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/clusters-and-climate/categories/life/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Outdoor</title>
+      <link>http://localhost:1313/clusters-and-climate/categories/outdoor/</link>
+      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/clusters-and-climate/categories/outdoor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Diary</title>
+      <link>http://localhost:1313/clusters-and-climate/categories/diary/</link>
+      <pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/clusters-and-climate/categories/diary/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
