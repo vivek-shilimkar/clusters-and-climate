@@ -5,8 +5,7 @@ description: "एल निनो वर्षी भारतात एकू�
 image: /images/science/Flooded_Agricultural_Land.jpg
 slug: /el-nino-extreme-rains/
 featured: true
-categories:
-    - climate
+categories: ["climate", "science"]
 tags: ["मान्सून", "एल निनो", "हवामान", "पाऊस", "भारत"]
 ---
 

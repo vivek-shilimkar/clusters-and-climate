@@ -3,6 +3,7 @@ title: "Cost-aware Cloud Architectures on a Budget"
 date: 2025-09-08
 description: "Practical patterns, principles and hands-on examples to design cloud architectures that minimise cost without sacrificing reliability or developer velocity."
 tags: ["cloud", "cost", "infrastructure", "terraform", "serverless"]
+categories: ["technology"]
 image: "/images/tech/cost-aware-cloud.png"
 ---
 
