@@ -1,26 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Hokkaido on Clusters and Climate</title>
-    <link>http://localhost:1313/tags/hokkaido/</link>
-    <description>Recent content in Hokkaido on Clusters and Climate</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 08 Dec 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/hokkaido/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Wild Onsen near Mt. Shikaribetsu in Shikaoi, Hokkaido</title>
-      <link>http://localhost:1313/outdoor/wild-onsen-mt-shikaribetsu/</link>
-      <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/outdoor/wild-onsen-mt-shikaribetsu/</guid>
-      <description>Enjoying the wild onsen near Mt. Shikaribetsu&#xA;Japan is world famous for its serene natural beauty, making it a paradise for bicycling, camping, and hiking.</description>
-    </item>
-    <item>
-      <title>Sapporo Jozankei Nature Village: A Campsite Guide</title>
-      <link>http://localhost:1313/outdoor/sapporo-jozankei-nature-village/</link>
-      <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/outdoor/sapporo-jozankei-nature-village/</guid>
-      <description>Sapporo Jozankei Nature Village is a campsite about 45 minutes by car from Sapporo, nestled in the deep Jozankei forest near Houheikyou Onsen and dam.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hokkaido on Clusters and Climate</title><link>https://clustersandclimate.com/tags/hokkaido/</link><description>Recent content in Hokkaido on Clusters and Climate</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 08 Dec 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://clustersandclimate.com/tags/hokkaido/index.xml" rel="self" type="application/rss+xml"/><item><title>Wild Onsen near Mt. Shikaribetsu in Shikaoi, Hokkaido</title><link>https://clustersandclimate.com/outdoor/wild-onsen-mt-shikaribetsu/</link><pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate><guid>https://clustersandclimate.com/outdoor/wild-onsen-mt-shikaribetsu/</guid><description>Enjoying the wild onsen near Mt. Shikaribetsu
+Japan is world famous for its serene natural beauty, making it a paradise for bicycling, camping, and hiking.</description></item><item><title>Sapporo Jozankei Nature Village: A Campsite Guide</title><link>https://clustersandclimate.com/outdoor/sapporo-jozankei-nature-village/</link><pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate><guid>https://clustersandclimate.com/outdoor/sapporo-jozankei-nature-village/</guid><description>Sapporo Jozankei Nature Village is a campsite about 45 minutes by car from Sapporo, nestled in the deep Jozankei forest near Houheikyou Onsen and dam.</description></item></channel></rss>
