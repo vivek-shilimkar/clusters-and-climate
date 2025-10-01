@@ -1,2 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Japan on Clusters and Climate</title><link>https://clustersandclimate.com/tags/japan/</link><description>Recent content in Japan on Clusters and Climate</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 25 Jul 2025 00:00:00 +0530</lastBuildDate><atom:link href="https://clustersandclimate.com/tags/japan/index.xml" rel="self" type="application/rss+xml"/><item><title>Kubernetes Disaster Recovery: Lessons from Natural Disasters</title><link>https://clustersandclimate.com/technology/kubernetes-disaster-recovery/</link><pubDate>Fri, 25 Jul 2025 00:00:00 +0530</pubDate><guid>https://clustersandclimate.com/technology/kubernetes-disaster-recovery/</guid><description>Introduction Living in Japan for several years as a climate scientist taught me profound lessons about resilience—not just in natural systems, but in how we design and operate technology infrastructure.</description></item><item><title>Wild Onsen near Mt. Shikaribetsu in Shikaoi, Hokkaido</title><link>https://clustersandclimate.com/outdoor/wild-onsen-mt-shikaribetsu/</link><pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate><guid>https://clustersandclimate.com/outdoor/wild-onsen-mt-shikaribetsu/</guid><description>Enjoying the wild onsen near Mt. Shikaribetsu
-Japan is world famous for its serene natural beauty, making it a paradise for bicycling, camping, and hiking.</description></item><item><title>Sapporo Jozankei Nature Village: A Campsite Guide</title><link>https://clustersandclimate.com/outdoor/sapporo-jozankei-nature-village/</link><pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate><guid>https://clustersandclimate.com/outdoor/sapporo-jozankei-nature-village/</guid><description>Sapporo Jozankei Nature Village is a campsite about 45 minutes by car from Sapporo, nestled in the deep Jozankei forest near Houheikyou Onsen and dam.</description></item><item><title>Breathtaking Sunrise from the Top of Mt. Sapporo, Hokkaido</title><link>https://clustersandclimate.com/outdoor/breathtaking-sunrise-mt-sapporo/</link><pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate><guid>https://clustersandclimate.com/outdoor/breathtaking-sunrise-mt-sapporo/</guid><description>Sapporo Dake trek in Sapporo, Japan, was my first night trek in a foreign country. My friend Tomo, an experienced mountaineer, joined me and knew the mountain well.</description></item><item><title>Night Trek to Sapporo Dake, Hokkaido</title><link>https://clustersandclimate.com/outdoor/night-trek-to-sapporo-dake-hokkaido/</link><pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate><guid>https://clustersandclimate.com/outdoor/night-trek-to-sapporo-dake-hokkaido/</guid><description>Sapporo (札幌) is the vibrant capital of Hokkaido Island (北海道), a paradise for mountain lovers, ocean seekers, and anyone looking to escape the bustle of big cities.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Japan on Clusters and Climate</title>
+    <link>http://localhost:1313/tags/japan/</link>
+    <description>Recent content in Japan on Clusters and Climate</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Jul 2025 00:00:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/japan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes Disaster Recovery: Lessons from Natural Disasters</title>
+      <link>http://localhost:1313/technology/kubernetes-disaster-recovery/</link>
+      <pubDate>Fri, 25 Jul 2025 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/technology/kubernetes-disaster-recovery/</guid>
+      <description>Introduction Living in Japan for several years as a climate scientist taught me profound lessons about resilience—not just in natural systems, but in how we design and operate technology infrastructure.</description>
+    </item>
+    <item>
+      <title>Wild Onsen near Mt. Shikaribetsu in Shikaoi, Hokkaido</title>
+      <link>http://localhost:1313/outdoor/wild-onsen-mt-shikaribetsu/</link>
+      <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/outdoor/wild-onsen-mt-shikaribetsu/</guid>
+      <description>Enjoying the wild onsen near Mt. Shikaribetsu&#xA;Japan is world famous for its serene natural beauty, making it a paradise for bicycling, camping, and hiking.</description>
+    </item>
+    <item>
+      <title>Sapporo Jozankei Nature Village: A Campsite Guide</title>
+      <link>http://localhost:1313/outdoor/sapporo-jozankei-nature-village/</link>
+      <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/outdoor/sapporo-jozankei-nature-village/</guid>
+      <description>Sapporo Jozankei Nature Village is a campsite about 45 minutes by car from Sapporo, nestled in the deep Jozankei forest near Houheikyou Onsen and dam.</description>
+    </item>
+    <item>
+      <title>Breathtaking Sunrise from the Top of Mt. Sapporo, Hokkaido</title>
+      <link>http://localhost:1313/outdoor/breathtaking-sunrise-mt-sapporo/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/outdoor/breathtaking-sunrise-mt-sapporo/</guid>
+      <description>Sapporo Dake trek in Sapporo, Japan, was my first night trek in a foreign country. My friend Tomo, an experienced mountaineer, joined me and knew the mountain well.</description>
+    </item>
+    <item>
+      <title>Night Trek to Sapporo Dake, Hokkaido</title>
+      <link>http://localhost:1313/outdoor/night-trek-to-sapporo-dake-hokkaido/</link>
+      <pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/outdoor/night-trek-to-sapporo-dake-hokkaido/</guid>
+      <description>Sapporo (札幌) is the vibrant capital of Hokkaido Island (北海道), a paradise for mountain lovers, ocean seekers, and anyone looking to escape the bustle of big cities.</description>
+    </item>
+  </channel>
+</rss>

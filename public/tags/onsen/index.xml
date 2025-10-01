@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Onsen on Clusters and Climate</title><link>https://clustersandclimate.com/tags/onsen/</link><description>Recent content in Onsen on Clusters and Climate</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 08 Dec 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://clustersandclimate.com/tags/onsen/index.xml" rel="self" type="application/rss+xml"/><item><title>Wild Onsen near Mt. Shikaribetsu in Shikaoi, Hokkaido</title><link>https://clustersandclimate.com/outdoor/wild-onsen-mt-shikaribetsu/</link><pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate><guid>https://clustersandclimate.com/outdoor/wild-onsen-mt-shikaribetsu/</guid><description>Enjoying the wild onsen near Mt. Shikaribetsu
-Japan is world famous for its serene natural beauty, making it a paradise for bicycling, camping, and hiking.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Onsen on Clusters and Climate</title>
+    <link>http://localhost:1313/tags/onsen/</link>
+    <description>Recent content in Onsen on Clusters and Climate</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/onsen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wild Onsen near Mt. Shikaribetsu in Shikaoi, Hokkaido</title>
+      <link>http://localhost:1313/outdoor/wild-onsen-mt-shikaribetsu/</link>
+      <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/outdoor/wild-onsen-mt-shikaribetsu/</guid>
+      <description>Enjoying the wild onsen near Mt. Shikaribetsu&#xA;Japan is world famous for its serene natural beauty, making it a paradise for bicycling, camping, and hiking.</description>
+    </item>
+  </channel>
+</rss>

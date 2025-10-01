@@ -1,176 +1,600 @@
-<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Kubernetes Disaster Recovery: Lessons from Natural Disasters | Clusters and Climate</title>
-<meta name=description content="How to design resilient Kubernetes clusters that can survive real disasters - insights from living through earthquakes, tsunamis, and typhoons in Japan."><link rel=stylesheet href=/css/main.css><link rel=icon type=image/svg+xml href=https://clustersandclimate.com/favicon.svg><link rel=icon type=image/x-icon href=https://clustersandclimate.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://clustersandclimate.com/favicon.png><link rel=icon type=image/png sizes=32x32 href=https://clustersandclimate.com/favicon-32.png><link rel=icon type=image/png sizes=64x64 href=https://clustersandclimate.com/favicon-64.png></head><body><header class="py-6 border-b"><div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col"><div class="flex items-center"><div class="flex items-center"><button class="flex items-center space-x-2 rounded-full border py-1 pr-[5px] pl-3 group bg-zinc-100 hover:bg-zinc-200 toggle-button" data-target=menu-bar>
-<svg width="22" height="22" fill="currentcolor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5.0 01.5-.5h10a.5.5.0 010 1H3a.5.5.0 01-.5-.5zm0-4a.5.5.0 01.5-.5h10a.5.5.0 010 1H3A.5.5.0 012.5 8zm0-4a.5.5.0 01.5-.5h10a.5.5.0 010 1H3A.5.5.0 012.5 4z"/></svg>
-<span class="bg-blue-500 fill-white rounded-full p-1.5"><svg width="18" height="18" fill="currentcolor" class="group-hover:animate-spin bi bi-egg-fried fill-white" viewBox="0 0 16 16"><path d="M8 11a3 3 0 100-6 3 3 0 000 6z"/><path d="M13.997 5.17A5 5 0 005.896 1.08 5 5 0 001.28 9.342a5 5 0 008.336 5.109 3.5 3.5.0 005.201-4.065 3.001 3.001.0 00-.822-5.216zm-1-.034a1 1 0 00.668.977 2.001 2.001.0 01.547 3.478 1 1 0 00-.341 1.113 2.5 2.5.0 01-3.715 2.905 1 1 0 00-1.262.152 4 4 0 01-6.67-4.087 1 1 0 00-.2-1 4 4 0 013.693-6.61 1 1 0 00.8-.2 4 4 0 016.48 3.273z"/></svg></span></button><div class="relative rounded-full py-1.5 px-6 bg-zinc-100 hover:bg-zinc-200 text-xl font-bold uppercase mx-2"><h2><a class="before:content-[''] before:z-10 before:top-0 before:right-0 before:left-0 before:bottom-0 before:absolute before:pointer-events-auto" href=https://clustersandclimate.com/>Clusters and Climate</a></h2></div></div><div class="flex items-center ml-auto"><button class="flex items-center rounded-full p-3 bg-zinc-100 hover:bg-zinc-200 toggle-button" data-target=search-bar><svg width="18" height="18" fill="currentcolor" viewBox="0 0 16 16"><path id="path1" class="transition-all ease-linear" d="M11.742 10.344a6.5 6.5.0 10-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 001.415-1.414l-3.85-3.85a1.007 1.007.0 00-.115-.1zM12 6.5a5.5 5.5.0 11-11 0 5.5 5.5.0 0111 0z"/><path id="path2" class="transition-all ease-linear hidden" d="M2.146 2.854a.5.5.0 11.708-.708L8 7.293l5.146-5.147a.5.5.0 01.708.708L8.707 8l5.147 5.146a.5.5.0 01-.708.708L8 8.707l-5.146 5.147a.5.5.0 01-.708-.708L7.293 8 2.146 2.854z"/></svg></button></div></div><nav id=menu-bar class="block mt-3 close"><ul class="flex items-center flex flex-nowrap whitespace-nowrap overflow-x-auto space-x-4"><li class=my-2><a class="rounded-full border px-6 py-2 bg-zinc-100 hover:bg-zinc-200" href=/>Home</a></li><li class=my-2><a class="rounded-full border px-6 py-2 bg-zinc-100 hover:bg-zinc-200" href=/about/>About</a></li><li class=my-2><a class="rounded-full border px-6 py-2 bg-zinc-100 hover:bg-zinc-200" href=/tags/>Tags</a></li><li class=my-2><a class="rounded-full border px-6 py-2 bg-zinc-100 hover:bg-zinc-200" href=/categories/>Categories</a></li></ul></nav><div id=search-bar class="block mt-3 close"><form id=search class="flex items-stretch"><input class="w-full block px-6 py-2 rounded-l-full focus:outline-none border border-zinc-200" type=text placeholder=Search...>
-<button class="flex items-center px-7 py-2.5 rounded-r-full border border-zinc-200"><svg width="18" height="18" fill="currentcolor" class="group-hover:animate-pulse" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5.0 10-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 001.415-1.414l-3.85-3.85a1.007 1.007.0 00-.115-.1zM12 6.5a5.5 5.5.0 11-11 0 5.5 5.5.0 0111 0z"/></svg></button></form></div></div></header><main class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8"><div id=breadcrumb class="max-w-7xl mx-auto py-8"><ul class="flex space-x-4 text-sm text-zinc-500"><li class="after:content-['❯'] after:ml-4 after:opacity-30 last:after:content-none uppercase"><a href=https://clustersandclimate.com/>Clusters and Climate</a></li><li class="after:content-['❯'] after:ml-4 after:opacity-30 last:after:content-none uppercase"><a href=https://clustersandclimate.com/technology/>Technologies</a></li></ul></div><div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14"><article class="md:col-span-2 prose lg:prose-lg"><header class=not-prose><h1 id=title class="text-4xl font-bold leading-normal">Kubernetes Disaster Recovery: Lessons from Natural Disasters</h1><div id=lead class=my-6><p class=font-bold>How to design resilient Kubernetes clusters that can survive real disasters - insights from living through earthquakes, tsunamis, and typhoons in Japan.</p></div><div id=writer class="flex items-center space-x-4"><img class="w-12 h-12 bg-black rounded-full" src=https://clustersandclimate.com/images/vivek-2.jpg alt="Dr. Vivek Shilimkar avatar" width=734 height=734><ul class="flex items-center space-x-4 flex-nowrap whitespace-nowrap overflow-x-auto"><li class="font-semibold my-2">Dr. Vivek Shilimkar</li><li class="before:content-['•'] before:mr-2 before:opacity-50 my-2"><time datetime=2025-07-25T00:00:00+05:30>July 25, 2025</time></li><li class="before:content-['•'] before:mr-2 before:opacity-50 my-2">6 min read</li></ul></div></header><figure id=featureimage class="rounded-xl aspect-video"><img class=rounded-lg src=https://clustersandclimate.com/images/tech/Disaster-Recovery_hu76bffe4ff55d1bb48bfcb23181a223dc_2081590_750x0_resize_box_3.png alt width=750 height=500></figure><div id=content class=mb-14><h2 id=introduction>Introduction</h2><p>Living in Japan for several years as a climate scientist taught me profound lessons about resilience—not just in natural systems, but in how we design and operate technology infrastructure. When you&rsquo;ve experienced a 6.7 earthquake, felt the ground shake for almost minute, and watched earthquake warnings scroll across every screen, you gain a visceral understanding of what &ldquo;disaster recovery&rdquo; really means.</p><p>As a Site Reliability Engineer working with Kubernetes, I&rsquo;ve learned to apply these hard-earned lessons about natural disaster preparedness to distributed systems design. The principles that help societies survive earthquakes and typhoons are remarkably similar to those that keep our clusters running during outages, data center failures, and regional disasters.</p><h2 id=the-reality-of-disasters-lessons-from-japan>The Reality of Disasters: Lessons from Japan</h2><h3 id=when-the-ground-literally-moves>When the Ground Literally Moves</h3><p>In September 2018, I experienced firsthand the 6.7 magnitude earthquake that struck Hokkaido, centered near Sapporo. What struck me wasn&rsquo;t just the immediate power outages and infrastructure damage, but how well-prepared systems continued functioning while unprepared ones failed catastrophically.</p><p><strong>Key observations:</strong></p><ul><li><strong>Cascading failures</strong>: One failure triggered multiple downstream failures</li><li><strong>Communication breakdown</strong>: Networks became congested when everyone needed them most</li><li><strong>Resource scarcity</strong>: Power, bandwidth, and personnel became critically limited</li><li><strong>Geographic correlation</strong>: Entire regions could become simultaneously unavailable</li></ul><p>These patterns mirror exactly what happens during large-scale infrastructure outages in cloud environments.</p><h2 id=designing-kubernetes-clusters-for-real-disasters>Designing Kubernetes Clusters for Real Disasters</h2><h3 id=1-multi-region-architecture-geographic-distribution>1. Multi-Region Architecture: Geographic Distribution</h3><p>Just as Japan&rsquo;s infrastructure spans multiple seismic zones, your Kubernetes workloads should span multiple failure domains.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#75715e># Example: Multi-region cluster federation</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>apiVersion</span>: <span style=color:#ae81ff>v1</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>kind</span>: <span style=color:#ae81ff>ConfigMap</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>metadata</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>name</span>: <span style=color:#ae81ff>cluster-regions</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>data</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>primary</span>: <span style=color:#e6db74>&#34;us-east-1&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>secondary</span>: <span style=color:#e6db74>&#34;us-west-2&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>tertiary</span>: <span style=color:#e6db74>&#34;eu-west-1&#34;</span>
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#f92672>apiVersion</span>: <span style=color:#ae81ff>apps/v1</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>kind</span>: <span style=color:#ae81ff>Deployment</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>metadata</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>name</span>: <span style=color:#ae81ff>critical-app</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>spec</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>replicas</span>: <span style=color:#ae81ff>9</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>template</span>:
-</span></span><span style=display:flex><span>    <span style=color:#f92672>spec</span>:
-</span></span><span style=display:flex><span>      <span style=color:#f92672>affinity</span>:
-</span></span><span style=display:flex><span>        <span style=color:#f92672>podAntiAffinity</span>:
-</span></span><span style=display:flex><span>          <span style=color:#f92672>requiredDuringSchedulingIgnoredDuringExecution</span>:
-</span></span><span style=display:flex><span>          - <span style=color:#f92672>labelSelector</span>:
-</span></span><span style=display:flex><span>              <span style=color:#f92672>matchLabels</span>:
-</span></span><span style=display:flex><span>                <span style=color:#f92672>app</span>: <span style=color:#ae81ff>critical-app</span>
-</span></span><span style=display:flex><span>            <span style=color:#f92672>topologyKey</span>: <span style=color:#e6db74>&#34;topology.kubernetes.io/zone&#34;</span>
-</span></span></code></pre></div><p><strong>Best Practices:</strong></p><ul><li>Deploy across at least 3 availability zones</li><li>Use different cloud providers for true independence</li><li>Consider latency vs. resilience trade-offs</li><li>Implement active-active patterns where possible</li></ul><h3 id=2-data-backup-and-replication-strategies>2. Data Backup and Replication Strategies</h3><p>During the 2018 Hokkaido earthquake, I witnessed how quickly critical infrastructure could fail. The half the island lost electrical power within minutes, and I watched as unprepared systems went dark while resilient ones continued operating on backup power and redundant connections. Digital assets need similar protection.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#75715e># Velero backup configuration for disaster recovery</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>apiVersion</span>: <span style=color:#ae81ff>velero.io/v1</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>kind</span>: <span style=color:#ae81ff>Schedule</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>metadata</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>name</span>: <span style=color:#ae81ff>disaster-recovery-backup</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>spec</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>schedule</span>: <span style=color:#e6db74>&#34;0 2 * * *&#34;</span>  <span style=color:#75715e># Daily at 2 AM</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>template</span>:
-</span></span><span style=display:flex><span>    <span style=color:#f92672>includedNamespaces</span>:
-</span></span><span style=display:flex><span>    - <span style=color:#ae81ff>production</span>
-</span></span><span style=display:flex><span>    - <span style=color:#ae81ff>critical-apps</span>
-</span></span><span style=display:flex><span>    <span style=color:#f92672>storageLocation</span>: <span style=color:#ae81ff>multi-region-backup</span>
-</span></span><span style=display:flex><span>    <span style=color:#f92672>volumeSnapshotLocations</span>:
-</span></span><span style=display:flex><span>    - <span style=color:#ae81ff>aws-east</span>
-</span></span><span style=display:flex><span>    - <span style=color:#ae81ff>aws-west</span>
-</span></span><span style=display:flex><span>    <span style=color:#f92672>ttl</span>: <span style=color:#ae81ff>720h </span> <span style=color:#75715e># 30 days retention</span>
-</span></span></code></pre></div><p><strong>Critical backup considerations:</strong></p><ul><li><strong>3-2-1 Rule</strong>: 3 copies, 2 different media types, 1 offsite</li><li><strong>Cross-region replication</strong>: Don&rsquo;t keep all backups in one region</li><li><strong>Regular restore testing</strong>: Backups are useless if you can&rsquo;t restore</li><li><strong>Encryption</strong>: Protect data both in transit and at rest</li></ul><h3 id=3-network-resilience-and-communication>3. Network Resilience and Communication</h3><p>When disaster strikes, network congestion can cripple response efforts. Design for degraded connectivity.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#75715e># Network policies for disaster scenarios</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>apiVersion</span>: <span style=color:#ae81ff>networking.k8s.io/v1</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>kind</span>: <span style=color:#ae81ff>NetworkPolicy</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>metadata</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>name</span>: <span style=color:#ae81ff>disaster-mode-policy</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>spec</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>podSelector</span>:
-</span></span><span style=display:flex><span>    <span style=color:#f92672>matchLabels</span>:
-</span></span><span style=display:flex><span>      <span style=color:#f92672>tier</span>: <span style=color:#ae81ff>critical</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>policyTypes</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#ae81ff>Ingress</span>
-</span></span><span style=display:flex><span>  - <span style=color:#ae81ff>Egress</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>ingress</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#f92672>from</span>:
-</span></span><span style=display:flex><span>    - <span style=color:#f92672>namespaceSelector</span>:
-</span></span><span style=display:flex><span>        <span style=color:#f92672>matchLabels</span>:
-</span></span><span style=display:flex><span>          <span style=color:#f92672>name</span>: <span style=color:#ae81ff>emergency-services</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>egress</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#f92672>to</span>:
-</span></span><span style=display:flex><span>    - <span style=color:#f92672>namespaceSelector</span>:
-</span></span><span style=display:flex><span>        <span style=color:#f92672>matchLabels</span>:
-</span></span><span style=display:flex><span>          <span style=color:#f92672>name</span>: <span style=color:#ae81ff>essential-services</span>
-</span></span><span style=display:flex><span>    <span style=color:#f92672>ports</span>:
-</span></span><span style=display:flex><span>    - <span style=color:#f92672>protocol</span>: <span style=color:#ae81ff>TCP</span>
-</span></span><span style=display:flex><span>      <span style=color:#f92672>port</span>: <span style=color:#ae81ff>443</span>
-</span></span></code></pre></div><p><strong>Network resilience strategies:</strong></p><ul><li><strong>Circuit breakers</strong>: Prevent cascade failures</li><li><strong>Rate limiting</strong>: Preserve resources during stress</li><li><strong>Multiple connectivity paths</strong>: Don&rsquo;t rely on single ISPs</li><li><strong>Service mesh</strong>: Implement intelligent routing and failover</li></ul><h2 id=operational-patterns-from-disaster-response>Operational Patterns from Disaster Response</h2><h3 id=1-incident-command-system-ics-for-kubernetes>1. Incident Command System (ICS) for Kubernetes</h3><p>Japan&rsquo;s disaster response follows a strict hierarchy that scales from local to national levels. Apply similar principles to your operations.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#75715e># RBAC for disaster response roles</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>apiVersion</span>: <span style=color:#ae81ff>rbac.authorization.k8s.io/v1</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>kind</span>: <span style=color:#ae81ff>ClusterRole</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>metadata</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>name</span>: <span style=color:#ae81ff>disaster-commander</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>rules</span>:
-</span></span><span style=display:flex><span>- <span style=color:#f92672>apiGroups</span>: [<span style=color:#e6db74>&#34;*&#34;</span>]
-</span></span><span style=display:flex><span>  <span style=color:#f92672>resources</span>: [<span style=color:#e6db74>&#34;*&#34;</span>]
-</span></span><span style=display:flex><span>  <span style=color:#f92672>verbs</span>: [<span style=color:#e6db74>&#34;*&#34;</span>]
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#f92672>apiVersion</span>: <span style=color:#ae81ff>rbac.authorization.k8s.io/v1</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>kind</span>: <span style=color:#ae81ff>ClusterRole</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>metadata</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>name</span>: <span style=color:#ae81ff>emergency-responder</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>rules</span>:
-</span></span><span style=display:flex><span>- <span style=color:#f92672>apiGroups</span>: [<span style=color:#e6db74>&#34;apps&#34;</span>, <span style=color:#e6db74>&#34;&#34;</span>]
-</span></span><span style=display:flex><span>  <span style=color:#f92672>resources</span>: [<span style=color:#e6db74>&#34;deployments&#34;</span>, <span style=color:#e6db74>&#34;pods&#34;</span>, <span style=color:#e6db74>&#34;services&#34;</span>]
-</span></span><span style=display:flex><span>  <span style=color:#f92672>verbs</span>: [<span style=color:#e6db74>&#34;get&#34;</span>, <span style=color:#e6db74>&#34;list&#34;</span>, <span style=color:#e6db74>&#34;patch&#34;</span>, <span style=color:#e6db74>&#34;update&#34;</span>]
-</span></span></code></pre></div><p><strong>Operational hierarchy:</strong></p><ul><li><strong>Incident Commander</strong>: Single point of decision-making</li><li><strong>Section Chiefs</strong>: Specialized teams (networking, storage, applications)</li><li><strong>Clear communication channels</strong>: Pre-defined escalation paths</li><li><strong>Regular status updates</strong>: Keep all stakeholders informed</li></ul><h3 id=2-runbooks-and-automation>2. Runbooks and Automation</h3><p>During the 2018 Hokkaido earthquake, pre-planned responses and automated systems kept essential services running even when human operators couldn&rsquo;t reach their posts. Your disaster recovery should be equally scripted and automated.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/bin/bash
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#75715e># disaster-recovery-runbook.sh</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Phase 1: Assessment</span>
-</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;=== DISASTER RECOVERY INITIATED ===&#34;</span>
-</span></span><span style=display:flex><span>kubectl get nodes --no-headers | wc -l &gt; /tmp/node-count
-</span></span><span style=display:flex><span>kubectl get pods --all-namespaces --field-selector<span style=color:#f92672>=</span>status.phase!<span style=color:#f92672>=</span>Running | wc -l &gt; /tmp/failed-pods
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Phase 2: Critical services check</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> service in <span style=color:#e6db74>&#34;kube-dns&#34;</span> <span style=color:#e6db74>&#34;ingress-controller&#34;</span> <span style=color:#e6db74>&#34;monitoring&#34;</span>; <span style=color:#66d9ef>do</span>
-</span></span><span style=display:flex><span>  kubectl get pods -n kube-system -l app<span style=color:#f92672>=</span>$service --no-headers
-</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Phase 3: Automated failover</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> <span style=color:#f92672>[</span> <span style=color:#66d9ef>$(</span>cat /tmp/failed-pods<span style=color:#66d9ef>)</span> -gt <span style=color:#ae81ff>50</span> <span style=color:#f92672>]</span>; <span style=color:#66d9ef>then</span>
-</span></span><span style=display:flex><span>  echo <span style=color:#e6db74>&#34;Triggering regional failover...&#34;</span>
-</span></span><span style=display:flex><span>  kubectl patch deployment critical-app -p <span style=color:#e6db74>&#39;{&#34;spec&#34;:{&#34;template&#34;:{&#34;spec&#34;:{&#34;nodeSelector&#34;:{&#34;failure-domain.beta.kubernetes.io/region&#34;:&#34;us-west-2&#34;}}}}}&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>fi</span>
-</span></span></code></pre></div><h3 id=3-resource-prioritization-and-graceful-degradation>3. Resource Prioritization and Graceful Degradation</h3><p>Not all services are equally critical. Implement triage principles.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#75715e># Priority classes for disaster scenarios</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>apiVersion</span>: <span style=color:#ae81ff>scheduling.k8s.io/v1</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>kind</span>: <span style=color:#ae81ff>PriorityClass</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>metadata</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>name</span>: <span style=color:#ae81ff>disaster-critical</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>value</span>: <span style=color:#ae81ff>1000000</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>globalDefault</span>: <span style=color:#66d9ef>false</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>description</span>: <span style=color:#e6db74>&#34;Critical services during disaster recovery&#34;</span>
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#f92672>apiVersion</span>: <span style=color:#ae81ff>scheduling.k8s.io/v1</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>kind</span>: <span style=color:#ae81ff>PriorityClass</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>metadata</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>name</span>: <span style=color:#ae81ff>disaster-optional</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>value</span>: <span style=color:#ae81ff>100</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>description</span>: <span style=color:#e6db74>&#34;Optional services that can be suspended during disasters&#34;</span>
-</span></span></code></pre></div><h2 id=testing-your-disaster-recovery>Testing Your Disaster Recovery</h2><h3 id=chaos-engineering-planned-disasters>Chaos Engineering: Planned Disasters</h3><p>Just as Japan conducts regular earthquake drills, you need to test your systems regularly.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#75715e># Chaos Monkey configuration</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>apiVersion</span>: <span style=color:#ae81ff>v1</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>kind</span>: <span style=color:#ae81ff>ConfigMap</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>metadata</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>name</span>: <span style=color:#ae81ff>chaos-schedule</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>data</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>scenarios</span>: |<span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    - name: &#34;zone-failure&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>      schedule: &#34;0 10 * * 1&#34;  # Monday 10 AM
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>      action: &#34;cordon-nodes&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>      target: &#34;zone=us-east-1a&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    - name: &#34;network-partition&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>      schedule: &#34;0 14 * * 3&#34;  # Wednesday 2 PM
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>      action: &#34;network-delay&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>      target: &#34;app=database&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>      parameters:
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        delay: &#34;500ms&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        duration: &#34;10m&#34;</span>    
-</span></span></code></pre></div><h3 id=game-days-and-tabletop-exercises>Game Days and Tabletop Exercises</h3><p>Regular disaster simulations help teams practice coordinated responses and identify gaps in procedures.</p><h2 id=monitoring-and-alerting-for-disasters>Monitoring and Alerting for Disasters</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#75715e># Disaster-focused monitoring</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>apiVersion</span>: <span style=color:#ae81ff>monitoring.coreos.com/v1</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>kind</span>: <span style=color:#ae81ff>PrometheusRule</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>metadata</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>name</span>: <span style=color:#ae81ff>disaster-alerts</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>spec</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>groups</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>disaster.rules</span>
-</span></span><span style=display:flex><span>    <span style=color:#f92672>rules</span>:
-</span></span><span style=display:flex><span>    - <span style=color:#f92672>alert</span>: <span style=color:#ae81ff>RegionalFailure</span>
-</span></span><span style=display:flex><span>      <span style=color:#f92672>expr</span>: <span style=color:#ae81ff>up{job=&#34;kubernetes-nodes&#34;} &lt; 0.5</span>
-</span></span><span style=display:flex><span>      <span style=color:#f92672>for</span>: <span style=color:#ae81ff>2m</span>
-</span></span><span style=display:flex><span>      <span style=color:#f92672>labels</span>:
-</span></span><span style=display:flex><span>        <span style=color:#f92672>severity</span>: <span style=color:#ae81ff>critical</span>
-</span></span><span style=display:flex><span>        <span style=color:#f92672>tier</span>: <span style=color:#ae81ff>disaster</span>
-</span></span><span style=display:flex><span>      <span style=color:#f92672>annotations</span>:
-</span></span><span style=display:flex><span>        <span style=color:#f92672>summary</span>: <span style=color:#e6db74>&#34;Potential regional failure detected&#34;</span>
-</span></span><span style=display:flex><span>        <span style=color:#f92672>description</span>: <span style=color:#e6db74>&#34;Less than 50% of nodes are responding&#34;</span>
-</span></span></code></pre></div><h2 id=cultural-lessons-resilience-as-a-mindset>Cultural Lessons: Resilience as a Mindset</h2><p>Living in Japan taught me that disaster preparedness isn&rsquo;t just about technology—it&rsquo;s about culture. The Japanese concept of &ldquo;備え&rdquo; (sonae), meaning &ldquo;preparedness,&rdquo; extends beyond having emergency supplies to maintaining a constant awareness of potential risks.</p><p><strong>Building a resilience culture:</strong></p><ul><li><strong>Regular drills</strong>: Make disaster response second nature</li><li><strong>Cross-training</strong>: Ensure knowledge isn&rsquo;t siloed</li><li><strong>Post-mortem culture</strong>: Learn from every incident</li><li><strong>Stress testing</strong>: Continuously challenge your assumptions</li></ul><h2 id=economic-considerations>Economic Considerations</h2><p>Disaster recovery isn&rsquo;t free, but the cost of not having it can be catastrophic.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#75715e># Cost-optimized DR strategy</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>apiVersion</span>: <span style=color:#ae81ff>v1</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>kind</span>: <span style=color:#ae81ff>ConfigMap</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>metadata</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>name</span>: <span style=color:#ae81ff>dr-cost-strategy</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>data</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>hot-standby</span>: <span style=color:#e6db74>&#34;critical-user-facing-services&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>warm-standby</span>: <span style=color:#e6db74>&#34;important-batch-jobs&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>cold-backup</span>: <span style=color:#e6db74>&#34;analytics-and-reporting&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>acceptable-rto</span>: |<span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    critical: &#34;5 minutes&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    important: &#34;1 hour&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    nice-to-have: &#34;24 hours&#34;</span>    
-</span></span></code></pre></div><h2 id=conclusion>Conclusion</h2><p>Having lived through real disasters—earthquakes that shake the ground for minutes, island-wide power outages that plunge entire regions into darkness, typhoons that shut down entire cities—I&rsquo;ve learned that the difference between systems that survive and those that don&rsquo;t isn&rsquo;t just technical sophistication. It&rsquo;s the understanding that disasters aren&rsquo;t theoretical edge cases—they&rsquo;re inevitable realities that demand respect, preparation, and constant vigilance.</p><p>Your Kubernetes clusters will face disasters. The question isn&rsquo;t if, but when. By applying lessons learned from societies that have survived and thrived despite constant natural threats, we can build systems that don&rsquo;t just survive disasters—they emerge stronger.</p><p>The ground will shake again. Your systems should be ready.</p><hr><p><em>Have you experienced natural disasters that changed how you think about system design? I&rsquo;d love to hear your stories and lessons learned. Connect with me to share your experiences.</em></p><ul id=taxonomy class="not-prose flex items-center space-x-4 flex-nowrap whitespace-nowrap overflow-x-auto"><li class="font-semibold my-4">Tags:</li><li><a class="py-2 px-6 border rounded-full hover:bg-zinc-100 active:bg-zinc-300" href=/tags/kubernetes/>Kubernetes</a></li><li><a class="py-2 px-6 border rounded-full hover:bg-zinc-100 active:bg-zinc-300" href=/tags/disaster-recovery/>Disaster Recovery</a></li><li><a class="py-2 px-6 border rounded-full hover:bg-zinc-100 active:bg-zinc-300" href=/tags/sre/>SRE</a></li><li><a class="py-2 px-6 border rounded-full hover:bg-zinc-100 active:bg-zinc-300" href=/tags/resilience/>Resilience</a></li><li><a class="py-2 px-6 border rounded-full hover:bg-zinc-100 active:bg-zinc-300" href=/tags/japan/>Japan</a></li></ul></div><footer id=content-footer class=not-prose><div id=comment class="border p-8 bg-zinc-100 rounded-2xl"><h2 class="text-xl font-semibold">Comment</h2><p>Disqus comment here</p></div><div id=author-box class="my-8 md:my-14 border p-8 bg-zinc-100 rounded-2xl"><img class="w-20 h-20 rounded-full" src=/images/vivek-2.jpg alt="Dr. Vivek Shilimkar"><h2 class="text-xl font-bold my-4">Written by : Dr. Vivek Shilimkar</h2><p class=mb-4>Site Reliability Engineer | Climate Scientist | Nature Lover</p><ul class="flex flex-wrap space-x-4"><li><a class="flex items-center decoration-auto hover:underline" href=https://facebook.com/# target=_blank rel=noopener><svg width="20" height="20" fill="currentcolor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58.0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876.0 1.791.157 1.791.157v1.98h-1.009c-.993.0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
-<span class=ml-2>Facebook</span></a></li><li><a class="flex items-center decoration-auto hover:underline" href=https://facebook.com/# target=_blank rel=noopener><svg width="20" height="20" fill="currentcolor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633z"/></svg>
-<span class=ml-2>Twitter</span></a></li><li><a class="flex items-center decoration-auto hover:underline" href=https://facebook.com/# target=_blank rel=noopener><svg width="20" height="20" fill="currentcolor" viewBox="0 0 16 16"><path d="M8 0C5.829.0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917.0 00-1.417.923A3.927 3.927.0 00.42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555.0 5.827.0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916.0 001.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926.0 00-.923-1.417A3.911 3.911.0 0013.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172.0 7.998.0h.003zm-.717 1.442h.718c2.136.0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47.0 01-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478.0 01-.92-.598 2.48 2.48.0 01-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233.0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96.0 100 1.92.96.96.0 000-1.92zm-4.27 1.122a4.109 4.109.0 100 8.217 4.109 4.109.0 000-8.217zm0 1.441a2.667 2.667.0 110 5.334 2.667 2.667.0 010-5.334z"/></svg>
-<span class=ml-2>Instagram</span></a></li></ul></div><div id=related-post><h2 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">Recommended for You</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><article class="relative group bg-zinc-100 hover:bg-blue-100 rounded-3xl"><a class=insert-link href=https://clustersandclimate.com/technology/kafka-on-kubernetes/></a><figure class="w-full aspect-video overflow-hidden rounded-3xl"><img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src=https://clustersandclimate.com/images/tech/kafka_hu904b045080b154616489b4faba9a9c78_1975723_750x0_resize_box_3.png alt="How to Set Up Kafka on Kubernetes" width=750 height=500></figure><div class=p-6><time datetime=2025-07-07T00:02:00+05:30>Jul 07, 2025</time><h3 class="my-4 text-2xl font-bold">How to Set Up Kafka on Kubernetes</h3><p class="text-normal leading-normal text-zinc-500 line-clamp-2">A step-by-step guide to deploying Apache Kafka on a Kubernetes cluster using Minikube, kubectl, and Helm.</p></div></article><article class="relative group bg-zinc-100 hover:bg-blue-100 rounded-3xl"><a class=insert-link href=https://clustersandclimate.com/technology/azure-csi-driver/></a><figure class="w-full aspect-video overflow-hidden rounded-3xl"><img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src=https://clustersandclimate.com/images/tech/azure-csi_hucdef3f82689ba3b55f244f4983dc2520_2036548_750x0_resize_box_3.png alt="Getting Started with CSI on Azure Kubernetes Service" width=750 height=500></figure><div class=p-6><time datetime=2025-07-07T00:00:00+05:30>Jul 07, 2025</time><h3 class="my-4 text-2xl font-bold">Getting Started with CSI on Azure Kubernetes Service</h3><p class="text-normal leading-normal text-zinc-500 line-clamp-2">A comprehensive, practical guide to deploying and using the Azure Disk CSI driver in AKS.</p></div></article></div></div></footer></article><aside class=md:col-span-1><div class="lg:sticky lg:top-8"><div class="rounded-2xl p-4 bg-zinc-100 mb-10"><img class="aspect-video rounded" src=/images/email-3249062_1280_by-Muhammad-Ribkhan-Pixabay.jpg alt="Banner Email Marketing"><p class="text-right text-xs mt-2 leading-none text-zinc-500">Adversitiment</p></div><div class=space-y-6><h2 class="font-bold text-xl mb-8">Recent Post</h2><article class="relative group flex flex-row"><a class=insert-link href=https://clustersandclimate.com/climate/river-in-the-ocean/></a><figure class="basis-1/3 aspect-square overflow-hidden rounded-2xl bg-zinc-100"><img class="object-cover h-full w-full group-hover:scale-105 transition duration-500 cursor-pointer" src=https://clustersandclimate.com/images/article-2/ITF_INSTANT_Sprintall2009_hu9fd345bb23d166d94d0b2c8d2d5f44b3_148445_250x250_crop_box_center_3.png alt="Indonesian Throughflow: River in the ocean that affects Indian Monsoon rainfall" width=250 height=250></figure><div class="basis-2/3 self-center ml-4"><h3 class="font-bold group-hover:underline decoration-auto">Indonesian Throughflow: River in the ocean that affects Indian Monsoon rainfall</h3></div></article><article class="relative group flex flex-row"><a class=insert-link href=https://clustersandclimate.com/climate/%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80%E0%A4%AF-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%B9%E0%A4%BE%E0%A4%BE%E0%A4%82%E0%A4%9A%E0%A4%BE-%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%9A%E0%A4%AF-%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A5%A7/></a><figure class="basis-1/3 aspect-square overflow-hidden rounded-2xl bg-zinc-100"><img class="object-cover h-full w-full group-hover:scale-105 transition duration-500 cursor-pointer" src=https://clustersandclimate.com/images/article-1/ocean-current_hu53cd2285913a449477dd2e165de70fed_9808534_250x250_crop_box_center_3.png alt="महासागरीय प्रवाहाांचा परिचय भाग – १" width=250 height=250></figure><div class="basis-2/3 self-center ml-4"><h3 class="font-bold group-hover:underline decoration-auto">महासागरीय प्रवाहाांचा परिचय भाग – १</h3></div></article><article class="relative group flex flex-row"><a class=insert-link href=https://clustersandclimate.com/science/the-great-conjunction/></a><figure class="basis-1/3 aspect-square overflow-hidden rounded-2xl bg-zinc-100"><img class="object-cover h-full w-full group-hover:scale-105 transition duration-500 cursor-pointer" src=https://clustersandclimate.com/images/science/Jupiter-Saturn-Conjunction_hu45acb605ddc9c11e12b96b81243b8ddb_24615_250x250_crop_q75_box_center.jpg alt="Saturn and Jupiter's Great Conjunction: A Once-in-a-Lifetime Event?" width=250 height=250></figure><div class="basis-2/3 self-center ml-4"><h3 class="font-bold group-hover:underline decoration-auto">Saturn and Jupiter's Great Conjunction: A Once-in-a-Lifetime Event?</h3></div></article></div></div></aside></div></main><footer class="bg-zinc-100 py-10 md:py-14"><div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8"><div class="flex flex-wrap space-y-6 mb-4"><div class="w-full md:w-3/5 flex flex-col space-y-4 md:pr-8 lg:pr-10"><a class="flex items-center group" href=https://clustersandclimate.com/><svg width="32" height="32" fill="currentcolor" class="mr-2 group-hover:animate-spin" viewBox="0 0 16 16"><path d="M8 11a3 3 0 100-6 3 3 0 000 6z"/><path d="M13.997 5.17A5 5 0 005.896 1.08 5 5 0 001.28 9.342a5 5 0 008.336 5.109 3.5 3.5.0 005.201-4.065 3.001 3.001.0 00-.822-5.216zm-1-.034a1 1 0 00.668.977 2.001 2.001.0 01.547 3.478 1 1 0 00-.341 1.113 2.5 2.5.0 01-3.715 2.905 1 1 0 00-1.262.152 4 4 0 01-6.67-4.087 1 1 0 00-.2-1 4 4 0 013.693-6.61 1 1 0 00.8-.2 4 4 0 016.48 3.273z"/></svg>
-<span class="text-2xl font-semibold uppercase">Clusters and Climate</span></a><p class=font-semibold>When not debugging clusters or decoding currents, I wander the wild.</p><p>👋 Hi, I'm Dr. Vivek Shilimkar. I’m a climate scientist by education and a Site Reliability Engineer by profession at Improving, where I work with Kubernetes, Rancher, and cloud-native infrastructure. I write about everything from virtual clouds to the real ones in the sky. When I’m not studying ocean currents or optimizing compute clusters, I’m usually hiking remote trails, camping by lakes, or stargazing under wide open skies.</p></div><div class="self-center flex flex-col w-full md:w-2/5"><ul id=social-media class="flex items-center space-x-4"><li><a class="w-12 h-12 rounded-full bg-white hover:bg-zinc-200 flex items-center justify-center p-2" href=https://www.facebook.com/# target=_blank rel="noopener noreferrer"><svg width="24" height="24" fill="currentcolor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58.0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876.0 1.791.157 1.791.157v1.98h-1.009c-.993.0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg></a></li><li><a class="w-12 h-12 rounded-full bg-white hover:bg-zinc-200 flex items-center justify-center p-2" href=https://www.twitter.com/# target=_blank rel="noopener noreferrer"><svg width="22" height="22" fill="currentcolor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633z"/></svg></a></li><li><a class="w-12 h-12 rounded-full bg-white hover:bg-zinc-200 flex items-center justify-center p-2" href=https://www.github.com/# target=_blank rel="noopener noreferrer"><svg width="22" height="22" fill="currentcolor" viewBox="0 0 16 16"><path d="M8 0C3.58.0.0 3.58.0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38.0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95.0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12.0.0.67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15.0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48.0 1.07-.01 1.93-.01 2.2.0.21.15.46.55.38A8.012 8.012.0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></li><li><a class="w-12 h-12 rounded-full bg-white hover:bg-zinc-200 flex items-center justify-center p-2" href=https://www.instagram.com/# target=_blank rel="noopener noreferrer"><svg width="22" height="22" fill="currentcolor" viewBox="0 0 16 16"><path d="M8 0C5.829.0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917.0 00-1.417.923A3.927 3.927.0 00.42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555.0 5.827.0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916.0 001.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926.0 00-.923-1.417A3.911 3.911.0 0013.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172.0 7.998.0h.003zm-.717 1.442h.718c2.136.0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47.0 01-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478.0 01-.92-.598 2.48 2.48.0 01-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233.0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96.0 100 1.92.96.96.0 000-1.92zm-4.27 1.122a4.109 4.109.0 100 8.217 4.109 4.109.0 000-8.217zm0 1.441a2.667 2.667.0 110 5.334 2.667 2.667.0 010-5.334z"/></svg></a></li></ul></div></div><div class=my-8><ul class="flex items-center space-x-4"><li><a class="decoration-auto hover:underline font-semibold" href=/>Home</a></li><li><a class="decoration-auto hover:underline font-semibold" href=/about/>About</a></li><li><a class="decoration-auto hover:underline font-semibold" href=/tags/>Tags</a></li><li><a class="decoration-auto hover:underline font-semibold" href=/categories/>Categories</a></li></ul></div><div class="border-t pt-4"><p class=text-sm>Copyright © 2025. All rights reserved. <a href=https://insertapps.com/en/ target=_blank rel=noopener>Insertapps.com</a></p></div></div></footer><script src=/js/insertoggle.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kubernetes Disaster Recovery: Lessons from Natural Disasters | Clusters and Climate</title>
+
+<meta name="description" content="How to design resilient Kubernetes clusters that can survive real disasters - insights from living through earthquakes, tsunamis, and typhoons in Japan.">
+  <link rel="stylesheet" href="/css/main.css">
+<link rel="icon" type="image/svg+xml" href="http://localhost:1313/favicon.svg"> 
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico"> 
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.png"> 
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32.png"> 
+<link rel="icon" type="image/png" sizes="64x64" href="http://localhost:1313/favicon-64.png"> 
+
+</head>
+<body>
+  <header class="py-6 border-b"><div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col">
+	<div class="flex items-center">
+		<div class="flex items-center">
+			<button class="flex items-center space-x-2 rounded-full border py-1 pr-[5px] pl-3 group bg-zinc-100 hover:bg-zinc-200 toggle-button" data-target="menu-bar">
+				<svg width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+				</svg>
+				<span class="bg-blue-500 fill-white rounded-full p-1.5">
+					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="group-hover:animate-spin bi bi-egg-fried fill-white" viewBox="0 0 16 16">
+						<path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+						<path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"></path>
+					</svg>
+				</span>
+			</button>
+			<div class="relative rounded-full py-1.5 px-6 bg-zinc-100 hover:bg-zinc-200 text-xl font-bold uppercase mx-2">
+				<h2><a class="before:content-[''] before:z-10 before:top-0 before:right-0 before:left-0 before:bottom-0 before:absolute before:pointer-events-auto" href="http://localhost:1313/">Clusters and Climate</a></h2>
+			</div>
+		</div>
+		<div class="flex items-center ml-auto">
+			<button class="flex items-center rounded-full p-3 bg-zinc-100 hover:bg-zinc-200 toggle-button" data-target="search-bar">
+				<svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+					<path id="path1" class="transition-all ease-linear" d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+					<path id="path2" class="transition-all ease-linear hidden" d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+				</svg>
+			</button>
+		</div>
+	</div>
+  <nav id="menu-bar" class="block mt-3 close">
+    <ul class="flex items-center flex flex-nowrap whitespace-nowrap overflow-x-auto space-x-4">
+    <li class="my-2">
+      <a class="rounded-full border px-6 py-2 bg-zinc-100 hover:bg-zinc-200" href="/">Home</a>
+    </li>
+    <li class="my-2">
+      <a class="rounded-full border px-6 py-2 bg-zinc-100 hover:bg-zinc-200" href="/about/">About</a>
+    </li>
+    <li class="my-2">
+      <a class="rounded-full border px-6 py-2 bg-zinc-100 hover:bg-zinc-200" href="/tags/">Tags</a>
+    </li>
+    <li class="my-2">
+      <a class="rounded-full border px-6 py-2 bg-zinc-100 hover:bg-zinc-200" href="/categories/">Categories</a>
+    </li>
+    </ul>
+  </nav>
+<div id="search-bar" class="block mt-3 close">
+	<form id="search" class="flex items-stretch">
+		<input class="w-full block px-6 py-2 rounded-l-full focus:outline-none border border-zinc-200" type="text" placeholder="Search...">
+		<button class="flex items-center px-7 py-2.5 rounded-r-full border border-zinc-200 ">
+			<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="group-hover:animate-pulse" viewBox="0 0 16 16">
+				<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+			</svg>
+		</button>
+	</form>
+</div>
+</div></header>
+  <main class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8"><div id="breadcrumb" class="max-w-7xl mx-auto py-8">
+	<ul class="flex space-x-4 text-sm text-zinc-500">
+		<li class="after:content-['❯'] after:ml-4 after:opacity-30 last:after:content-none uppercase">
+			<a href="http://localhost:1313/">Clusters and Climate</a>
+		</li>
+		<li class="after:content-['❯'] after:ml-4 after:opacity-30 last:after:content-none uppercase">
+			<a href="http://localhost:1313/technology/">Technologies</a>
+		</li>
+	</ul>
+</div><div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
+
+  <article class="md:col-span-2 prose lg:prose-lg">
+
+    <header class="not-prose">
+      
+      <h1 id="title" class="text-4xl font-bold leading-normal">Kubernetes Disaster Recovery: Lessons from Natural Disasters</h1>
+
+      <div id="lead" class="my-6">
+
+        <p class="font-bold">How to design resilient Kubernetes clusters that can survive real disasters - insights from living through earthquakes, tsunamis, and typhoons in Japan. </p>
+
+      </div>
+      
+      <div id="writer" class="flex items-center space-x-4">
+
+        <img class="w-12 h-12 bg-black rounded-full" src="http://localhost:1313/images/vivek-2.jpg" alt="Dr. Vivek Shilimkar avatar" width="734" height="734">
+
+        <ul class="flex items-center space-x-4 flex-nowrap whitespace-nowrap overflow-x-auto">
+          
+          <li class="font-semibold my-2">Dr. Vivek Shilimkar</li>
+          
+          <li class="before:content-['•'] before:mr-2 before:opacity-50 my-2"><time datetime="2025-07-25T00:00:00&#43;05:30">July 25, 2025</time>
+          </li>
+
+          <li class="before:content-['•'] before:mr-2 before:opacity-50 my-2">
+            6 min read
+          </li>
+
+        </ul>
+
+      </div>
+      
+    </header>
+
+    <figure id="featureimage" class="rounded-xl aspect-video">
+            <img class="rounded-lg" src="http://localhost:1313/images/tech/Disaster-Recovery_hu76bffe4ff55d1bb48bfcb23181a223dc_2081590_750x0_resize_box_3.png" alt="" width="750" height="500">
+
+    </figure>
+
+    <div id="content" class="mb-14">
+      <h2 id="introduction">Introduction</h2>
+<p>Living in Japan for several years as a climate scientist taught me profound lessons about resilience—not just in natural systems, but in how we design and operate technology infrastructure. When you&rsquo;ve experienced a 6.7 earthquake, felt the ground shake for almost minute, and watched earthquake warnings scroll across every screen, you gain a visceral understanding of what &ldquo;disaster recovery&rdquo; really means.</p>
+<p>As a Site Reliability Engineer working with Kubernetes, I&rsquo;ve learned to apply these hard-earned lessons about natural disaster preparedness to distributed systems design. The principles that help societies survive earthquakes and typhoons are remarkably similar to those that keep our clusters running during outages, data center failures, and regional disasters.</p>
+<h2 id="the-reality-of-disasters-lessons-from-japan">The Reality of Disasters: Lessons from Japan</h2>
+<h3 id="when-the-ground-literally-moves">When the Ground Literally Moves</h3>
+<p>In September 2018, I experienced firsthand the 6.7 magnitude earthquake that struck Hokkaido, centered near Sapporo. What struck me wasn&rsquo;t just the immediate power outages and infrastructure damage, but how well-prepared systems continued functioning while unprepared ones failed catastrophically.</p>
+<p><strong>Key observations:</strong></p>
+<ul>
+<li><strong>Cascading failures</strong>: One failure triggered multiple downstream failures</li>
+<li><strong>Communication breakdown</strong>: Networks became congested when everyone needed them most</li>
+<li><strong>Resource scarcity</strong>: Power, bandwidth, and personnel became critically limited</li>
+<li><strong>Geographic correlation</strong>: Entire regions could become simultaneously unavailable</li>
+</ul>
+<p>These patterns mirror exactly what happens during large-scale infrastructure outages in cloud environments.</p>
+<h2 id="designing-kubernetes-clusters-for-real-disasters">Designing Kubernetes Clusters for Real Disasters</h2>
+<h3 id="1-multi-region-architecture-geographic-distribution">1. Multi-Region Architecture: Geographic Distribution</h3>
+<p>Just as Japan&rsquo;s infrastructure spans multiple seismic zones, your Kubernetes workloads should span multiple failure domains.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Example: Multi-region cluster federation</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ConfigMap</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">cluster-regions</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">data</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">primary</span>: <span style="color:#e6db74">&#34;us-east-1&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">secondary</span>: <span style="color:#e6db74">&#34;us-west-2&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">tertiary</span>: <span style="color:#e6db74">&#34;eu-west-1&#34;</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Deployment</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">critical-app</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">replicas</span>: <span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">affinity</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">podAntiAffinity</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">requiredDuringSchedulingIgnoredDuringExecution</span>:
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">labelSelector</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">app</span>: <span style="color:#ae81ff">critical-app</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">topologyKey</span>: <span style="color:#e6db74">&#34;topology.kubernetes.io/zone&#34;</span>
+</span></span></code></pre></div><p><strong>Best Practices:</strong></p>
+<ul>
+<li>Deploy across at least 3 availability zones</li>
+<li>Use different cloud providers for true independence</li>
+<li>Consider latency vs. resilience trade-offs</li>
+<li>Implement active-active patterns where possible</li>
+</ul>
+<h3 id="2-data-backup-and-replication-strategies">2. Data Backup and Replication Strategies</h3>
+<p>During the 2018 Hokkaido earthquake, I witnessed how quickly critical infrastructure could fail. The half the island lost electrical power within minutes, and I watched as unprepared systems went dark while resilient ones continued operating on backup power and redundant connections. Digital assets need similar protection.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Velero backup configuration for disaster recovery</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">velero.io/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Schedule</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">disaster-recovery-backup</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">schedule</span>: <span style="color:#e6db74">&#34;0 2 * * *&#34;</span>  <span style="color:#75715e"># Daily at 2 AM</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">includedNamespaces</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">production</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">critical-apps</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">storageLocation</span>: <span style="color:#ae81ff">multi-region-backup</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumeSnapshotLocations</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">aws-east</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">aws-west</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ttl</span>: <span style="color:#ae81ff">720h </span> <span style="color:#75715e"># 30 days retention</span>
+</span></span></code></pre></div><p><strong>Critical backup considerations:</strong></p>
+<ul>
+<li><strong>3-2-1 Rule</strong>: 3 copies, 2 different media types, 1 offsite</li>
+<li><strong>Cross-region replication</strong>: Don&rsquo;t keep all backups in one region</li>
+<li><strong>Regular restore testing</strong>: Backups are useless if you can&rsquo;t restore</li>
+<li><strong>Encryption</strong>: Protect data both in transit and at rest</li>
+</ul>
+<h3 id="3-network-resilience-and-communication">3. Network Resilience and Communication</h3>
+<p>When disaster strikes, network congestion can cripple response efforts. Design for degraded connectivity.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Network policies for disaster scenarios</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">networking.k8s.io/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">NetworkPolicy</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">disaster-mode-policy</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">podSelector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">tier</span>: <span style="color:#ae81ff">critical</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">policyTypes</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">Ingress</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">Egress</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">ingress</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">from</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">namespaceSelector</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">name</span>: <span style="color:#ae81ff">emergency-services</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">egress</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">to</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">namespaceSelector</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">name</span>: <span style="color:#ae81ff">essential-services</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">protocol</span>: <span style="color:#ae81ff">TCP</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">port</span>: <span style="color:#ae81ff">443</span>
+</span></span></code></pre></div><p><strong>Network resilience strategies:</strong></p>
+<ul>
+<li><strong>Circuit breakers</strong>: Prevent cascade failures</li>
+<li><strong>Rate limiting</strong>: Preserve resources during stress</li>
+<li><strong>Multiple connectivity paths</strong>: Don&rsquo;t rely on single ISPs</li>
+<li><strong>Service mesh</strong>: Implement intelligent routing and failover</li>
+</ul>
+<h2 id="operational-patterns-from-disaster-response">Operational Patterns from Disaster Response</h2>
+<h3 id="1-incident-command-system-ics-for-kubernetes">1. Incident Command System (ICS) for Kubernetes</h3>
+<p>Japan&rsquo;s disaster response follows a strict hierarchy that scales from local to national levels. Apply similar principles to your operations.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># RBAC for disaster response roles</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">rbac.authorization.k8s.io/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ClusterRole</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">disaster-commander</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">rules</span>:
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">apiGroups</span>: [<span style="color:#e6db74">&#34;*&#34;</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">resources</span>: [<span style="color:#e6db74">&#34;*&#34;</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">verbs</span>: [<span style="color:#e6db74">&#34;*&#34;</span>]
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">rbac.authorization.k8s.io/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ClusterRole</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">emergency-responder</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">rules</span>:
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">apiGroups</span>: [<span style="color:#e6db74">&#34;apps&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">resources</span>: [<span style="color:#e6db74">&#34;deployments&#34;</span>, <span style="color:#e6db74">&#34;pods&#34;</span>, <span style="color:#e6db74">&#34;services&#34;</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">verbs</span>: [<span style="color:#e6db74">&#34;get&#34;</span>, <span style="color:#e6db74">&#34;list&#34;</span>, <span style="color:#e6db74">&#34;patch&#34;</span>, <span style="color:#e6db74">&#34;update&#34;</span>]
+</span></span></code></pre></div><p><strong>Operational hierarchy:</strong></p>
+<ul>
+<li><strong>Incident Commander</strong>: Single point of decision-making</li>
+<li><strong>Section Chiefs</strong>: Specialized teams (networking, storage, applications)</li>
+<li><strong>Clear communication channels</strong>: Pre-defined escalation paths</li>
+<li><strong>Regular status updates</strong>: Keep all stakeholders informed</li>
+</ul>
+<h3 id="2-runbooks-and-automation">2. Runbooks and Automation</h3>
+<p>During the 2018 Hokkaido earthquake, pre-planned responses and automated systems kept essential services running even when human operators couldn&rsquo;t reach their posts. Your disaster recovery should be equally scripted and automated.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e"># disaster-recovery-runbook.sh</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Phase 1: Assessment</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;=== DISASTER RECOVERY INITIATED ===&#34;</span>
+</span></span><span style="display:flex;"><span>kubectl get nodes --no-headers | wc -l &gt; /tmp/node-count
+</span></span><span style="display:flex;"><span>kubectl get pods --all-namespaces --field-selector<span style="color:#f92672">=</span>status.phase!<span style="color:#f92672">=</span>Running | wc -l &gt; /tmp/failed-pods
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Phase 2: Critical services check</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> service in <span style="color:#e6db74">&#34;kube-dns&#34;</span> <span style="color:#e6db74">&#34;ingress-controller&#34;</span> <span style="color:#e6db74">&#34;monitoring&#34;</span>; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  kubectl get pods -n kube-system -l app<span style="color:#f92672">=</span>$service --no-headers
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Phase 3: Automated failover</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#66d9ef">$(</span>cat /tmp/failed-pods<span style="color:#66d9ef">)</span> -gt <span style="color:#ae81ff">50</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Triggering regional failover...&#34;</span>
+</span></span><span style="display:flex;"><span>  kubectl patch deployment critical-app -p <span style="color:#e6db74">&#39;{&#34;spec&#34;:{&#34;template&#34;:{&#34;spec&#34;:{&#34;nodeSelector&#34;:{&#34;failure-domain.beta.kubernetes.io/region&#34;:&#34;us-west-2&#34;}}}}}&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span></code></pre></div><h3 id="3-resource-prioritization-and-graceful-degradation">3. Resource Prioritization and Graceful Degradation</h3>
+<p>Not all services are equally critical. Implement triage principles.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Priority classes for disaster scenarios</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">scheduling.k8s.io/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">PriorityClass</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">disaster-critical</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">value</span>: <span style="color:#ae81ff">1000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">globalDefault</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;Critical services during disaster recovery&#34;</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">scheduling.k8s.io/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">PriorityClass</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">disaster-optional</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">value</span>: <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;Optional services that can be suspended during disasters&#34;</span>
+</span></span></code></pre></div><h2 id="testing-your-disaster-recovery">Testing Your Disaster Recovery</h2>
+<h3 id="chaos-engineering-planned-disasters">Chaos Engineering: Planned Disasters</h3>
+<p>Just as Japan conducts regular earthquake drills, you need to test your systems regularly.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Chaos Monkey configuration</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ConfigMap</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">chaos-schedule</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">data</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">scenarios</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - name: &#34;zone-failure&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      schedule: &#34;0 10 * * 1&#34;  # Monday 10 AM
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      action: &#34;cordon-nodes&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      target: &#34;zone=us-east-1a&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - name: &#34;network-partition&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      schedule: &#34;0 14 * * 3&#34;  # Wednesday 2 PM
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      action: &#34;network-delay&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      target: &#34;app=database&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      parameters:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        delay: &#34;500ms&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        duration: &#34;10m&#34;</span>    
+</span></span></code></pre></div><h3 id="game-days-and-tabletop-exercises">Game Days and Tabletop Exercises</h3>
+<p>Regular disaster simulations help teams practice coordinated responses and identify gaps in procedures.</p>
+<h2 id="monitoring-and-alerting-for-disasters">Monitoring and Alerting for Disasters</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Disaster-focused monitoring</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">monitoring.coreos.com/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">PrometheusRule</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">disaster-alerts</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">groups</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">disaster.rules</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">rules</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">alert</span>: <span style="color:#ae81ff">RegionalFailure</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">expr</span>: <span style="color:#ae81ff">up{job=&#34;kubernetes-nodes&#34;} &lt; 0.5</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">for</span>: <span style="color:#ae81ff">2m</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">severity</span>: <span style="color:#ae81ff">critical</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">tier</span>: <span style="color:#ae81ff">disaster</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">annotations</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">summary</span>: <span style="color:#e6db74">&#34;Potential regional failure detected&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;Less than 50% of nodes are responding&#34;</span>
+</span></span></code></pre></div><h2 id="cultural-lessons-resilience-as-a-mindset">Cultural Lessons: Resilience as a Mindset</h2>
+<p>Living in Japan taught me that disaster preparedness isn&rsquo;t just about technology—it&rsquo;s about culture. The Japanese concept of &ldquo;備え&rdquo; (sonae), meaning &ldquo;preparedness,&rdquo; extends beyond having emergency supplies to maintaining a constant awareness of potential risks.</p>
+<p><strong>Building a resilience culture:</strong></p>
+<ul>
+<li><strong>Regular drills</strong>: Make disaster response second nature</li>
+<li><strong>Cross-training</strong>: Ensure knowledge isn&rsquo;t siloed</li>
+<li><strong>Post-mortem culture</strong>: Learn from every incident</li>
+<li><strong>Stress testing</strong>: Continuously challenge your assumptions</li>
+</ul>
+<h2 id="economic-considerations">Economic Considerations</h2>
+<p>Disaster recovery isn&rsquo;t free, but the cost of not having it can be catastrophic.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Cost-optimized DR strategy</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ConfigMap</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">dr-cost-strategy</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">data</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">hot-standby</span>: <span style="color:#e6db74">&#34;critical-user-facing-services&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">warm-standby</span>: <span style="color:#e6db74">&#34;important-batch-jobs&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">cold-backup</span>: <span style="color:#e6db74">&#34;analytics-and-reporting&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">acceptable-rto</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    critical: &#34;5 minutes&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    important: &#34;1 hour&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    nice-to-have: &#34;24 hours&#34;</span>    
+</span></span></code></pre></div><h2 id="conclusion">Conclusion</h2>
+<p>Having lived through real disasters—earthquakes that shake the ground for minutes, island-wide power outages that plunge entire regions into darkness, typhoons that shut down entire cities—I&rsquo;ve learned that the difference between systems that survive and those that don&rsquo;t isn&rsquo;t just technical sophistication. It&rsquo;s the understanding that disasters aren&rsquo;t theoretical edge cases—they&rsquo;re inevitable realities that demand respect, preparation, and constant vigilance.</p>
+<p>Your Kubernetes clusters will face disasters. The question isn&rsquo;t if, but when. By applying lessons learned from societies that have survived and thrived despite constant natural threats, we can build systems that don&rsquo;t just survive disasters—they emerge stronger.</p>
+<p>The ground will shake again. Your systems should be ready.</p>
+<hr>
+<p><em>Have you experienced natural disasters that changed how you think about system design? I&rsquo;d love to hear your stories and lessons learned. Connect with me to share your experiences.</em></p>
+
+
+    <ul id="taxonomy" class="not-prose flex items-center space-x-4 flex-nowrap whitespace-nowrap overflow-x-auto">
+
+      <li class="font-semibold my-4">Tags:</li>
+        <li ><a class="py-2 px-6 border rounded-full hover:bg-zinc-100 active:bg-zinc-300" href="/tags/kubernetes/">Kubernetes</a></li>
+        <li ><a class="py-2 px-6 border rounded-full hover:bg-zinc-100 active:bg-zinc-300" href="/tags/disaster-recovery/">Disaster Recovery</a></li>
+        <li ><a class="py-2 px-6 border rounded-full hover:bg-zinc-100 active:bg-zinc-300" href="/tags/sre/">SRE</a></li>
+        <li ><a class="py-2 px-6 border rounded-full hover:bg-zinc-100 active:bg-zinc-300" href="/tags/resilience/">Resilience</a></li>
+        <li ><a class="py-2 px-6 border rounded-full hover:bg-zinc-100 active:bg-zinc-300" href="/tags/japan/">Japan</a></li>
+    </ul>
+</div>
+
+    <footer id="content-footer" class="not-prose">
+
+      <div id="comment" class="border p-8 bg-zinc-100 rounded-2xl">
+
+        <h2 class="text-xl font-semibold">Comment</h2>
+
+        <p>Disqus comment here</p></div>
+
+      <div id="author-box" class="my-8 md:my-14 border p-8 bg-zinc-100 rounded-2xl">
+
+        <img class="w-20 h-20 rounded-full" src="/images/vivek-2.jpg" alt="Dr. Vivek Shilimkar">
+
+        <h2 class="text-xl font-bold my-4">Written by : Dr. Vivek Shilimkar</h2>
+
+        <p class="mb-4">Site Reliability Engineer | Climate Scientist | Nature Lover</p>
+
+        <ul class="flex flex-wrap space-x-4">
+          <li>
+            <a class="flex items-center decoration-auto hover:underline" href="https://facebook.com/#" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+              <span class="ml-2">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a class="flex items-center decoration-auto hover:underline" href="https://facebook.com/#" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+              </svg>
+              <span class="ml-2">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a class="flex items-center decoration-auto hover:underline" href="https://facebook.com/#" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+
+              </svg>
+              <span class="ml-2">Instagram</span>
+            </a>
+          </li>
+
+        </ul>
+        
+      </div>
+
+      <div id="related-post" class="">
+
+        <h2 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">Recommended for You</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><article class="relative group bg-zinc-100 hover:bg-blue-100 rounded-3xl">
+	
+	<a class="insert-link" href="http://localhost:1313/technology/kafka-on-kubernetes/"></a>
+
+	<figure class="w-full aspect-video overflow-hidden rounded-3xl"><img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="http://localhost:1313/images/tech/kafka_hu904b045080b154616489b4faba9a9c78_1975723_750x0_resize_box_3.png" alt="How to Set Up Kafka on Kubernetes" width="750" height="500">
+
+	  </figure>
+
+	<div class="p-6">
+
+		<time datetime="2025-07-07T00:02:00&#43;05:30">Jul 07, 2025</time>
+
+		<h3 class="my-4 text-2xl font-bold">How to Set Up Kafka on Kubernetes</h3>
+
+		<p class="text-normal leading-normal text-zinc-500 line-clamp-2">A step-by-step guide to deploying Apache Kafka on a Kubernetes cluster using Minikube, kubectl, and Helm.</p>
+
+	</div>
+</article><article class="relative group bg-zinc-100 hover:bg-blue-100 rounded-3xl">
+	
+	<a class="insert-link" href="http://localhost:1313/technology/azure-csi-driver/"></a>
+
+	<figure class="w-full aspect-video overflow-hidden rounded-3xl"><img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="http://localhost:1313/images/tech/azure-csi_hucdef3f82689ba3b55f244f4983dc2520_2036548_750x0_resize_box_3.png" alt="Getting Started with CSI on Azure Kubernetes Service" width="750" height="500">
+
+	  </figure>
+
+	<div class="p-6">
+
+		<time datetime="2025-07-07T00:00:00&#43;05:30">Jul 07, 2025</time>
+
+		<h3 class="my-4 text-2xl font-bold">Getting Started with CSI on Azure Kubernetes Service</h3>
+
+		<p class="text-normal leading-normal text-zinc-500 line-clamp-2">A comprehensive, practical guide to deploying and using the Azure Disk CSI driver in AKS.</p>
+
+	</div>
+</article>
+          
+        </div>
+      </div>
+
+    </footer>
+
+  </article>
+
+  
+  <aside class="md:col-span-1"><div class="lg:sticky lg:top-8"><div class="rounded-2xl p-4 bg-zinc-100 mb-10">
+
+		<img class="aspect-video rounded" src="/images/email-3249062_1280_by-Muhammad-Ribkhan-Pixabay.jpg" alt="Banner Email Marketing">
+
+		<p class="text-right text-xs mt-2 leading-none text-zinc-500">Adversitiment</p>
+
+</div><div class="space-y-6">
+
+			<h2 class="font-bold text-xl mb-8">Recent Post</h2>
+
+			<article class="relative group flex flex-row">
+	<a class="insert-link" href="http://localhost:1313/climate/river-in-the-ocean/"></a>
+	<figure class="basis-1/3 aspect-square overflow-hidden rounded-2xl bg-zinc-100"><img class="object-cover h-full w-full group-hover:scale-105 transition duration-500 cursor-pointer" src="http://localhost:1313/images/article-2/ITF_INSTANT_Sprintall2009_hu9fd345bb23d166d94d0b2c8d2d5f44b3_148445_250x250_crop_box_center_3.png" alt="Indonesian Throughflow: River in the ocean that affects Indian Monsoon rainfall" width="250" height="250">
+
+	</figure>
+	<div class="basis-2/3 self-center ml-4">
+		<h3 class="font-bold group-hover:underline decoration-auto">Indonesian Throughflow: River in the ocean that affects Indian Monsoon rainfall</h3>
+	</div>
+</article><article class="relative group flex flex-row">
+	<a class="insert-link" href="http://localhost:1313/climate/%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80%E0%A4%AF-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%B9%E0%A4%BE%E0%A4%BE%E0%A4%82%E0%A4%9A%E0%A4%BE-%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%9A%E0%A4%AF-%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A5%A7/"></a>
+	<figure class="basis-1/3 aspect-square overflow-hidden rounded-2xl bg-zinc-100"><img class="object-cover h-full w-full group-hover:scale-105 transition duration-500 cursor-pointer" src="http://localhost:1313/images/article-1/ocean-current_hu53cd2285913a449477dd2e165de70fed_9808534_250x250_crop_box_center_3.png" alt="महासागरीय प्रवाहाांचा परिचय भाग – १" width="250" height="250">
+
+	</figure>
+	<div class="basis-2/3 self-center ml-4">
+		<h3 class="font-bold group-hover:underline decoration-auto">महासागरीय प्रवाहाांचा परिचय भाग – १</h3>
+	</div>
+</article><article class="relative group flex flex-row">
+	<a class="insert-link" href="http://localhost:1313/science/the-great-conjunction/"></a>
+	<figure class="basis-1/3 aspect-square overflow-hidden rounded-2xl bg-zinc-100"><img class="object-cover h-full w-full group-hover:scale-105 transition duration-500 cursor-pointer" src="http://localhost:1313/images/science/Jupiter-Saturn-Conjunction_hu45acb605ddc9c11e12b96b81243b8ddb_24615_250x250_crop_q75_box_center.jpg" alt="Saturn and Jupiter&#39;s Great Conjunction: A Once-in-a-Lifetime Event?" width="250" height="250">
+
+	</figure>
+	<div class="basis-2/3 self-center ml-4">
+		<h3 class="font-bold group-hover:underline decoration-auto">Saturn and Jupiter&#39;s Great Conjunction: A Once-in-a-Lifetime Event?</h3>
+	</div>
+</article>
+            
+		</div></div>
+</aside>
+
+</div>
+  
+</main>
+  <footer class="bg-zinc-100 py-10 md:py-14"><div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+
+  <div class="flex flex-wrap space-y-6 mb-4">
+
+    <div class="w-full md:w-3/5 flex flex-col space-y-4 md:pr-8 lg:pr-10">
+
+      <a class="flex items-center group" href="http://localhost:1313/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="mr-2 group-hover:animate-spin" viewBox="0 0 16 16">
+          <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+        </svg>
+        
+        <span class="text-2xl font-semibold uppercase">Clusters and Climate</span>
+      </a>
+
+      <p class="font-semibold">
+        When not debugging clusters or decoding currents, I wander the wild.
+      </p>
+
+      <p>👋 Hi, I'm Dr. Vivek Shilimkar. I’m a climate scientist by education and a Site Reliability Engineer by profession at Improving, where I work with Kubernetes, Rancher, and cloud-native infrastructure. I write about everything from virtual clouds to the real ones in the sky. When I’m not studying ocean currents or optimizing compute clusters, I’m usually hiking remote trails, camping by lakes, or stargazing under wide open skies.</p>
+
+    </div>
+
+    <div class="self-center flex flex-col w-full md:w-2/5">
+
+<ul id="social-media" class="flex items-center space-x-4">
+	<li>
+		<a class="w-12 h-12 rounded-full bg-white hover:bg-zinc-200 flex items-center justify-center p-2" href="https://www.facebook.com/#" target="_blank" rel="noopener noreferrer">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+				<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a class="w-12 h-12 rounded-full bg-white hover:bg-zinc-200 flex items-center justify-center p-2" href="https://www.twitter.com/#" target="_blank" rel="noopener noreferrer">
+			<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+				  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a class="w-12 h-12 rounded-full bg-white hover:bg-zinc-200 flex items-center justify-center p-2" href="https://www.github.com/#" target="_blank" rel="noopener noreferrer">
+			<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+				  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a class="w-12 h-12 rounded-full bg-white hover:bg-zinc-200 flex items-center justify-center p-2" href="https://www.instagram.com/#" target="_blank" rel="noopener noreferrer">
+			<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+				  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+			</svg>
+		</a>
+	</li>
+</ul>
+
+    </div>
+    
+  </div>
+
+  <div class="my-8">
+    <ul class="flex items-center space-x-4">
+      
+        <li><a class="decoration-auto hover:underline font-semibold" href="/">Home</a></li>
+      
+        <li><a class="decoration-auto hover:underline font-semibold" href="/about/">About</a></li>
+      
+        <li><a class="decoration-auto hover:underline font-semibold" href="/tags/">Tags</a></li>
+      
+        <li><a class="decoration-auto hover:underline font-semibold" href="/categories/">Categories</a></li>
+      
+    </ul>
+  </div>
+
+  <div class="border-t pt-4">
+
+    <p class="text-sm">Copyright © 2025. All rights reserved. <a href="https://insertapps.com/en/" target="_blank" rel="noopener">Insertapps.com</a></p>
+
+  </div>
+  
+</div>
+</footer><script src="/js/insertoggle.js"></script>
+</body>
+</html>
