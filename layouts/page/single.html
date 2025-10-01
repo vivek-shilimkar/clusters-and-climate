@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+<div class="py-14">
+
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+
+	<article class="md:col-span-1 prose lg:prose-lg">
+
+		<header class="not-prose mb-14">
+
+			<h1 class="text-4xl font-bold">{{ .Title }}</h1>
+		
+		</header>
+
+		<div id="content" class="prose lg:prose-lg">
+
+			{{- .Content -}}
+			
+		</div>
+
+		</article>
+
+	<aside class="md:col-span-1 self-start">
+
+		<div class="lg:sticky lg:top-8 md:sticky md:top-8 space-y-6">
+				{{- if eq .RelPermalink "/about/" -}}
+				<div class="flex flex-col items-center">
+					<img class="rounded-2xl object-cover w-56 h-56" src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+					<div class="mt-10 w-full max-w-xs">
+						<h3 class="font-semibold mb-3" style="font-size:1.5rem">📸 Doctor on Instagram</h3>
+						<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+						<iframe src="https://cdn.lightwidget.com/widgets/773bde97e72653e2b8821b8024fbeef3.html" loading="lazy" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;height:280px;border:0;overflow:hidden;display:block;"></iframe>
+					</div>
+				</div>
+				{{- end -}}
+
+				{{- partial "content/aside.html" . -}}
+			</div>
+
+		</aside>
+
+	</div>
+
+</div>
+
+<!-- The Instagram widget has been moved into the aside for About page -->
+
+{{ end }}

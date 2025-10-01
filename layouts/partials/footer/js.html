@@ -1,0 +1,15 @@
+{{- $js := resources.Get "js/insertoggle.js" -}}
+{{- if $js -}}
+  {{- if eq hugo.Environment "development" -}}
+    {{- with $js | js.Build -}}
+      <script src="{{ .RelPermalink }}"></script>
+    {{- end -}}
+  {{- else -}}
+    {{- $opts := dict "minify" true -}}
+    {{- with $js | js.Build $opts | fingerprint -}}
+      <script defer src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  <script src="{{ "/js/insertoggle.js" | relURL }}"></script>
+{{- end -}}

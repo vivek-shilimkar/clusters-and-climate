@@ -1,0 +1,14 @@
+{{/* Try to use Hugo Pipes resource if available, otherwise fall back to static /css/main.css */}}
+{{- $r := resources.Get "css/main.css" -}}
+{{- if $r -}}
+  {{- if eq hugo.Environment "development" -}}
+    <link rel="stylesheet" href="{{ $r.RelPermalink }}">
+  {{- else -}}
+    {{- with $r | minify | fingerprint -}}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{/* Fallback to root-relative static file path so local server serves it correctly */}}
+  <link rel="stylesheet" href="{{ "/css/main.css" | relURL }}">
+{{- end -}}
