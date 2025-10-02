@@ -5,6 +5,9 @@ categories: []
 tags: ["dengue", "climate-change", "public-health", "disease-modeling", "epidemiology", "vector-borne", "tropical-disease", "predictions"]
 image: "/images/science/Aedes_Mosquito.jpg"
 description: "Recent research reveals how climate change is reshaping dengue transmission patterns, offering crucial insights for public health preparedness and disease prevention strategies."
+_build:
+  list: false
+  render: true
 ---
 
 As climate patterns shift across our planet, vector-borne diseases like dengue are experiencing dramatic changes in their distribution and intensity. A groundbreaking study published in *Nature Scientific Reports* provides new insights into dengue dynamics and predictions that could revolutionize how we prepare for and respond to future outbreaks.

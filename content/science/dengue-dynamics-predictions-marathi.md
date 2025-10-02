@@ -1,7 +1,9 @@
 ---
 title: "डेंग्यू रोगाचे गतिशास्त्र आणि हवामान बदल: नवीन संशोधनाचे महत्त्वपूर्ण निष्कर्ष"
 date: 2025-07-28T10:00:00+05:30
-categories: ["science", "climate"]
+categories:
+    - climate
+    - science
 tags: ["dengue", "climate-change", "public-health", "disease-modeling", "epidemiology", "vector-borne", "tropical-disease", "predictions", "marathi"]
 image: "/images/science/Aedes_Mosquito.jpg"
 description: "हवामान बदलामुळे डेंग्यू रोगाचे प्रसार कसे बदलत आहे आणि भविष्यातील आजारपणाची अंदाजे कशी करता येतील, याबद्दल नवीन संशोधनाचे महत्त्वपूर्ण निष्कर्ष."
