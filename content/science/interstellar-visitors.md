@@ -3,7 +3,7 @@ title: "Interstellar Visitors: What We Learn from Objects From Beyond Our Solar 
 date: 2025-10-02T12:00:00+05:30
 categories: ["Science"]
 tags: ["interstellar", "astronomy", "comets", "oumuamua", "borisov", "space-missions"]
-image: "/images/science/Oumuamua.jpg"
+image: "/images/science/Oumuamua.jpeg"
 description: "A concise guide to interstellar objects — from 'Oumuamua and 2I/Borisov to recent candidates — why they matter and how we can study them."
 ---
 
