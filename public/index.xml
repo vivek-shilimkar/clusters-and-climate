@@ -16,20 +16,6 @@
       <description>🌏 भारतातील हवामान बदल: जागतिक तापमानवाढीचे स्थानिक परिणाम हवामान बदल आता दूरच्या भविष्यातील भीती राहिली नाही; तो आपल्या देशाच्या हवामानावर, शेतीवर, आरोग्यावर आणि अर्थव्यवस्थेवर आजच परिणाम करू लागलाय.</description>
     </item>
     <item>
-      <title>Install ML workloads with Rancher — Quick Guide</title>
-      <link>https://clustersandclimate.com/technology/install-ml-with-rancher-excerpt/</link>
-      <pubDate>Fri, 10 Oct 2025 11:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/technology/install-ml-with-rancher-excerpt/</guid>
-      <description>Rancher makes it straightforward to manage clusters and run ML workloads across edge and cloud. This quick guide shows the fast path: create a cluster (or use k3s locally), add nodepools for GPU and spot instances, install KServe, and deploy a small demo model.</description>
-    </item>
-    <item>
-      <title>Install ML workloads with Rancher: from cluster to inference</title>
-      <link>https://clustersandclimate.com/technology/install-ml-with-rancher/</link>
-      <pubDate>Fri, 10 Oct 2025 10:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/technology/install-ml-with-rancher/</guid>
-      <description>This guide walks through a practical path to run ML workloads using Rancher as the control plane. It covers provisioning clusters, creating nodepools for GPU and spot/low-priority instances, installing an ML inference stack (KServe), and deploying a minimal demo model.</description>
-    </item>
-    <item>
       <title>Interstellar Visitors: What We Learn from Objects From Beyond Our Solar System</title>
       <link>https://clustersandclimate.com/science/interstellar-visitors/</link>
       <pubDate>Thu, 02 Oct 2025 12:00:00 +0530</pubDate>

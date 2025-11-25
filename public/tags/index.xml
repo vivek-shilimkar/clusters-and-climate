@@ -72,48 +72,6 @@
       <description></description>
     </item>
     <item>
-      <title>Kserve</title>
-      <link>https://clustersandclimate.com/tags/kserve/</link>
-      <pubDate>Fri, 10 Oct 2025 11:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/tags/kserve/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mlops</title>
-      <link>https://clustersandclimate.com/tags/mlops/</link>
-      <pubDate>Fri, 10 Oct 2025 11:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/tags/mlops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rancher</title>
-      <link>https://clustersandclimate.com/tags/rancher/</link>
-      <pubDate>Fri, 10 Oct 2025 11:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/tags/rancher/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>K3s</title>
-      <link>https://clustersandclimate.com/tags/k3s/</link>
-      <pubDate>Fri, 10 Oct 2025 10:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/tags/k3s/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kubernetes</title>
-      <link>https://clustersandclimate.com/tags/kubernetes/</link>
-      <pubDate>Fri, 10 Oct 2025 10:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Seldon</title>
-      <link>https://clustersandclimate.com/tags/seldon/</link>
-      <pubDate>Fri, 10 Oct 2025 10:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/tags/seldon/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Astronomy</title>
       <link>https://clustersandclimate.com/tags/astronomy/</link>
       <pubDate>Thu, 02 Oct 2025 12:00:00 +0530</pubDate>
@@ -307,6 +265,13 @@
       <link>https://clustersandclimate.com/tags/japan/</link>
       <pubDate>Fri, 25 Jul 2025 00:00:00 +0530</pubDate>
       <guid>https://clustersandclimate.com/tags/japan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubernetes</title>
+      <link>https://clustersandclimate.com/tags/kubernetes/</link>
+      <pubDate>Fri, 25 Jul 2025 00:00:00 +0530</pubDate>
+      <guid>https://clustersandclimate.com/tags/kubernetes/</guid>
       <description></description>
     </item>
     <item>
