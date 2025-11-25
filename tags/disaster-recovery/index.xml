@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Disaster Recovery on Clusters and Climate</title><link>https://clustersandclimate.com/tags/disaster-recovery/</link><description>Recent content in Disaster Recovery on Clusters and Climate</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 25 Jul 2025 00:00:00 +0530</lastBuildDate><atom:link href="https://clustersandclimate.com/tags/disaster-recovery/index.xml" rel="self" type="application/rss+xml"/><item><title>Kubernetes Disaster Recovery: Lessons from Natural Disasters</title><link>https://clustersandclimate.com/technology/kubernetes-disaster-recovery/</link><pubDate>Fri, 25 Jul 2025 00:00:00 +0530</pubDate><guid>https://clustersandclimate.com/technology/kubernetes-disaster-recovery/</guid><description>Introduction Living in Japan for several years as a climate scientist taught me profound lessons about resilience—not just in natural systems, but in how we design and operate technology infrastructure.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Disaster Recovery on Clusters and Climate</title>
+    <link>https://clustersandclimate.com/tags/disaster-recovery/</link>
+    <description>Recent content in Disaster Recovery on Clusters and Climate</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Jul 2025 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://clustersandclimate.com/tags/disaster-recovery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes Disaster Recovery: Lessons from Natural Disasters</title>
+      <link>https://clustersandclimate.com/technology/kubernetes-disaster-recovery/</link>
+      <pubDate>Fri, 25 Jul 2025 00:00:00 +0530</pubDate>
+      <guid>https://clustersandclimate.com/technology/kubernetes-disaster-recovery/</guid>
+      <description>Introduction Living in Japan for several years as a climate scientist taught me profound lessons about resilience—not just in natural systems, but in how we design and operate technology infrastructure.</description>
+    </item>
+  </channel>
+</rss>
