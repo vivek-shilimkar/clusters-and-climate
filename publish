@@ -1,21 +1,4 @@
 #!/bin/bash
 # Publish script for Hugo site with submodules
-set -e
-
-# build the site
-echo "Building Hugo site..."
-hugo --minify
-
-echo "Updating submodules..."
-git submodule update --init --recursive
-
-# Commit and push public/ submodule
-cd public
-#checkout gh-pages branch
-echo "Checking out gh-pages branch..."
-git checkout gh-pages
-echo "Adding and committing public/ submodule changes..."
-git add .
-git commit -m "Update generated site" || echo "Nothing to commit in public/ submodule."
-git push origin -f gh-pages
+hugo && rsync -av public/ ./ && git add . && git commit -m "Update site content: publish Marathi article changes and remove rancher demo" && git push origin master
 
