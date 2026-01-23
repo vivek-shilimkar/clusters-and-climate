@@ -1,0 +1,18 @@
+# Hugo build output (we copy to root for deployment)
+public/
+
+# Hugo cache
+resources/_gen/
+
+# Build lock
+.hugo_build.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
