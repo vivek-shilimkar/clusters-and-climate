@@ -33,29 +33,15 @@ fi
 echo -e "${YELLOW}🔨 Building Hugo site...${NC}"
 hugo
 
-# Push master changes
-echo -e "${YELLOW}📤 Pushing master branch...${NC}"
-git push origin master
-
-# Switch to gh-pages
-echo -e "${YELLOW}🔄 Switching to gh-pages branch...${NC}"
-git checkout gh-pages
-
-# Copy built site from master
-echo -e "${YELLOW}📋 Copying built site...${NC}"
-git checkout master -- public/
+# Copy built site from public/ to repo root (GitHub Pages serves from master root)
+echo -e "${YELLOW}📋 Copying built site to repo root...${NC}"
 cp -r public/* .
-rm -rf public
 
-# Commit and push gh-pages
-echo -e "${YELLOW}📤 Deploying to gh-pages...${NC}"
+# Commit and push master
+echo -e "${YELLOW}📤 Deploying to master...${NC}"
 git add -A
 git commit -m "$COMMIT_MSG" || echo "No changes to commit"
-git push origin gh-pages
-
-# Switch back to master
-echo -e "${YELLOW}🔄 Switching back to master...${NC}"
-git checkout master
+git push origin master
 
 echo -e "${GREEN}✅ Deployment complete!${NC}"
 echo -e "${GREEN}🌐 Site will be live at https://clustersandclimate.com in a few minutes${NC}"
