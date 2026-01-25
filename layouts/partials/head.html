@@ -20,16 +20,24 @@
 {{- /* Robust Image Logic: Handles Resources, Static files, and External URLs */ -}}
 {{- $img := .Params.image -}}
 {{- $imgAbs := "" -}}
+{{- $imgResource := nil -}}
 {{- if $img -}}
   {{- if (strings.HasPrefix $img "http") -}}
     {{- $imgAbs = $img -}}
   {{- else -}}
     {{- /* Try to get as resource first, otherwise fallback to static URL */ -}}
-    {{- with resources.Get $img }}{{ $imgAbs = .Permalink }}{{ else }}{{ $imgAbs = $img | absURL }}{{ end -}}
+    {{- $imgResource = resources.Get (strings.TrimPrefix "/" $img) -}}
+    {{- if $imgResource -}}
+      {{- if gt $imgResource.Width 1200 }}{{ $imgResource = $imgResource.Resize "1200x" }}{{ end -}}
+      {{- $imgAbs = $imgResource.Permalink -}}
+    {{- else -}}
+      {{- $imgAbs = $img | absURL -}}
+    {{- end -}}
   {{- end -}}
 {{- else -}}
   {{- /* Fallback to Author Avatar if no article image */ -}}
-  {{- with resources.Get .Site.Params.author.avatar }}{{ $imgAbs = .Permalink }}{{ else }}{{ $imgAbs = .Site.Params.author.avatar | absURL }}{{ end -}}
+  {{- $imgResource = resources.Get (strings.TrimPrefix "/" .Site.Params.author.avatar) -}}
+  {{- with $imgResource }}{{ $imgAbs = .Permalink }}{{ else }}{{ $imgAbs = .Site.Params.author.avatar | absURL }}{{ end -}}
 {{- end -}}
 
 <meta property="og:type" content="{{ if $isHome }}website{{ else }}article{{ end }}">
@@ -38,11 +46,15 @@
 <meta property="og:url" content="{{ $url }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 {{- with $imgAbs -}}<meta property="og:image" content="{{ . }}">{{- end -}}
+{{- if $imgResource -}}
+  <meta property="og:image:width" content="{{ $imgResource.Width }}">
+  <meta property="og:image:height" content="{{ $imgResource.Height }}">
+{{- end -}}
 {{- if $imgAbs -}}<meta property="og:image:alt" content="{{ $title }}">{{- end -}}
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{{ $title }}">
-<meta name="twitter:description" content="{{ $desc }}">
+<meta name="twitter:description" content="{{ $desc | truncate 200 }}">
 {{- with $imgAbs -}}<meta name="twitter:image" content="{{ . }}">{{- end -}}
 {{- if $imgAbs -}}<meta name="twitter:image:alt" content="{{ $title }}">{{- end -}}
 {{- with .Site.Params.author.twitter -}}<meta name="twitter:site" content="{{ . }}">{{- end -}}
