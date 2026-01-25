@@ -11,13 +11,26 @@
 <!-- Open Graph & Twitter Cards for rich link previews -->
 {{- $isHome := .IsHome -}}
 {{- $title := cond $isHome .Site.Title .Title -}}
-{{- $desc := cond $isHome .Site.Params.description .Params.description -}}
-{{- $url := .Permalink -}}
-{{- $img := .Params.image -}}
-{{- if not $img -}}
-	{{- $img = .Site.Params.author.avatar -}}
+{{- $desc := .Params.description -}}
+{{- if not $desc -}}
+  {{- $desc = cond $isHome .Site.Params.description (.Summary | plainify | truncate 200) -}}
 {{- end -}}
-{{- $imgAbs := $img | absURL -}}
+{{- $url := .Permalink -}}
+
+{{- /* Robust Image Logic: Handles Resources, Static files, and External URLs */ -}}
+{{- $img := .Params.image -}}
+{{- $imgAbs := "" -}}
+{{- if $img -}}
+  {{- if (strings.HasPrefix $img "http") -}}
+    {{- $imgAbs = $img -}}
+  {{- else -}}
+    {{- /* Try to get as resource first, otherwise fallback to static URL */ -}}
+    {{- with resources.Get $img }}{{ $imgAbs = .Permalink }}{{ else }}{{ $imgAbs = $img | absURL }}{{ end -}}
+  {{- end -}}
+{{- else -}}
+  {{- /* Fallback to Author Avatar if no article image */ -}}
+  {{- with resources.Get .Site.Params.author.avatar }}{{ $imgAbs = .Permalink }}{{ else }}{{ $imgAbs = .Site.Params.author.avatar | absURL }}{{ end -}}
+{{- end -}}
 
 <meta property="og:type" content="{{ if $isHome }}website{{ else }}article{{ end }}">
 <meta property="og:title" content="{{ $title }}">
@@ -31,4 +44,5 @@
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $desc }}">
 {{- with $imgAbs -}}<meta name="twitter:image" content="{{ . }}">{{- end -}}
+{{- if $imgAbs -}}<meta name="twitter:image:alt" content="{{ $title }}">{{- end -}}
 {{- with .Site.Params.author.twitter -}}<meta name="twitter:site" content="{{ . }}">{{- end -}}
