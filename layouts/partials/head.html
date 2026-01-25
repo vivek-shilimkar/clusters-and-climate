@@ -7,3 +7,28 @@
 {{- partialCached "head/css.html" . -}}
 {{- partialCached "head/favicon.html" . -}}
 {{- template "_internal/google_analytics.html" . -}}
+
+<!-- Open Graph & Twitter Cards for rich link previews -->
+{{- $isHome := .IsHome -}}
+{{- $title := cond $isHome .Site.Title .Title -}}
+{{- $desc := cond $isHome .Site.Params.description .Params.description -}}
+{{- $url := .Permalink -}}
+{{- $img := .Params.image -}}
+{{- if not $img -}}
+	{{- $img = .Site.Params.author.avatar -}}
+{{- end -}}
+{{- $imgAbs := $img | absURL -}}
+
+<meta property="og:type" content="{{ if $isHome }}website{{ else }}article{{ end }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ $url }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+{{- with $imgAbs -}}<meta property="og:image" content="{{ . }}">{{- end -}}
+{{- if $imgAbs -}}<meta property="og:image:alt" content="{{ $title }}">{{- end -}}
+
+<meta name="twitter:card" content="{{ if $imgAbs }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+{{- with $imgAbs -}}<meta name="twitter:image" content="{{ . }}">{{- end -}}
+{{- with .Site.Params.author.twitter -}}<meta name="twitter:site" content="{{ . }}">{{- end -}}
