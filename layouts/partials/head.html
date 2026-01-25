@@ -11,7 +11,7 @@
 <!-- Open Graph & Twitter Cards for rich link previews -->
 {{- $isHome := .IsHome -}}
 {{- $title := cond $isHome .Site.Title .Title -}}
-{{- $desc := .Params.description -}}
+{{- $desc := .Params.description | plainify -}}
 {{- if not $desc -}}
   {{- $desc = cond $isHome .Site.Params.description (.Summary | plainify | truncate 200) -}}
 {{- end -}}
