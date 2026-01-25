@@ -27,7 +27,7 @@
 {{- with $imgAbs -}}<meta property="og:image" content="{{ . }}">{{- end -}}
 {{- if $imgAbs -}}<meta property="og:image:alt" content="{{ $title }}">{{- end -}}
 
-<meta name="twitter:card" content="{{ if $imgAbs }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $desc }}">
 {{- with $imgAbs -}}<meta name="twitter:image" content="{{ . }}">{{- end -}}
