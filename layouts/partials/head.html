@@ -20,7 +20,7 @@
 {{- /* Robust Image Logic: Handles Resources, Static files, and External URLs */ -}}
 {{- $img := .Params.image -}}
 {{- $imgAbs := "" -}}
-{{- $imgResource := nil -}}
+{{- $imgResource := "" -}}
 {{- if $img -}}
   {{- if (strings.HasPrefix $img "http") -}}
     {{- $imgAbs = $img -}}
@@ -36,8 +36,11 @@
   {{- end -}}
 {{- else -}}
   {{- /* Fallback to Author Avatar if no article image */ -}}
-  {{- $imgResource = resources.Get (strings.TrimPrefix "/" .Site.Params.author.avatar) -}}
-  {{- with $imgResource }}{{ $imgAbs = .Permalink }}{{ else }}{{ $imgAbs = .Site.Params.author.avatar | absURL }}{{ end -}}
+  {{- $avatar := .Site.Params.author.avatar -}}
+  {{- if $avatar -}}
+    {{- $imgResource = resources.Get (strings.TrimPrefix "/" $avatar) -}}
+    {{- with $imgResource }}{{ $imgAbs = .Permalink }}{{ else }}{{ $imgAbs = $avatar | absURL }}{{ end -}}
+  {{- end -}}
 {{- end -}}
 
 <meta property="og:type" content="{{ if $isHome }}website{{ else }}article{{ end }}">
