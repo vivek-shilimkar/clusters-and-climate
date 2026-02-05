@@ -2,17 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://clustersandclimate.com/categories/</loc>
+    <lastmod>2026-02-05T17:32:37+00:00</lastmod>
+  </url><url>
+    <loc>https://clustersandclimate.com/tags/cloud/</loc>
+    <lastmod>2026-02-05T17:32:37+00:00</lastmod>
+  </url><url>
     <loc>https://clustersandclimate.com/</loc>
+    <lastmod>2026-02-05T17:32:37+00:00</lastmod>
+  </url><url>
+    <loc>https://clustersandclimate.com/tags/feature/</loc>
+    <lastmod>2026-02-05T17:32:37+00:00</lastmod>
+  </url><url>
+    <loc>https://clustersandclimate.com/technology/from-climate-science-to-virtual-cloud-systems/</loc>
+    <lastmod>2026-02-05T17:32:37+00:00</lastmod>
+  </url><url>
+    <loc>https://clustersandclimate.com/tags/sustainability/</loc>
+    <lastmod>2026-02-05T17:32:37+00:00</lastmod>
+  </url><url>
+    <loc>https://clustersandclimate.com/tags/</loc>
     <lastmod>2026-02-05T17:32:37+00:00</lastmod>
   </url><url>
     <loc>https://clustersandclimate.com/technology/</loc>
     <lastmod>2026-02-05T17:32:37+00:00</lastmod>
   </url><url>
+    <loc>https://clustersandclimate.com/categories/technology/</loc>
+    <lastmod>2026-02-05T17:32:37+00:00</lastmod>
+  </url><url>
     <loc>https://clustersandclimate.com/science/</loc>
     <lastmod>2026-01-23T12:00:00+05:30</lastmod>
-  </url><url>
-    <loc>https://clustersandclimate.com/categories/</loc>
-    <lastmod>2026-01-23T11:58:00+09:00</lastmod>
   </url><url>
     <loc>https://clustersandclimate.com/categories/climate/</loc>
     <lastmod>2026-01-23T11:58:00+09:00</lastmod>
@@ -41,9 +59,6 @@
     <loc>https://clustersandclimate.com/tags/ssp/</loc>
     <lastmod>2026-01-23T11:58:00+09:00</lastmod>
   </url><url>
-    <loc>https://clustersandclimate.com/tags/</loc>
-    <lastmod>2026-01-23T11:58:00+09:00</lastmod>
-  </url><url>
     <loc>https://clustersandclimate.com/tags/%E0%A4%AE%E0%A4%B0%E0%A4%BE%E0%A4%A0%E0%A5%80/</loc>
     <lastmod>2026-01-23T11:58:00+09:00</lastmod>
   </url><url>
@@ -51,9 +66,6 @@
     <lastmod>2026-01-23T00:01:00+05:30</lastmod>
   </url><url>
     <loc>https://clustersandclimate.com/climate/</loc>
-    <lastmod>2026-01-23T00:01:00+05:30</lastmod>
-  </url><url>
-    <loc>https://clustersandclimate.com/tags/feature/</loc>
     <lastmod>2026-01-23T00:01:00+05:30</lastmod>
   </url><url>
     <loc>https://clustersandclimate.com/tags/science/</loc>
@@ -131,9 +143,6 @@
     <loc>https://clustersandclimate.com/tags/%E0%A4%B9%E0%A4%B5%E0%A4%BE%E0%A4%AE%E0%A4%BE%E0%A4%A8/</loc>
     <lastmod>2025-09-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://clustersandclimate.com/tags/cloud/</loc>
-    <lastmod>2025-09-08T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://clustersandclimate.com/tags/cost/</loc>
     <lastmod>2025-09-08T00:00:00+00:00</lastmod>
   </url><url>
@@ -144,9 +153,6 @@
     <lastmod>2025-09-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://clustersandclimate.com/tags/serverless/</loc>
-    <lastmod>2025-09-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://clustersandclimate.com/categories/technology/</loc>
     <lastmod>2025-09-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://clustersandclimate.com/tags/terraform/</loc>

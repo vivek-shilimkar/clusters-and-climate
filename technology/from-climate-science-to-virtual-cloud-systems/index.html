@@ -4,9 +4,9 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Cloud | Clusters and Climate</title>
+<title>From Climate Science to Virtual Cloud Systems : Designing Green Cloud Systems | Clusters and Climate</title>
 
-<meta name="description" content="">
+<meta name="description" content="A climate scientist’s perspective on why Green Cloud is not about offsets or slogans, but about how we design, size, and run cloud systems — and why engineering honesty matters before optimization.">
   <link rel="stylesheet" href="/css/main.css">
 <link rel="icon" type="image/svg+xml" href="https://clustersandclimate.com/favicon.svg"> 
 <link rel="icon" type="image/x-icon" href="https://clustersandclimate.com/favicon.ico"> 
@@ -34,13 +34,12 @@
   
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="Cloud">
-<meta property="og:description" content="">
-<meta property="og:url" content="https://clustersandclimate.com/tags/cloud/">
-<meta property="og:site_name" content="Clusters and Climate"><meta property="og:image" content="https://clustersandclimate.com/images/vivek-2.jpg"><meta property="og:image:width" content="734">
-  <meta property="og:image:height" content="734"><meta property="og:image:alt" content="Cloud"><meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cloud">
-<meta name="twitter:description" content=""><meta name="twitter:image" content="https://clustersandclimate.com/images/vivek-2.jpg"><meta name="twitter:image:alt" content="Cloud"><meta name="twitter:site" content="https://x.com/DrViKiShi">
+<meta property="og:title" content="From Climate Science to Virtual Cloud Systems : Designing Green Cloud Systems">
+<meta property="og:description" content="A climate scientist’s perspective on why Green Cloud is not about offsets or slogans, but about how we design, size, and run cloud systems — and why engineering honesty matters before optimization.">
+<meta property="og:url" content="https://clustersandclimate.com/technology/from-climate-science-to-virtual-cloud-systems/">
+<meta property="og:site_name" content="Clusters and Climate"><meta property="og:image" content="https://clustersandclimate.com/home/vivek-shilimkar/github/clusters-and-climate/assets/images/tech/Earth_rotation.gif"><meta property="og:image:alt" content="From Climate Science to Virtual Cloud Systems : Designing Green Cloud Systems"><meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="From Climate Science to Virtual Cloud Systems : Designing Green Cloud Systems">
+<meta name="twitter:description" content="A climate scientist’s perspective on why Green Cloud is not about offsets or slogans, but about how we design, size, and run cloud systems — and why engineering honesty matters before optimization."><meta name="twitter:image" content="https://clustersandclimate.com/home/vivek-shilimkar/github/clusters-and-climate/assets/images/tech/Earth_rotation.gif"><meta name="twitter:image:alt" content="From Climate Science to Virtual Cloud Systems : Designing Green Cloud Systems"><meta name="twitter:site" content="https://x.com/DrViKiShi">
 </head>
 <body>
   <header class="py-6 border-b"><div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col">
@@ -103,32 +102,160 @@
 			<a href="https://clustersandclimate.com/">Clusters and Climate</a>
 		</li>
 		<li class="after:content-['❯'] after:ml-4 after:opacity-30 last:after:content-none uppercase">
-			<a href="https://clustersandclimate.com/tags/">Tags</a>
+			<a href="https://clustersandclimate.com/technology/">Technologies</a>
 		</li>
 	</ul>
-</div><div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
+</div><div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
 
-  <section class="md:col-span-2">
+  <article class="md:col-span-2 prose lg:prose-lg">
 
-    <h2 class="text-3xl font-bold mb-10">Cloud</h2>
+    <header class="not-prose">
+      
+      <h1 id="title" class="text-4xl font-bold leading-normal">From Climate Science to Virtual Cloud Systems : Designing Green Cloud Systems</h1>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-4">
+      <div id="lead" class="my-6">
 
-      <article class="relative group bg-zinc-100 hover:bg-blue-100 rounded-3xl">
+        <p class="font-bold">A climate scientist’s perspective on why Green Cloud is not about offsets or slogans, but about how we design, size, and run cloud systems — and why engineering honesty matters before optimization. </p>
+
+      </div>
+      
+      <div id="writer" class="flex items-center space-x-4">
+
+        <img class="w-12 h-12 bg-black rounded-full" src="https://clustersandclimate.com/images/vivek-2.jpg" alt="Dr. Vivek Shilimkar avatar" width="734" height="734">
+
+        <ul class="flex items-center space-x-4 flex-nowrap whitespace-nowrap overflow-x-auto">
+          
+          <li class="font-semibold my-2">Dr. Vivek Shilimkar</li>
+          
+          <li class="before:content-['•'] before:mr-2 before:opacity-50 my-2"><time datetime="2026-02-05T17:32:37&#43;00:00">February 5, 2026</time>
+          </li>
+
+          <li class="before:content-['•'] before:mr-2 before:opacity-50 my-2">
+            4 min read
+          </li>
+
+        </ul>
+
+      </div>
+      
+    </header>
+
+    <figure id="featureimage" class="rounded-xl aspect-video">
+
+    </figure>
+
+    <div id="content" class="mb-14">
+      <h2 id="introduction">Introduction</h2>
+<p>Before I was involved with cloud infrastructure and distributed systems, I spent years studying the climate. I am a doctor by PhD — in climate science — and I have spent years understanding how Earth’s climate systems behave, how energy moves through the atmosphere and oceans, and how small imbalances accumulate into large, sometimes irreversible changes. Climate science teaches you patience, but it also teaches you discomfort. The thing about extreme climate events that I learned very early was that these do not arrive suddenly. They grow quietly, while everything still appears normal.</p>
+<p>That way of thinking never really left me.</p>
+<p>While I was still working with actual clouds in the atmosphere, I also started working with virtual clouds platforms, large-scale computing systems, and automation-heavy infrastructure. I could not help but notice familiar patterns. Not identical, of course — virtual cloud systems are not the actual cloud systems — but the shape of the problems felt similar. Complex systems. Feedback loops. Invisible background activity. Decisions made for convenience in the present that quietly push costs into the future.</p>
+<p>My interest in building and designing virtual Green Cloud Systems comes from that place — not only technical, but also emotional.</p>
+<p>The term Green Cloud itself is not primarily about climate, at least not in the way many people assume. In fact, many of you may be encountering it for the first time. And if that is the case, it is completely natural to feel that the term sounds smooth, even harmless. If you decide to read about it on cloud provider blogs or in sustainability reports, you will encounter the same reassuring vocabulary again and again: net zero, carbon neutral, renewable-powered data centers. Everything sounds under control, as if the problem is already well understood — perhaps even solved.
+But that sense of comfort is precisely what makes me uneasy.</p>
+<p>In climate science, comforting narratives are often the most dangerous ones. They tend to appear right before we stop asking hard questions. And that is exactly why I want to start this discussion on Green Cloud from a very basic place, before tools, before metrics, before solutions.</p>
+<p>This article is not about how to reduce your cloud carbon footprint. It is not about offsets, certifications, or choosing the “greenest” region. It is about how we think about systems.
+Green Cloud, at its core, a simple but unsettling question I want to ask : Should this system be running at all, and if it does, how much of it is actually necessary?</p>
+<p>In cloud-native environments, especially those built on platforms like Kubernetes, activity does not always neatly align with user demand. Large systems are alive even when applications are quiet. Control planes reconcile state. Nodes communicate continuously. Monitoring systems observe relentlessly. Automation pipelines execute because time has passed, not because reality has changed. From a distance, everything looks stable. From close up, everything is moving.
+As a climate scientist, I was trained to pay attention to exactly this kind of background motions. In the Earth system, extreme events matter and those are devastating. But those extremes are the result of a small but continuous flow of energy, like global warming. A system can appear balanced while quietly drifting toward inefficiency or instability.
+I wish that the cloud engineers start thinking in the same way.</p>
+<p>This is not a moral appeal. It is not a call to “save the planet” through willpower alone. It is an invitation to examine system behavior honestly. To notice where automation has turned into a habit. To ask whether always-on infrastructure is still justified. To distinguish between reliability that is engineered and reliability that exists simply because everything is oversized.</p>
+<p>I am going to write a series of articles about it because I believe Green Cloud deserves to be understood before systems are automated and tools are advocated. We need a shared mental model first. Without that, measurements become misleading and solutions become superficial.</p>
+<p>So this article starts deliberately at the beginning. What does it actually mean for a cloud system to be “idle”? What assumptions do we carry from cost models into energy models without questioning them? And how many of our engineering decisions are shaped more by fear of failure than by evidence of necessity?</p>
+<p>These are not questions with immediate answers. But they are the right questions to ask if we want to build Green Clouds rather than only talking about it.</p>
+<p>In the articles that follow, I will move gradually from these fundamentals toward concrete examples — Kubernetes clusters that never truly sleep, CI pipelines that run because they always have, and design choices that trade short-term comfort for long-term waste. But none of that makes sense unless we first agree on why building a Green Cloud is, above all, a system design problem.</p>
+<p>That is where this journey begins.</p>
+
+
+    <ul id="taxonomy" class="not-prose flex items-center space-x-4 flex-nowrap whitespace-nowrap overflow-x-auto">
+
+      <li class="font-semibold my-4">Tags:</li>
+        <li ><a class="py-2 px-6 border rounded-full hover:bg-zinc-100 active:bg-zinc-300" href="/tags/cloud/">Cloud</a></li>
+        <li ><a class="py-2 px-6 border rounded-full hover:bg-zinc-100 active:bg-zinc-300" href="/tags/sustainability/">Sustainability</a></li>
+        <li ><a class="py-2 px-6 border rounded-full hover:bg-zinc-100 active:bg-zinc-300" href="/tags/feature/">Feature</a></li>
+    </ul>
+</div>
+
+    <footer id="content-footer" class="not-prose">
+
+      <div id="comment" class="border p-8 bg-zinc-100 rounded-2xl">
+
+        <h2 class="text-xl font-semibold mb-4">Comments</h2>
+
+        <script src="https://giscus.app/client.js"
+                data-repo="vivek-shilimkar/clusters-and-climate"
+                data-repo-id="R_kgDONhx8ng"
+                data-category="General"
+                data-category-id="DIC_kwDONhx8ns4Clb8B"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="light"
+                data-lang="en"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+      </div>
+
+      <div id="author-box" class="my-8 md:my-14 border p-8 bg-zinc-100 rounded-2xl">
+
+        <img class="w-20 h-20 rounded-full" src="/images/vivek-2.jpg" alt="Dr. Vivek Shilimkar">
+
+        <h2 class="text-xl font-bold my-4">Written by : Dr. Vivek Shilimkar</h2>
+
+        <p class="mb-4">Site Reliability Engineer | Climate Scientist | Nature Lover</p>
+
+        <ul class="flex flex-wrap space-x-4">
+          <li>
+            <a class="flex items-center decoration-auto hover:underline" href="https://facebook.com/#" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+              <span class="ml-2">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a class="flex items-center decoration-auto hover:underline" href="https://facebook.com/#" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+              </svg>
+              <span class="ml-2">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a class="flex items-center decoration-auto hover:underline" href="https://facebook.com/#" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+
+              </svg>
+              <span class="ml-2">Instagram</span>
+            </a>
+          </li>
+
+        </ul>
+        
+      </div>
+
+      <div id="related-post" class="">
+
+        <h2 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">Recommended for You</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><article class="relative group bg-zinc-100 hover:bg-blue-100 rounded-3xl">
 	
-	<a class="insert-link" href="https://clustersandclimate.com/technology/from-climate-science-to-virtual-cloud-systems/"></a>
+	<a class="insert-link" href="https://clustersandclimate.com/climate/bob-changing-tracks/"></a>
 
-	<figure class="w-full aspect-video overflow-hidden rounded-3xl">
+	<figure class="w-full aspect-video overflow-hidden rounded-3xl"><img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="https://clustersandclimate.com/images/Sundarban_Rising_Water_hu1de3d3f1b8e00717ee8ee11237f2ae10_868239_750x0_resize_q75_box.jpg" alt="चक्रीवादळे वळत आहेत — आपली धोरणे त्यानुसार वळणार का?" width="750" height="422">
 
 	  </figure>
 
 	<div class="p-6">
 
-		<time datetime="2026-02-05T17:32:37&#43;00:00">Feb 05, 2026</time>
+		<time datetime="2026-01-23T00:01:00&#43;05:30">Jan 23, 2026</time>
 
-		<h3 class="my-4 text-2xl font-bold">From Climate Science to Virtual Cloud Systems : Designing Green Cloud Systems</h3>
+		<h3 class="my-4 text-2xl font-bold">चक्रीवादळे वळत आहेत — आपली धोरणे त्यानुसार वळणार का?</h3>
 
-		<p class="text-normal leading-normal text-zinc-500 line-clamp-2">A climate scientist’s perspective on why Green Cloud is not about offsets or slogans, but about how we design, size, and run cloud systems — and why engineering honesty matters before optimization.</p>
+		<p class="text-normal leading-normal text-zinc-500 line-clamp-2">पूर्वी बंगालच्या उपसागरातील बहुतेक चक्रीवादळे भारताच्या दक्षिण-पूर्व किनारपट्टीवरील राज्यांमध्ये धडकत असत. मात्र CMIP6 उच्च रिझोल्यूशन हवामान मॉडेल्सवर आधारित २०१५ ते २०५० या कालावधीतील अंदाज दर्शवतात की चक्रीवादळांच्या मार्गांमध्ये हळूहळू उत्तरेकडे झुकणारा बदल होत आहे. या बदलामुळे चक्रीवादळे आता अधिकाधिक ओडिशा आणि पश्चिम बंगालच्या दिशेने सरकण्याची शक्यता वाढत असल्याचे स्पष्ट होते.</p>
 
 	</div>
 </article><article class="relative group bg-zinc-100 hover:bg-blue-100 rounded-3xl">
@@ -148,33 +275,16 @@
 		<p class="text-normal leading-normal text-zinc-500 line-clamp-2">Practical patterns, principles and hands-on examples to design cloud architectures that minimise cost without sacrificing reliability or developer velocity.</p>
 
 	</div>
-</article><article class="relative group bg-zinc-100 hover:bg-blue-100 rounded-3xl">
-	
-	<a class="insert-link" href="https://clustersandclimate.com/climate/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%95%E0%A4%BE-%E0%A4%86%E0%A4%A3%E0%A4%BF-%E0%A4%85%E0%A4%B0%E0%A5%81%E0%A4%A3%E0%A4%BF%E0%A4%95%E0%A4%BE/"></a>
-
-	<figure class="w-full aspect-video overflow-hidden rounded-3xl"><img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="https://clustersandclimate.com/images/article-7/image1_hua21ddc77e5346aca238537ec88a5b1cc_262520_750x0_resize_q75_box.jpg" alt="अर्का आणि अरुणिका : हवामान अंदाज आणि संशोधनातील झेप" width="750" height="563">
-
-	  </figure>
-
-	<div class="p-6">
-
-		<time datetime="2024-10-15T00:00:00&#43;00:00">Oct 15, 2024</time>
-
-		<h3 class="my-4 text-2xl font-bold">अर्का आणि अरुणिका : हवामान अंदाज आणि संशोधनातील झेप</h3>
-
-		<p class="text-normal leading-normal text-zinc-500 line-clamp-2">अचूक हवामान अंदाज आणि सर्वसमावेशक हवामान संशोधनाची गरज आजपेक्षा जास्त कधीच नव्हती. याच पार्श्वभूमीवर पुण्यातील पाषाण रोडच्या ‘इंडियन इन्स्टिटय़ूट ऑफ ट्रॉपिकल मेटिऑरॉलॉजी (IITM)’ येथे ‘अर्का’ नावाच्या नवीन उच्च-कार्यक्षमता संगणकीय प्रणालीचे (HPC) उदघाटन २६ सप्टेंबर २०२४ या दिवशी पृथ्वी विज्ञान मंत्रालयाने (MoES) केले.</p>
-
-	</div>
 </article>
-    
-    </div>
+          
+        </div>
+      </div>
 
-    
+    </footer>
 
-    <div class="flex items-center mt-10"></div>
+  </article>
+
   
-  </section>
-
   <aside class="md:col-span-1"><div class="lg:sticky lg:top-8">
 <script src="https://elfsightcdn.com/platform.js" async></script>
 <div class="elfsight-app-dcad58da-bc3d-4fbe-b282-b1826d9fac43" data-elfsight-app-lazy></div><div class="space-y-6">
@@ -210,8 +320,8 @@
 		</div></div>
 </aside>
 
-  </div>
-
+</div>
+  
 </main>
   <footer class="bg-zinc-100 py-10 md:py-14"><div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
 
