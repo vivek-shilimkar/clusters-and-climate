@@ -1,6 +1,8 @@
 ---
 title: "Cost-aware Cloud Architectures on a Budget"
 date: 2025-09-08
+draft: true
+author: Dr. Vivek Shilimkar
 description: "Practical patterns, principles and hands-on examples to design cloud architectures that minimise cost without sacrificing reliability or developer velocity."
 tags: ["cloud", "cost", "infrastructure", "terraform", "serverless"]
 categories: ["technology"]
