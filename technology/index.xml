@@ -43,19 +43,5 @@
       <guid>https://clustersandclimate.com/technology/azure-csi-driver/</guid>
       <description>Introduction The Container Storage Interface (CSI) is now the industry standard for connecting Kubernetes clusters to a variety of storage solutions.</description>
     </item>
-    <item>
-      <title></title>
-      <link>https://clustersandclimate.com/technology/agent-development-kit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/agent-development-kit/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://clustersandclimate.com/technology/platform-engineering-kubernetes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/platform-engineering-kubernetes/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
