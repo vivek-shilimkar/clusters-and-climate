@@ -16,13 +16,6 @@
       <description>Introduction Before I was involved with cloud infrastructure and distributed systems, I spent years studying the climate. I am a doctor by PhD — in climate science — and I have spent years understanding how Earth’s climate systems behave, how energy moves through the atmosphere and oceans, and how small imbalances accumulate into large, sometimes irreversible changes.</description>
     </item>
     <item>
-      <title>Cost-aware Cloud Architectures on a Budget</title>
-      <link>https://clustersandclimate.com/technology/cost-aware-cloud-architectures-on-a-budget/</link>
-      <pubDate>Mon, 08 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/cost-aware-cloud-architectures-on-a-budget/</guid>
-      <description>Overview Running workloads in the cloud doesn&amp;rsquo;t have to be expensive. With deliberate architecture choices, observability, and a few automated patterns you can reduce spend substantially while keeping performance and reliability.</description>
-    </item>
-    <item>
       <title>Kubernetes Disaster Recovery: Lessons from Natural Disasters</title>
       <link>https://clustersandclimate.com/technology/kubernetes-disaster-recovery/</link>
       <pubDate>Fri, 25 Jul 2025 00:00:00 +0530</pubDate>
