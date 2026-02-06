@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Green-Cloud on Clusters and Climate</title>
-    <link>https://clustersandclimate.com/tags/green-cloud/</link>
+    <link>http://localhost:1313/tags/green-cloud/</link>
     <description>Recent content in Green-Cloud on Clusters and Climate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Feb 2026 17:32:37 +0000</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/tags/green-cloud/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/green-cloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From Climate Science to Virtual Cloud Systems : Designing Green Cloud Systems</title>
-      <link>https://clustersandclimate.com/technology/from-climate-science-to-virtual-cloud-systems/</link>
+      <link>http://localhost:1313/technology/from-climate-science-to-virtual-cloud-systems/</link>
       <pubDate>Thu, 05 Feb 2026 17:32:37 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/from-climate-science-to-virtual-cloud-systems/</guid>
+      <guid>http://localhost:1313/technology/from-climate-science-to-virtual-cloud-systems/</guid>
       <description>Introduction Before I was involved with cloud infrastructure and distributed systems, I spent years studying the climate. I am a doctor by PhD — in climate science — and I have spent years understanding how Earth’s climate systems behave, how energy moves through the atmosphere and oceans, and how small imbalances accumulate into large, sometimes irreversible changes.</description>
     </item>
   </channel>

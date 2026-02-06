@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>मराठी on Clusters and Climate</title>
-    <link>https://clustersandclimate.com/tags/%E0%A4%AE%E0%A4%B0%E0%A4%BE%E0%A4%A0%E0%A5%80/</link>
+    <link>http://localhost:1313/tags/%E0%A4%AE%E0%A4%B0%E0%A4%BE%E0%A4%A0%E0%A5%80/</link>
     <description>Recent content in मराठी on Clusters and Climate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Jan 2026 11:58:00 +0900</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/tags/%E0%A4%AE%E0%A4%B0%E0%A4%BE%E0%A4%A0%E0%A5%80/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E0%A4%AE%E0%A4%B0%E0%A4%BE%E0%A4%A0%E0%A5%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CMIP6 म्हणजे काय? इतिहास आणि CMIP5ची माहिती</title>
-      <link>https://clustersandclimate.com/science/cmip6-marathi/</link>
+      <link>http://localhost:1313/science/cmip6-marathi/</link>
       <pubDate>Fri, 23 Jan 2026 11:58:00 +0900</pubDate>
-      <guid>https://clustersandclimate.com/science/cmip6-marathi/</guid>
+      <guid>http://localhost:1313/science/cmip6-marathi/</guid>
       <description>CMIP6 म्हणजे काय? इतिहास आणि CMIP5ची माहिती हवामान बदल समजून घेण्यासाठी वैज्ञानिक संगणकीय मॉडेल्स वापरतात. वेगवेगळ्या देशांतील संशोधन संस्था स्वतःची हवामान मॉडेल्स तयार करतात.</description>
     </item>
   </channel>

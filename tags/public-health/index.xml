@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Public-Health on Clusters and Climate</title>
-    <link>https://clustersandclimate.com/tags/public-health/</link>
+    <link>http://localhost:1313/tags/public-health/</link>
     <description>Recent content in Public-Health on Clusters and Climate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 28 Jul 2025 10:00:00 +0530</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/tags/public-health/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/public-health/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>डेंग्यू रोगाचे गतिशास्त्र आणि हवामान बदल: नवीन संशोधनाचे महत्त्वपूर्ण निष्कर्ष</title>
-      <link>https://clustersandclimate.com/science/dengue-dynamics-predictions-marathi/</link>
+      <link>http://localhost:1313/science/dengue-dynamics-predictions-marathi/</link>
       <pubDate>Mon, 28 Jul 2025 10:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/science/dengue-dynamics-predictions-marathi/</guid>
+      <guid>http://localhost:1313/science/dengue-dynamics-predictions-marathi/</guid>
       <description>Read English article here: Dengue Dynamics and Climate (English)&#xA;जसजसा आपल्या पृथ्वीवरील हवामानाचा नमुना बदलत चालला आहे, तसतसे डेंग्यूसारख्या कीटकजन्य आजारांच्या पसरण्याच्या पद्धतीत आणि तीव्रतेत नाट्यमय बदल होत आहेत.</description>
     </item>
   </channel>

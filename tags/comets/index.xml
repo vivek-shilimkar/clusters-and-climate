@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Comets on Clusters and Climate</title>
-    <link>https://clustersandclimate.com/tags/comets/</link>
+    <link>http://localhost:1313/tags/comets/</link>
     <description>Recent content in Comets on Clusters and Climate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Oct 2025 12:00:00 +0530</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/tags/comets/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/comets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Interstellar Visitors: What We Learn from Objects From Beyond Our Solar System</title>
-      <link>https://clustersandclimate.com/science/interstellar-visitors/</link>
+      <link>http://localhost:1313/science/interstellar-visitors/</link>
       <pubDate>Thu, 02 Oct 2025 12:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/science/interstellar-visitors/</guid>
+      <guid>http://localhost:1313/science/interstellar-visitors/</guid>
       <description>Interstellar objects — bodies that originate outside our Solar System and pass through it — have captured astronomers&amp;rsquo; imaginations since 2017, when the first confirmed visitor, 1I/&amp;lsquo;Oumuamua, was discovered.</description>
     </item>
   </channel>
