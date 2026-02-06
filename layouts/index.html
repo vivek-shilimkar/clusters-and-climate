@@ -10,7 +10,26 @@
     {{ $featured := where .Site.RegularPages.ByDate.Reverse ".Params.tags" "intersect" (slice "feature") }}
     <div class="grid grid-cols-1 gap-6">
       {{ range first 3 $featured }}
-        {{ partial "content/card.html" . }}
+        <article class="relative group bg-zinc-100 hover:bg-blue-100 rounded-3xl">
+          <a class="insert-link" href="{{ .Permalink }}"></a>
+          <figure class="w-full overflow-hidden rounded-3xl" style="aspect-ratio: 16/7.65;">
+            {{- if .Params.image }}
+              {{- if (strings.HasPrefix .Params.image "http") }}
+                <img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ .Params.image }}" alt="{{ $.Name }}" style="width: 100%; height: 100%; object-fit: cover;">
+              {{- else }}
+                {{- with $imgcard := resources.Get .Params.image -}}
+                  {{- $imgcard := $imgcard.Process "resize 750x" -}}
+                  <img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ $imgcard.Permalink }}" alt="{{ $.Name }}" width="{{ $imgcard.Width }}" height="{{ $imgcard.Height }}" style="width: 100%; height: 100%; object-fit: cover;">
+                {{- end }}
+              {{- end }}
+            {{- end }}
+          </figure>
+          <div class="p-6">
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}">{{ .Date.Format "Jan 02, 2006" }}</time>
+            <h3 class="my-4 text-2xl font-bold">{{ .LinkTitle }}</h3>
+            <p class="text-normal leading-normal text-zinc-500 line-clamp-2">{{ .Params.description }}</p>
+          </div>
+        </article>
       {{ end }}
     </div>
 
@@ -23,7 +42,7 @@
     </div>
     {{- partial "pagination.html" . -}}
 
-    <h2 class="text-3xl font-bold my-8">Climate Posts</h2>
+    <!-- <h2 class="text-3xl font-bold my-8">Climate Posts</h2> -->
     {{ $climate := where .Site.RegularPages "Section" "climate" | first 2 }}
     <h2 class="text-3xl font-bold my-8"><a href="/climate/" class="hover:underline">Climate Posts</a></h2>
     {{ $climate := where .Site.RegularPages "Section" "climate" | first 4 }}
@@ -33,7 +52,7 @@
       {{ end }}
     </div>
 
-    <h2 class="text-3xl font-bold my-8">Outdoor Posts</h2>
+    <!-- <h2 class="text-3xl font-bold my-8">Outdoor Posts</h2> -->
     {{ $outdoor := where .Site.RegularPages "Section" "outdoor" | first 2 }}
     <h2 class="text-3xl font-bold my-8"><a href="/outdoor/" class="hover:underline">Outdoor Posts</a></h2>
     {{ $outdoor := where .Site.RegularPages "Section" "outdoor" | first 4 }}

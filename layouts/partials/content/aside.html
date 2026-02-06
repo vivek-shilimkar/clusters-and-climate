@@ -1,7 +1,6 @@
 <div class="lg:sticky lg:top-8">
 
 	{{- if not (eq .RelPermalink "/about/") -}}
-		{{- partial "content/aside-banner.html" -}}
 
 		<div class="space-y-6">
 
@@ -14,16 +13,12 @@
 					<p class="text-zinc-600 mb-4 text-sm">{{ .Site.Params.Author.bio }}</p>
 					<a href="/about/" class="text-blue-600 font-semibold hover:underline text-sm">More about me →</a>
 				</div>
-			{{- else -}}
-				<h2 class="font-bold text-xl mb-8">Recent Post</h2>
-
-				{{ range first 5 .Site.RegularPages }}
-
-					{{- partial "content/list-post.html" . -}}
-
-				{{ end }}
 			{{- end -}}
-            
+
+		</div>
+
+		<div class="mt-8 space-y-4">
+			{{- partial "content/aside-banner.html" -}}
 		</div>
 	{{- end -}}
 
