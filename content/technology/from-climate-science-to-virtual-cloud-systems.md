@@ -2,7 +2,7 @@
 title: "From Climate Science to Virtual Cloud Systems : Designing Green Cloud Systems"
 date: 2026-02-05T17:32:37+00:00
 author: Dr. Vivek Shilimkar
-image: /home/vivek-shilimkar/github/clusters-and-climate/assets/images/tech/Earth_rotation.gif
+image: images/tech/heading.png
 categories:
   - technology
 tags:
@@ -16,6 +16,8 @@ description: "A climate scientist’s perspective on why Green Cloud is not abou
 
 Before I was involved with cloud infrastructure and distributed systems, I spent years studying the climate. I am a doctor by PhD — in climate science — and I have spent years understanding how Earth’s climate systems behave, how energy moves through the atmosphere and oceans, and how small imbalances accumulate into large, sometimes irreversible changes. Climate science teaches you patience, but it also teaches you discomfort. The thing about extreme climate events that I learned very early was that these do not arrive suddenly. They grow quietly, while everything still appears normal.
 
+![Rotating Earth](/images/tech/Rotating_earth_animated.gif)
+
 That way of thinking never really left me.
 
 While I was still working with actual clouds in the atmosphere, I also started working with virtual clouds platforms, large-scale computing systems, and automation-heavy infrastructure. I could not help but notice familiar patterns. Not identical, of course — virtual cloud systems are not the actual cloud systems — but the shape of the problems felt similar. Complex systems. Feedback loops. Invisible background activity. Decisions made for convenience in the present that quietly push costs into the future.
@@ -28,13 +30,18 @@ But that sense of comfort is precisely what makes me uneasy.
 In climate science, comforting narratives are often the most dangerous ones. They tend to appear right before we stop asking hard questions. And that is exactly why I want to start this discussion on Green Cloud from a very basic place, before tools, before metrics, before solutions.
 
 This article is not about how to reduce your cloud carbon footprint. It is not about offsets, certifications, or choosing the “greenest” region. It is about how we think about systems.
-Green Cloud, at its core, a simple but unsettling question I want to ask : Should this system be running at all, and if it does, how much of it is actually necessary?
+
+For me, Green Cloud begins with a simple but unsettling question : __Should this system be running at all, and if it does, how much of it is actually necessary?__
+
+![Should-it-be-running](/images/tech/should-it-be-running.png)
 
 In cloud-native environments, especially those built on platforms like Kubernetes, activity does not always neatly align with user demand. Large systems are alive even when applications are quiet. Control planes reconcile state. Nodes communicate continuously. Monitoring systems observe relentlessly. Automation pipelines execute because time has passed, not because reality has changed. From a distance, everything looks stable. From close up, everything is moving.
 As a climate scientist, I was trained to pay attention to exactly this kind of background motions. In the Earth system, extreme events matter and those are devastating. But those extremes are the result of a small but continuous flow of energy, like global warming. A system can appear balanced while quietly drifting toward inefficiency or instability.
 I wish that the cloud engineers start thinking in the same way.
 
 This is not a moral appeal. It is not a call to “save the planet” through willpower alone. It is an invitation to examine system behavior honestly. To notice where automation has turned into a habit. To ask whether always-on infrastructure is still justified. To distinguish between reliability that is engineered and reliability that exists simply because everything is oversized.
+
+![Reliability](/images/tech/reliability.png)
 
 I am going to write a series of articles about it because I believe Green Cloud deserves to be understood before systems are automated and tools are advocated. We need a shared mental model first. Without that, measurements become misleading and solutions become superficial.
 
