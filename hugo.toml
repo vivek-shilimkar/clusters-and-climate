@@ -2,6 +2,8 @@ baseURL = 'https://clustersandclimate.com/' # <- Your blog's base URL
 languageCode = 'en-us'
 title = 'Clusters and Climate'
 theme = 'pehtheme'
+disablePathToLower = true
+removePathAccents = false
 
 summaryLength = '20' # <- 20 words are approximately 160 characters
 
@@ -20,7 +22,7 @@ googleAnalytics = 'G-W43KWS3B37' # <- Your Google Analytics 4 measurement ID
 	
 [params.author]
 	name = 'Dr. Vivek Shilimkar'
-	bio = 'Senior Engineer | Climate Scientist | Green Cloud Advocate | Nature Enthusiast | Science Communicator'
+	bio = 'Cloud Engineer | Climate Scientist | Green Cloud Advocate | Nature Enthusiast | Science Communicator'
 	avatar = '/images/vivek-2.jpg'
   	twitter = 'https://x.com/DrViKiShi'
 	facebook = 'https://facebook.com/vivekshilimkar'
@@ -59,3 +61,10 @@ googleAnalytics = 'G-W43KWS3B37' # <- Your Google Analytics 4 measurement ID
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[permalinks]
+  tags = "/tags/:slug/"

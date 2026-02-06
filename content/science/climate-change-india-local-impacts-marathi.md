@@ -4,7 +4,7 @@ date: 2025-11-24T10:00:00+05:30
 categories: 
     - science
     - climate
-tags: ["climate-change","india","monsoon","himalaya","cyclone","sea-level","heatwaves","adaptation","marine-heatwaves"]
+tags: ["climate-change","india","monsoon","himalaya","cyclone","sea-level","heatwaves","adaptation","marine-heatwaves","marathi"]
 image: "/images/science/indiaclimate.png"
 description: "भारतावर हवामान बदलाचे तापमान, मान्सून, हिमालय, महासागर, किनारी पूर आणि चक्रीवादळांवरील ठोस स्थानिक परिणामांचा आढावा."
 ---

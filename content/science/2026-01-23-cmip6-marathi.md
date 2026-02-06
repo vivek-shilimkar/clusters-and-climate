@@ -5,7 +5,7 @@ author: Dr. Vivek Shilimkar
 draft: false
 slug: cmip6-marathi
 categories: ["climate","science"]
-tags: ["cmip6", "cmip5", "climate models", "ipcc", "RCP", "SSP", "मराठी"]
+tags: ["cmip6", "cmip5", "climate models", "ipcc", "RCP", "SSP", "marathi"]
 image: "images/cmip6.jpeg"
 description: "CMIP (Coupled Model Intercomparison Project) ही जगभरातील हवामान मॉडेल्सची सामूहिक चाचणी योजना आहे, ज्यातून वेगवेगळ्या मॉडेल्सचे निष्कर्ष तुलना करून हवामान बदल समजून घेतला जातो. CMIP5 मॉडेल्समुळे तापमानवाढ, पाऊस आणि समुद्रपातळी बदल यांचे महत्त्वाचे अंदाज मिळाले, त्यापुढील टप्पा असलेली CMIP6 योजना अधिक सूक्ष्म, अचूक आणि प्रदेशनिहाय हवामान बदलांचे अंदाज देते."
 ---
