@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NISQ on Clusters and Climate</title>
+    <link>http://localhost:1313/tags/nisq/</link>
+    <description>Recent content in NISQ on Clusters and Climate</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Jan 2026 12:00:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/nisq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>क्वांटम संगणक म्हणजे काय? क्वबिट, सुपरपोझिशन आणि एंटॅंगलमेंट</title>
+      <link>http://localhost:1313/science/quantum-computing-marathi/</link>
+      <pubDate>Fri, 23 Jan 2026 12:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/science/quantum-computing-marathi/</guid>
+      <description>क्वांटम संगणक हे पारंपरिक (क्लासिकल) संगणकांपेक्षा वेगळ्या नियमांवर चालतात — क्वांटम मेकॅनिक्सच्या नियमांवर. त्यामुळे काही निवडक समस्यांसाठी ते अत्यंत वेगाने किंवा कार्यक्षमतेने उत्तर शोधू शकतात.</description>
+    </item>
+  </channel>
+</rss>
