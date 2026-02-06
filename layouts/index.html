@@ -1,0 +1,53 @@
+{{ define "main" }}
+
+{{- partial "content/breadcrumb.html" . -}}
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
+
+  <div class="md:col-span-2">
+    
+    <h2 class="text-3xl font-bold mb-8">Featured Posts</h2>
+    {{ $featured := where .Site.RegularPages.ByDate.Reverse ".Params.tags" "intersect" (slice "feature") }}
+    <div class="grid grid-cols-1 gap-6">
+      {{ range first 3 $featured }}
+        {{ partial "content/card.html" . }}
+      {{ end }}
+    </div>
+
+    <h2 class="text-3xl font-bold my-8">All Posts</h2>
+    {{ $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Type" "in" .Site.Params.mainSections) }}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {{ range $paginator.Pages }}
+            {{ partial "content/card.html" . }}
+        {{ end }}
+    </div>
+    {{- partial "pagination.html" . -}}
+
+    <h2 class="text-3xl font-bold my-8">Climate Posts</h2>
+    {{ $climate := where .Site.RegularPages "Section" "climate" | first 2 }}
+    <h2 class="text-3xl font-bold my-8"><a href="/climate/" class="hover:underline">Climate Posts</a></h2>
+    {{ $climate := where .Site.RegularPages "Section" "climate" | first 4 }}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {{ range $climate }}
+        {{ partial "content/card.html" . }}
+      {{ end }}
+    </div>
+
+    <h2 class="text-3xl font-bold my-8">Outdoor Posts</h2>
+    {{ $outdoor := where .Site.RegularPages "Section" "outdoor" | first 2 }}
+    <h2 class="text-3xl font-bold my-8"><a href="/outdoor/" class="hover:underline">Outdoor Posts</a></h2>
+    {{ $outdoor := where .Site.RegularPages "Section" "outdoor" | first 4 }}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {{ range $outdoor }}
+        {{ partial "content/card.html" . }}
+      {{ end }}
+    </div>
+
+  </div>
+
+  <aside class="md:col-span-1">
+    {{- partial "content/aside.html" . -}}
+  </aside>
+
+</div>
+{{ end }}

@@ -20,7 +20,7 @@ googleAnalytics = 'G-W43KWS3B37' # <- Your Google Analytics 4 measurement ID
 	
 [params.author]
 	name = 'Dr. Vivek Shilimkar'
-	bio = 'Site Reliability Engineer | Climate Scientist | Nature Lover'
+	bio = 'Senior Engineer | Climate Scientist | Green Cloud Advocate | Nature Enthusiast | Science Communicator'
 	avatar = '/images/vivek-2.jpg'
   	twitter = 'https://x.com/DrViKiShi'
 	facebook = 'https://facebook.com/vivekshilimkar'

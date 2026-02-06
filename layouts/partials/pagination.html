@@ -1,0 +1,15 @@
+{{- if gt .Paginator.TotalPages 1 -}}
+<div class="flex justify-center mt-8">
+    <nav class="flex items-center space-x-4">
+        {{- if .Paginator.HasPrev -}}
+        <a href="{{ .Paginator.Prev.URL }}" class="px-4 py-2 bg-white border border-zinc-200 rounded-lg hover:bg-zinc-50 text-zinc-700 transition-colors">Previous</a>
+        {{- end -}}
+
+        <span class="text-zinc-500">Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}</span>
+
+        {{- if .Paginator.HasNext -}}
+        <a href="{{ .Paginator.Next.URL }}" class="px-4 py-2 bg-white border border-zinc-200 rounded-lg hover:bg-zinc-50 text-zinc-700 transition-colors">Next</a>
+        {{- end -}}
+    </nav>
+</div>
+{{- end -}}

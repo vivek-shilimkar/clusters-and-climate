@@ -5,13 +5,24 @@
 
 		<div class="space-y-6">
 
-			<h2 class="font-bold text-xl mb-8">Recent Post</h2>
+			{{- if .IsHome -}}
+				<div class="bg-zinc-100 p-6 rounded-2xl">
+					<h2 class="font-bold text-xl mb-4">About Me</h2>
+					{{- with .Site.Params.Author.avatar }}
+						<img class="w-20 h-20 rounded-full mb-4" src="{{ . }}" alt="{{ $.Site.Params.Author.name }}">
+					{{- end }}
+					<p class="text-zinc-600 mb-4 text-sm">{{ .Site.Params.Author.bio }}</p>
+					<a href="/about/" class="text-blue-600 font-semibold hover:underline text-sm">More about me →</a>
+				</div>
+			{{- else -}}
+				<h2 class="font-bold text-xl mb-8">Recent Post</h2>
 
-			{{ range first 5 .Site.RegularPages }}
+				{{ range first 5 .Site.RegularPages }}
 
-				{{- partial "content/list-post.html" . -}}
+					{{- partial "content/list-post.html" . -}}
 
-			{{ end }}
+				{{ end }}
+			{{- end -}}
             
 		</div>
 	{{- end -}}
