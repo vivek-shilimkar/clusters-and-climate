@@ -183,11 +183,17 @@ These non-production clusters are quiet and that makes them easy to miss in term
 </ul>
 <p>Each virtual node draws roughly 50-100W on average. Running continuously:</p>
 <ul>
-<li>Daily energy per environment: ~15-30 kWh</li>
-<li>Monthly per environment: 450-900 kWh</li>
-<li>Annual across all environments: ~70,000-140,000 kWh</li>
+<li>Daily energy per environment: ~6-12 kWh</li>
+<li>Monthly per environment: 180-360 kWh</li>
+<li>Yearly: 2000–4400 kWh</li>
 </ul>
-<p>That&rsquo;s equivalent to the electricity consumption of 5-10 average homes annually. Just for infrastructure that sits mostly unused outside business hours.</p>
+<p>Across all 15 environments:</p>
+<ul>
+<li>Daily: ~90–180 kWh</li>
+<li>Monthly: ~2,700–5,400 kWh</li>
+<li>Yearly: ~33,000-66,000 kWh</li>
+</ul>
+<p>India’s per-capita electricity consumption is reported as ~1,300 kWh/year (2023–24). So 33,000–66,000 kWh/year is roughly equivalent to the annual electricity consumption of 25–45 Indian homes</p>
 <p>The math is straightforward. If engineers work 40 hours per week out of 168 total hours, these clusters are actively used less than 25% of the time. Yet they consume energy continuously. The other 75% - nights, weekends, holidays - the servers remain powered, CPUs tick, memory stays active, and cooling systems run. All waiting for the next morning&rsquo;s git push.</p>
 <p>Green Cloud thinking becomes practical at this point. Not by just questioning production reliability, but by looking honestly at development and test environments and questioning their runtime. Are these environments serving active work, or simply existing because you might use them again after almost 15 hours?</p>
 <blockquote>
