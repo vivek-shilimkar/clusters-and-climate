@@ -117,15 +117,4 @@ Every kilowatt-hour saved in development is one that doesn't need to be generate
 
 The question is not whether we can reduce this energy use. We can. The question is whether we will choose to look at these quiet, always-on systems with the same scrutiny we apply to production.
 
-## Tools and Resources
-
-**Cost and energy monitoring:**
-* [Kubecost](https://www.kubecost.com/) - Kubernetes cost monitoring and optimization
-* [Cloud Carbon Footprint](https://www.cloudcarbonfootprint.org/) - Open source cloud emissions tracking
-* [OpenCost](https://www.opencost.io/) - Open source Kubernetes cost monitoring
-
-**Further reading:**
-* [Green Software Foundation](https://greensoftware.foundation/) - Patterns and practices for sustainable software
-* [Principles of Green Software Engineering](https://principles.green/)
-* [Climate Neutral Data Centre Pact](https://www.climateneutraldatacentre.net/)
 
