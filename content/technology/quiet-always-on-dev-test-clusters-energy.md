@@ -37,11 +37,17 @@ Numbers help make the invisible visible. Consider a typical mid-sized engineerin
 * 2 staging environments
 
 Each virtual node draws roughly 50-100W on average. Running continuously:
-* Daily energy per environment: ~15-30 kWh
-* Monthly per environment: 450-900 kWh
-* Annual across all environments: ~70,000-140,000 kWh
+* Daily energy per environment: ~6-12 kWh
+* Monthly per environment: 180-360 kWh
+* Yearly: 2000–4400 kWh
 
-That's equivalent to the electricity consumption of 5-10 average homes annually. Just for infrastructure that sits mostly unused outside business hours.
+Across all 15 environments:
+
+* Daily: ~90–180 kWh
+* Monthly: ~2,700–5,400 kWh
+* Yearly: ~33,000-66,000 kWh
+
+India’s per-capita electricity consumption is reported as ~1,300 kWh/year (2023–24). So 33,000–66,000 kWh/year is roughly equivalent to the annual electricity consumption of 25–45 Indian homes
 
 The math is straightforward. If engineers work 40 hours per week out of 168 total hours, these clusters are actively used less than 25% of the time. Yet they consume energy continuously. The other 75% - nights, weekends, holidays - the servers remain powered, CPUs tick, memory stays active, and cooling systems run. All waiting for the next morning's git push.
 
