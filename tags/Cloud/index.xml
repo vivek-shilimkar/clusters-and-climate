@@ -6,8 +6,15 @@
     <description>Recent content in Cloud on Clusters and Climate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://clustersandclimate.com/tags/Cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quiet, Always-On: How Development and Test Clusters Accumulate Energy Use</title>
+      <link>https://clustersandclimate.com/technology/quiet-always-on-dev-test-clusters-energy/</link>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://clustersandclimate.com/technology/quiet-always-on-dev-test-clusters-energy/</guid>
+      <description>Production cluster systems are the most important since they serve customers. Most of the production clusters are overprovisioned with a “just in case” reason.</description>
+    </item>
     <item>
       <title>अर्का आणि अरुणिका : हवामान अंदाज आणि संशोधनातील झेप</title>
       <link>https://clustersandclimate.com/climate/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%95%E0%A4%BE-%E0%A4%86%E0%A4%A3%E0%A4%BF-%E0%A4%85%E0%A4%B0%E0%A5%81%E0%A4%A3%E0%A4%BF%E0%A4%95%E0%A4%BE/</link>

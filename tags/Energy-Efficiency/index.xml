@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Energy-Efficiency on Clusters and Climate</title>
+    <link>https://clustersandclimate.com/tags/Energy-Efficiency/</link>
+    <description>Recent content in Energy-Efficiency on Clusters and Climate</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://clustersandclimate.com/tags/Energy-Efficiency/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quiet, Always-On: How Development and Test Clusters Accumulate Energy Use</title>
+      <link>https://clustersandclimate.com/technology/quiet-always-on-dev-test-clusters-energy/</link>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://clustersandclimate.com/technology/quiet-always-on-dev-test-clusters-energy/</guid>
+      <description>Production cluster systems are the most important since they serve customers. Most of the production clusters are overprovisioned with a “just in case” reason.</description>
+    </item>
+  </channel>
+</rss>

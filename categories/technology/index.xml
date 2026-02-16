@@ -6,8 +6,15 @@
     <description>Recent content in Technology on Clusters and Climate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Feb 2026 17:32:37 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://clustersandclimate.com/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quiet, Always-On: How Development and Test Clusters Accumulate Energy Use</title>
+      <link>https://clustersandclimate.com/technology/quiet-always-on-dev-test-clusters-energy/</link>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://clustersandclimate.com/technology/quiet-always-on-dev-test-clusters-energy/</guid>
+      <description>Production cluster systems are the most important since they serve customers. Most of the production clusters are overprovisioned with a “just in case” reason.</description>
+    </item>
     <item>
       <title>From Climate Science to Virtual Cloud Systems : Designing Green Cloud Systems</title>
       <link>https://clustersandclimate.com/technology/from-climate-science-to-virtual-cloud-systems/</link>
