@@ -36,6 +36,8 @@ Numbers help make the invisible visible. Consider a typical mid-sized engineerin
 * 3 test environments with similar configurations
 * 2 staging environments
 
+Source for the numbers: https://www.cncf.io/reports/cncf-annual-survey-2022/
+
 Each virtual node draws roughly 50-100W on average. Running continuously:
 * Daily energy per environment: ~6-12 kWh
 * Monthly per environment: 180-360 kWh
