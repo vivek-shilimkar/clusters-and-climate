@@ -27,7 +27,7 @@ Latest climate models from major forecasting centers including NOAA, the Austral
 
 ### El Niño Development
 - **Strength**: Models predict Niño 3.4 Index (NINO3.4) values reaching as high as +3°C by August 2026. (See the Pacific Ocean SST anomalies)
-![Mean sea surface temperature anomaly of August 2026](/images/science/august-tropical.png)
+![Mean sea surface temperature anomaly of August 2026](/images/science/august-pacific.png)
 
 - **Timeline**: El Nino is in developing phase right now, with rising intensity expected throughut the year.
 ![NINO 3.4 Index](/images/science/nino-3.4-forecast.png)
