@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Drought on Clusters and Climate</title>
-    <link>https://clustersandclimate.com/tags/Drought/</link>
-    <description>Recent content in Drought on Clusters and Climate</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 13 Apr 2026 00:00:00 +0530</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/tags/Drought/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Super El Niño 2026: Why the Positive Indian Ocean Dipole Offers Hope Against Drought</title>
-      <link>https://clustersandclimate.com/climate/2026-04-13-super-el-nino-positive-iod-forecast/</link>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/climate/2026-04-13-super-el-nino-positive-iod-forecast/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Climate forecasters worldwide are closely monitoring oceanic conditions as multiple climate models indicate the development of what could be a &amp;ldquo;Super El Niño&amp;rdquo; event in 2026. Historically, such strong El Niño events have been associated with reduced monsoon rainfall over parts of the Indian subcontinent—typically 10-20% below normal—with regional variations in drought impacts. However, this time there&amp;rsquo;s a crucial difference: concurrent forecasts show a strong positive Indian Ocean Dipole (IOD) developing simultaneously, which could significantly buffer India against the typical El Niño-induced rainfall reductions.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Drought on Clusters and Climate</title>
+		<link>https://clustersandclimate.com/tags/Drought/</link>
+		<description>Recent content in Drought on Clusters and Climate</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 13 Apr 2026 00:00:00 +0530</lastBuildDate>
+		
+			<atom:link href="https://clustersandclimate.com/tags/Drought/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Super El Niño 2026: Why the Positive Indian Ocean Dipole Offers Hope Against Drought</title>
+				<link>https://clustersandclimate.com/climate/2026-04-13-super-el-nino-positive-iod-forecast/</link>
+				<pubDate>Mon, 13 Apr 2026 00:00:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/climate/2026-04-13-super-el-nino-positive-iod-forecast/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Climate forecasters worldwide are closely monitoring oceanic conditions as multiple climate models indicate the development of what could be a &amp;ldquo;Super El Niño&amp;rdquo; event in 2026. Historically, such strong El Niño events have been associated with reduced monsoon rainfall over parts of the Indian subcontinent—typically 10-20% below normal—with regional variations in drought impacts. However, this time there&amp;rsquo;s a crucial difference: concurrent forecasts show a strong positive Indian Ocean Dipole (IOD) developing simultaneously, which could significantly buffer India against the typical El Niño-induced rainfall reductions.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

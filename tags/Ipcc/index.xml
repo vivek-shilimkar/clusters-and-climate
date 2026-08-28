@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Ipcc on Clusters and Climate</title>
-    <link>https://clustersandclimate.com/tags/Ipcc/</link>
-    <description>Recent content in Ipcc on Clusters and Climate</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 23 Jan 2026 11:58:00 +0900</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/tags/Ipcc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>CMIP6 म्हणजे काय? इतिहास आणि CMIP5ची माहिती</title>
-      <link>https://clustersandclimate.com/science/cmip6-marathi/</link>
-      <pubDate>Fri, 23 Jan 2026 11:58:00 +0900</pubDate>
-      <guid>https://clustersandclimate.com/science/cmip6-marathi/</guid>
-      <description>&lt;h2 id=&#34;cmip6-महणज-कय-इतहस-आण-cmip5च-महत&#34;&gt;CMIP6 म्हणजे काय? इतिहास आणि CMIP5ची माहिती&lt;/h2&gt;&#xA;&lt;p&gt;हवामान बदल समजून घेण्यासाठी वैज्ञानिक संगणकीय मॉडेल्स वापरतात. वेगवेगळ्या देशांतील संशोधन संस्था स्वतःची हवामान मॉडेल्स तयार करतात. पण प्रत्येक मॉडेल वेगळे असल्यामुळे त्यांच्या परिणामांची थेट तुलना करणे कठीण जाते. हाच अडथळा दूर करण्यासाठी &amp;ldquo;CMIP&amp;rdquo; — Coupled Model Intercomparison Project — ही जागतिक, समन्वित योजना तयार करण्यात आली. CMIP अंतर्गत सर्व प्रमुख हवामान मॉडेल्सना समान प्रयोग चालवायचे असतात, इनपुट्स/आउटपुट्स प्रमाणित (standardized) स्वरूपात द्यायचे असतात, आणि डेटा सार्वजनिकरित्या उपलब्ध करून द्यायचा असतो. यामुळे वेगवेगळ्या मॉडेल्समधील साम्य/फरक समजतो, आणि बहु-मॉडेल निष्कर्षांवर विश्वास वाढतो.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Ipcc on Clusters and Climate</title>
+		<link>https://clustersandclimate.com/tags/Ipcc/</link>
+		<description>Recent content in Ipcc on Clusters and Climate</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 23 Jan 2026 11:58:00 +0900</lastBuildDate>
+		
+			<atom:link href="https://clustersandclimate.com/tags/Ipcc/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>CMIP6 म्हणजे काय? इतिहास आणि CMIP5ची माहिती</title>
+				<link>https://clustersandclimate.com/science/cmip6-marathi/</link>
+				<pubDate>Fri, 23 Jan 2026 11:58:00 +0900</pubDate>
+				<guid>https://clustersandclimate.com/science/cmip6-marathi/</guid>
+				<description>&lt;h2 id=&#34;cmip6-महणज-कय-इतहस-आण-cmip5च-महत&#34;&gt;CMIP6 म्हणजे काय? इतिहास आणि CMIP5ची माहिती&lt;/h2&gt;&#xA;&lt;p&gt;हवामान बदल समजून घेण्यासाठी वैज्ञानिक संगणकीय मॉडेल्स वापरतात. वेगवेगळ्या देशांतील संशोधन संस्था स्वतःची हवामान मॉडेल्स तयार करतात. पण प्रत्येक मॉडेल वेगळे असल्यामुळे त्यांच्या परिणामांची थेट तुलना करणे कठीण जाते. हाच अडथळा दूर करण्यासाठी &amp;ldquo;CMIP&amp;rdquo; — Coupled Model Intercomparison Project — ही जागतिक, समन्वित योजना तयार करण्यात आली. CMIP अंतर्गत सर्व प्रमुख हवामान मॉडेल्सना समान प्रयोग चालवायचे असतात, इनपुट्स/आउटपुट्स प्रमाणित (standardized) स्वरूपात द्यायचे असतात, आणि डेटा सार्वजनिकरित्या उपलब्ध करून द्यायचा असतो. यामुळे वेगवेगळ्या मॉडेल्समधील साम्य/फरक समजतो, आणि बहु-मॉडेल निष्कर्षांवर विश्वास वाढतो.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

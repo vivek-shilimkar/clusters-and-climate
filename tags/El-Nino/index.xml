@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>El-Nino on Clusters and Climate</title>
-    <link>https://clustersandclimate.com/tags/El-Nino/</link>
-    <description>Recent content in El-Nino on Clusters and Climate</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 30 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/tags/El-Nino/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>El Niño and the Indian Monsoon — A Tug of War Across Oceans</title>
-      <link>https://clustersandclimate.com/climate/2026-05-1-el-nino-and-the-indian-monsoon/</link>
-      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/2026-05-1-el-nino-and-the-indian-monsoon/</guid>
-      <description>&lt;p&gt;The Indian Summer Monsoon Rainfall (ISMR) is not merely a weather pattern. It is the circulatory system of an entire civilisation. Between June and September, the monsoon delivers roughly 80% of India&amp;rsquo;s annual precipitation — filling reservoirs, recharging aquifers, and determining the fate of Kharif crops that feed over a billion people. The long-period average (LPA) for this June–September window is 868.6 mm, a number that anchors every seasonal forecast and every agricultural planning cycle. When the India Meteorological Department (IMD) classifies a season as &amp;ldquo;deficient&amp;rdquo; — defined as rainfall falling below 90% of LPA — the consequences ripple through food prices, rural incomes, and river flows for years.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>एल निनो आणि भारतीय मान्सून : दुष्काळासोबत अतिवृष्टीची सावली</title>
-      <link>https://clustersandclimate.com/climate/el-nino-extreme-rains/</link>
-      <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/el-nino-extreme-rains/</guid>
-      <description>&lt;p&gt;भारतीय मान्सून हा आपल्या जीवनाचा अविभाज्य भाग आहे. चार महिन्यांच्या या पावसावर शेतकऱ्याचे भविष्य, शहरातील पाणीपुरवठा आणि संपूर्ण अर्थव्यवस्था उभी आहे. त्यामुळेच मान्सून किती आणि कसा पडतो हे समजून घेणे प्रत्येकासाठी महत्त्वाचे आहे. गेली शंभर वर्षे हवामानशास्त्रज्ञ एक गोष्ट वारंवार सांगत आले आहेत — &lt;strong&gt;एल निनो आला की भारतात पाऊस कमी पडतो.&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>El-Nino on Clusters and Climate</title>
+		<link>https://clustersandclimate.com/tags/El-Nino/</link>
+		<description>Recent content in El-Nino on Clusters and Climate</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 30 Apr 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://clustersandclimate.com/tags/El-Nino/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>El Niño and the Indian Monsoon — A Tug of War Across Oceans</title>
+				<link>https://clustersandclimate.com/climate/2026-05-1-el-nino-and-the-indian-monsoon/</link>
+				<pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/2026-05-1-el-nino-and-the-indian-monsoon/</guid>
+				<description>&lt;p&gt;The Indian Summer Monsoon Rainfall (ISMR) is not merely a weather pattern. It is the circulatory system of an entire civilisation. Between June and September, the monsoon delivers roughly 80% of India&amp;rsquo;s annual precipitation — filling reservoirs, recharging aquifers, and determining the fate of Kharif crops that feed over a billion people. The long-period average (LPA) for this June–September window is 868.6 mm, a number that anchors every seasonal forecast and every agricultural planning cycle. When the India Meteorological Department (IMD) classifies a season as &amp;ldquo;deficient&amp;rdquo; — defined as rainfall falling below 90% of LPA — the consequences ripple through food prices, rural incomes, and river flows for years.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>एल निनो आणि भारतीय मान्सून : दुष्काळासोबत अतिवृष्टीची सावली</title>
+				<link>https://clustersandclimate.com/climate/el-nino-extreme-rains/</link>
+				<pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/el-nino-extreme-rains/</guid>
+				<description>&lt;p&gt;भारतीय मान्सून हा आपल्या जीवनाचा अविभाज्य भाग आहे. चार महिन्यांच्या या पावसावर शेतकऱ्याचे भविष्य, शहरातील पाणीपुरवठा आणि संपूर्ण अर्थव्यवस्था उभी आहे. त्यामुळेच मान्सून किती आणि कसा पडतो हे समजून घेणे प्रत्येकासाठी महत्त्वाचे आहे. गेली शंभर वर्षे हवामानशास्त्रज्ञ एक गोष्ट वारंवार सांगत आले आहेत — &lt;strong&gt;एल निनो आला की भारतात पाऊस कमी पडतो.&lt;/strong&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

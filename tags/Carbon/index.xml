@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Carbon on Clusters and Climate</title>
-    <link>https://clustersandclimate.com/tags/Carbon/</link>
-    <description>Recent content in Carbon on Clusters and Climate</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/tags/Carbon/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cost Is Not Carbon: Why Cheap Systems Can Emit More</title>
-      <link>https://clustersandclimate.com/technology/cost-is-not-carbon-cheap-systems-emit-more/</link>
-      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/cost-is-not-carbon-cheap-systems-emit-more/</guid>
-      <description>&lt;p&gt;This article is for teams that have recently started implementing green cloud and are new to it. Optimizing for cost and optimizing for carbon are not the same thing. In many cases, they directly oppose each other.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Why Carbon-Aware Systems Can Cost More and Still Be the Right Choice</title>
-      <link>https://clustersandclimate.com/technology/why-carbon-aware-systems-can-cost-more-right-choice/</link>
-      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/why-carbon-aware-systems-can-cost-more-right-choice/</guid>
-      <description>&lt;p&gt;In the previous article, I made the case that cost and carbon are not the same thing — that cheap cloud infrastructure can emit significantly more carbon than slightly more expensive alternatives. The response I got from several readers and colleagues was some version of the same question:&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Carbon on Clusters and Climate</title>
+		<link>https://clustersandclimate.com/tags/Carbon/</link>
+		<description>Recent content in Carbon on Clusters and Climate</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://clustersandclimate.com/tags/Carbon/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Cost Is Not Carbon: Why Cheap Systems Can Emit More</title>
+				<link>https://clustersandclimate.com/technology/cost-is-not-carbon-cheap-systems-emit-more/</link>
+				<pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/cost-is-not-carbon-cheap-systems-emit-more/</guid>
+				<description>&lt;p&gt;This article is for teams that have recently started implementing green cloud and are new to it. Optimizing for cost and optimizing for carbon are not the same thing. In many cases, they directly oppose each other.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Why Carbon-Aware Systems Can Cost More and Still Be the Right Choice</title>
+				<link>https://clustersandclimate.com/technology/why-carbon-aware-systems-can-cost-more-right-choice/</link>
+				<pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/why-carbon-aware-systems-can-cost-more-right-choice/</guid>
+				<description>&lt;p&gt;In the previous article, I made the case that cost and carbon are not the same thing — that cheap cloud infrastructure can emit significantly more carbon than slightly more expensive alternatives. The response I got from several readers and colleagues was some version of the same question:&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

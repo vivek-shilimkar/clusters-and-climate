@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Feature on Clusters and Climate</title>
-    <link>https://clustersandclimate.com/tags/Feature/</link>
-    <description>Recent content in Feature on Clusters and Climate</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/tags/Feature/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Double Standard: Why AI-Assisted Writing Should Be Normalized Like AI-Assisted Coding</title>
-      <link>https://clustersandclimate.com/technology/ai-assisting-writing-normalizing-the-workflow/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/ai-assisting-writing-normalizing-the-workflow/</guid>
-      <description>&lt;h2 id=&#34;the-double-standard&#34;&gt;The Double Standard&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve noticed something strange in technical communities. The same engineer who proudly uses GitHub Copilot, who asks Claude to refactor their functions, who relies on AI to generate boilerplate code will turn around and criticize someone for using AI to help draft an article.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Feature on Clusters and Climate</title>
+		<link>https://clustersandclimate.com/tags/Feature/</link>
+		<description>Recent content in Feature on Clusters and Climate</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 26 Mar 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://clustersandclimate.com/tags/Feature/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Double Standard: Why AI-Assisted Writing Should Be Normalized Like AI-Assisted Coding</title>
+				<link>https://clustersandclimate.com/technology/ai-assisting-writing-normalizing-the-workflow/</link>
+				<pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/ai-assisting-writing-normalizing-the-workflow/</guid>
+				<description>&lt;h2 id=&#34;the-double-standard&#34;&gt;The Double Standard&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve noticed something strange in technical communities. The same engineer who proudly uses GitHub Copilot, who asks Claude to refactor their functions, who relies on AI to generate boilerplate code will turn around and criticize someone for using AI to help draft an article.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

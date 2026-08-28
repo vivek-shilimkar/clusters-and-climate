@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Technology on Clusters and Climate</title>
-    <link>https://clustersandclimate.com/tags/Technology/</link>
-    <description>Recent content in Technology on Clusters and Climate</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/tags/Technology/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>अर्का आणि अरुणिका : हवामान अंदाज आणि संशोधनातील झेप</title>
-      <link>https://clustersandclimate.com/climate/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%95%E0%A4%BE-%E0%A4%86%E0%A4%A3%E0%A4%BF-%E0%A4%85%E0%A4%B0%E0%A5%81%E0%A4%A3%E0%A4%BF%E0%A4%95%E0%A4%BE/</link>
-      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%95%E0%A4%BE-%E0%A4%86%E0%A4%A3%E0%A4%BF-%E0%A4%85%E0%A4%B0%E0%A5%81%E0%A4%A3%E0%A4%BF%E0%A4%95%E0%A4%BE/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;आकृती 1:&lt;/strong&gt; सुपर कॉम्पुटर अर्का चे उद्घाटन. सौजन्य: इंडियन इन्स्टिटय़ूट ऑफ ट्रॉपिकल मेटिऑरॉलॉजी (IITM)&lt;/p&gt;&#xA;&lt;p&gt;वैविध्यपूर्ण हवामान आणि चक्रीवादळ, उष्णतेच्या लाटा, अति मुसळधार पाऊस व दुष्काळ यांसारख्या नैसर्गिक आपत्तींना बळी पडणाऱ्या भारताला हवामान अंदाज तंत्रज्ञानातील प्रगतीचा लक्षणीय फायदा होतो. त्यात भर म्हणून हवामानातील बदलामुळे अशा घटनांमध्ये वाढ होत आहे. अशा वेळी, अचूक हवामान अंदाज आणि सर्वसमावेशक हवामान संशोधनाची गरज आजपेक्षा जास्त कधीच नव्हती. याच पार्श्वभूमीवर पुण्यातील पाषाण रोडच्या ‘इंडियन इन्स्टिटय़ूट ऑफ ट्रॉपिकल मेटिऑरॉलॉजी (IITM)’ येथे ‘अर्का’ नावाच्या नवीन उच्च-कार्यक्षमता संगणकीय प्रणालीचे (HPC) उदघाटन २६ सप्टेंबर २०२४ या दिवशी पृथ्वी विज्ञान मंत्रालयाने (MoES) केले.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Technology on Clusters and Climate</title>
+		<link>https://clustersandclimate.com/tags/Technology/</link>
+		<description>Recent content in Technology on Clusters and Climate</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://clustersandclimate.com/tags/Technology/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>अर्का आणि अरुणिका : हवामान अंदाज आणि संशोधनातील झेप</title>
+				<link>https://clustersandclimate.com/climate/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%95%E0%A4%BE-%E0%A4%86%E0%A4%A3%E0%A4%BF-%E0%A4%85%E0%A4%B0%E0%A5%81%E0%A4%A3%E0%A4%BF%E0%A4%95%E0%A4%BE/</link>
+				<pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%95%E0%A4%BE-%E0%A4%86%E0%A4%A3%E0%A4%BF-%E0%A4%85%E0%A4%B0%E0%A5%81%E0%A4%A3%E0%A4%BF%E0%A4%95%E0%A4%BE/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;आकृती 1:&lt;/strong&gt; सुपर कॉम्पुटर अर्का चे उद्घाटन. सौजन्य: इंडियन इन्स्टिटय़ूट ऑफ ट्रॉपिकल मेटिऑरॉलॉजी (IITM)&lt;/p&gt;&#xA;&lt;p&gt;वैविध्यपूर्ण हवामान आणि चक्रीवादळ, उष्णतेच्या लाटा, अति मुसळधार पाऊस व दुष्काळ यांसारख्या नैसर्गिक आपत्तींना बळी पडणाऱ्या भारताला हवामान अंदाज तंत्रज्ञानातील प्रगतीचा लक्षणीय फायदा होतो. त्यात भर म्हणून हवामानातील बदलामुळे अशा घटनांमध्ये वाढ होत आहे. अशा वेळी, अचूक हवामान अंदाज आणि सर्वसमावेशक हवामान संशोधनाची गरज आजपेक्षा जास्त कधीच नव्हती. याच पार्श्वभूमीवर पुण्यातील पाषाण रोडच्या ‘इंडियन इन्स्टिटय़ूट ऑफ ट्रॉपिकल मेटिऑरॉलॉजी (IITM)’ येथे ‘अर्का’ नावाच्या नवीन उच्च-कार्यक्षमता संगणकीय प्रणालीचे (HPC) उदघाटन २६ सप्टेंबर २०२४ या दिवशी पृथ्वी विज्ञान मंत्रालयाने (MoES) केले.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

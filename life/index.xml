@@ -1,61 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Lives on Clusters and Climate</title>
-    <link>https://clustersandclimate.com/life/</link>
-    <description>Recent content in Lives on Clusters and Climate</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 05 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/life/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>A Walk Through Hokkaido Historical Village</title>
-      <link>https://clustersandclimate.com/life/hokkaido-historical-village/</link>
-      <pubDate>Sat, 05 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/life/hokkaido-historical-village/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Hokkaido historical village exhibits different types of buildings of Hokkaido built in Meiji and early Showa period, during the initial era of its development. All these buildings are categorized in four sections namely - Fishing village, farm village, town and mountain village.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>When the Sun-Moon duo turned into the Ring of Fire</title>
-      <link>https://clustersandclimate.com/life/how-i-followed-the-solar-eclipse/</link>
-      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/life/how-i-followed-the-solar-eclipse/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Following article is written by one of the participants of solar eclipse expedition - Sania Rahigude. She pours out her journey and experience of Solar Eclipse Expedition through this article.&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Tengu&#39;s Walk on Fire: The Furubira Fire Festival</title>
-      <link>https://clustersandclimate.com/life/tengu-festival/</link>
-      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/life/tengu-festival/</guid>
-      <description>&lt;div style=&#34;display: flex; align-items: center; gap: 18px; margin-bottom: 18px;&#34;&gt;&#xA;  &lt;img src=&#34;https://clustersandclimate.com/images/life/chetna.jpeg&#34; alt=&#34;Chetna&#34; style=&#34;width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin: 0;&#34; /&gt;&#xA;  &lt;span style=&#34;font-size: 1.05em; color: #555;&#34;&gt;Chetna Sharma, the author of this article, shares her experience of the Furubira Fire Festival.&lt;/span&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;tengus-walk-on-fire&#34;&gt;Tengu&amp;rsquo;s Walk on Fire&lt;/h2&gt;&#xA;&lt;p&gt;Furubira is a place close to my heart. I have visited several times, and each visit is a new immersion into Japanese culture. Furubira is a small town in western Hokkaido, Japan. The simplicity of the people, humble landscapes, cleanliness, and purity of the atmosphere are truly satisfying.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Engaru Archaeological Centre: Tracing Hokkaido&#39;s Ancient Cultures</title>
-      <link>https://clustersandclimate.com/life/engaru-archaeological-centre/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/life/engaru-archaeological-centre/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;A land with the ruins speaks the history.&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Ruins are traces of life, telling us about the people and their ways in the past. These remnants help us understand how ancient people lived. Hokkaido, which only became part of Japan in 1868, was long home to the Ainu and other unique cultures. While rice cultivation began on the Japanese mainland at the end of the Jomon period (14,000 BC – 300 BC), Hokkaido&amp;rsquo;s people relied on the island&amp;rsquo;s rich natural environment and influences from surrounding regions, developing their own distinctive cultures: Zoku-Jomon (Post-Jomon), Satsumon, Okhotsk, and Ainu.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Quirky Quakes - A tale of Earthquakes</title>
-      <link>https://clustersandclimate.com/life/quirky-quakes/</link>
-      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/life/quirky-quakes/</guid>
-      <description>&lt;h2 id=&#34;life-in-sapporo&#34;&gt;Life in Sapporo&lt;/h2&gt;&#xA;&lt;p&gt;I’ve been living in Sapporo, the capital of Hokkaido, for many years now. Hokkaido is known for its pristine forests, breathtaking natural beauty, dairy products, and fresh seafood. &lt;strong&gt;What I love the most are the mountains surrounding Sapporo—and the sea is just 15 km away.&lt;/strong&gt; What more could one ask for? The combination of mountains and sea makes Sapporo a perfect place for hiking and camping.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lake Toya and Volcanic Wonders of Hokkaido</title>
-      <link>https://clustersandclimate.com/life/lake-toya-hokkaido/</link>
-      <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/life/lake-toya-hokkaido/</guid>
-      <description>&lt;p&gt;Japan is located at the junction of several tectonic plates, making it rich in volcanic mountains and calderas. With over 100 volcanic mountains—more than almost any other country—Japan is famous for its onsen (hot springs) and dramatic volcanic landscapes. While most people know that mountains form due to volcanic activity, fewer realize that lakes can also be born from volcanoes. These are called caldera lakes. One such gem in Hokkaido is Lake Toya (Toya-ko).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>मी भारत बोलतोय…</title>
-      <link>https://clustersandclimate.com/life/%E0%A4%AE%E0%A5%80-%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4-%E0%A4%AC%E0%A5%8B%E0%A4%B2%E0%A4%A4%E0%A5%8B%E0%A4%AF/</link>
-      <pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/life/%E0%A4%AE%E0%A5%80-%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4-%E0%A4%AC%E0%A5%8B%E0%A4%B2%E0%A4%A4%E0%A5%8B%E0%A4%AF/</guid>
-      <description>&lt;p&gt;१५ ऑगस्ट चा दिवस होता. बरेचजण स्वातंत्र्यदिन साजरा करण्यासाठी कॉलेजमध्ये एकत्र आले होते. कोणीतरी भारताच्या नकाशाची आउटलाइन फळ्यावर काढायचा चांगला प्रयत्न केला होता. थोड्याच वेळात कार्यक्रम सुरु झाला आणि एक तासात संपला सुद्धा. मग सुरु झाली, ती दरवर्षीची गाणी.&#xA;” जहां डाल डाल पार सोने कि,&#xA;चिडिया करती हे बसेरा l&#xA;वो भारत देश हे मेरा,&#xA;वो भारत देश हे मेरा… ll ”&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Lives on Clusters and Climate</title>
+		<link>https://clustersandclimate.com/life/</link>
+		<description>Recent content in Lives on Clusters and Climate</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 23 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://clustersandclimate.com/life/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>भीमाशंकर ते भोरगिरी — सँडल्स, जळवा आणि एक निवांत पावसाळी वेडेपणा</title>
+				<link>https://clustersandclimate.com/life/%E0%A4%AD%E0%A5%80%E0%A4%AE%E0%A4%BE%E0%A4%B6%E0%A4%82%E0%A4%95%E0%A4%B0-%E0%A4%A4%E0%A5%87-%E0%A4%AD%E0%A5%8B%E0%A4%B0%E0%A4%97%E0%A4%BF%E0%A4%B0%E0%A5%80-%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%95/</link>
+				<pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/%E0%A4%AD%E0%A5%80%E0%A4%AE%E0%A4%BE%E0%A4%B6%E0%A4%82%E0%A4%95%E0%A4%B0-%E0%A4%A4%E0%A5%87-%E0%A4%AD%E0%A5%8B%E0%A4%B0%E0%A4%97%E0%A4%BF%E0%A4%B0%E0%A5%80-%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%95/</guid>
+				<description>&lt;p&gt;काही ट्रेक्स &amp;ldquo;फिटनेससाठी&amp;rdquo; केले जातात, काही &amp;ldquo;इन्स्टाग्रामसाठी&amp;rdquo; — आणि काही ट्रेक्स असे असतात, जे फक्त &amp;ldquo;आपण जरा मोकळा श्वास घ्यावा&amp;rdquo; म्हणून केले जातात. भीमाशंकर ते भोरगिरी हा ट्रेक तिसऱ्या प्रकारातला. आणि तो पावसाळ्यात करायचा असेल, तर तयारी नुसतीच शारीरिक नाही, तर मानसिकही लागते — कारण इथे सह्याद्री तुम्हाला हवं तसं भिजवतो, आणि तुम्ही &amp;ldquo;आपणच हे ट्रेक करायचं ठरवलं&amp;rdquo; यावर एकदा तरी स्वतःशी हसता.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>A Walk Through Hokkaido Historical Village</title>
+				<link>https://clustersandclimate.com/life/hokkaido-historical-village/</link>
+				<pubDate>Sat, 05 Jul 2025 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/hokkaido-historical-village/</guid>
+				<description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Hokkaido historical village exhibits different types of buildings of Hokkaido built in Meiji and early Showa period, during the initial era of its development. All these buildings are categorized in four sections namely - Fishing village, farm village, town and mountain village.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>When the Sun-Moon duo turned into the Ring of Fire</title>
+				<link>https://clustersandclimate.com/life/how-i-followed-the-solar-eclipse/</link>
+				<pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/how-i-followed-the-solar-eclipse/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Following article is written by one of the participants of solar eclipse expedition - Sania Rahigude. She pours out her journey and experience of Solar Eclipse Expedition through this article.&lt;/strong&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Tengu&#39;s Walk on Fire: The Furubira Fire Festival</title>
+				<link>https://clustersandclimate.com/life/tengu-festival/</link>
+				<pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/tengu-festival/</guid>
+				<description>&lt;div style=&#34;display: flex; align-items: center; gap: 18px; margin-bottom: 18px;&#34;&gt;&#xA;  &lt;img src=&#34;https://clustersandclimate.com/images/life/chetna.jpeg&#34; alt=&#34;Chetna&#34; style=&#34;width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin: 0;&#34; /&gt;&#xA;  &lt;span style=&#34;font-size: 1.05em; color: #555;&#34;&gt;Chetna Sharma, the author of this article, shares her experience of the Furubira Fire Festival.&lt;/span&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;tengus-walk-on-fire&#34;&gt;Tengu&amp;rsquo;s Walk on Fire&lt;/h2&gt;&#xA;&lt;p&gt;Furubira is a place close to my heart. I have visited several times, and each visit is a new immersion into Japanese culture. Furubira is a small town in western Hokkaido, Japan. The simplicity of the people, humble landscapes, cleanliness, and purity of the atmosphere are truly satisfying.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Engaru Archaeological Centre: Tracing Hokkaido&#39;s Ancient Cultures</title>
+				<link>https://clustersandclimate.com/life/engaru-archaeological-centre/</link>
+				<pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/engaru-archaeological-centre/</guid>
+				<description>&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;A land with the ruins speaks the history.&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Ruins are traces of life, telling us about the people and their ways in the past. These remnants help us understand how ancient people lived. Hokkaido, which only became part of Japan in 1868, was long home to the Ainu and other unique cultures. While rice cultivation began on the Japanese mainland at the end of the Jomon period (14,000 BC – 300 BC), Hokkaido&amp;rsquo;s people relied on the island&amp;rsquo;s rich natural environment and influences from surrounding regions, developing their own distinctive cultures: Zoku-Jomon (Post-Jomon), Satsumon, Okhotsk, and Ainu.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Quirky Quakes - A tale of Earthquakes</title>
+				<link>https://clustersandclimate.com/life/quirky-quakes/</link>
+				<pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/quirky-quakes/</guid>
+				<description>&lt;h2 id=&#34;life-in-sapporo&#34;&gt;Life in Sapporo&lt;/h2&gt;&#xA;&lt;p&gt;I’ve been living in Sapporo, the capital of Hokkaido, for many years now. Hokkaido is known for its pristine forests, breathtaking natural beauty, dairy products, and fresh seafood. &lt;strong&gt;What I love the most are the mountains surrounding Sapporo—and the sea is just 15 km away.&lt;/strong&gt; What more could one ask for? The combination of mountains and sea makes Sapporo a perfect place for hiking and camping.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Lake Toya and Volcanic Wonders of Hokkaido</title>
+				<link>https://clustersandclimate.com/life/lake-toya-hokkaido/</link>
+				<pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/lake-toya-hokkaido/</guid>
+				<description>&lt;p&gt;Japan is located at the junction of several tectonic plates, making it rich in volcanic mountains and calderas. With over 100 volcanic mountains—more than almost any other country—Japan is famous for its onsen (hot springs) and dramatic volcanic landscapes. While most people know that mountains form due to volcanic activity, fewer realize that lakes can also be born from volcanoes. These are called caldera lakes. One such gem in Hokkaido is Lake Toya (Toya-ko).&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>मी भारत बोलतोय…</title>
+				<link>https://clustersandclimate.com/life/%E0%A4%AE%E0%A5%80-%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4-%E0%A4%AC%E0%A5%8B%E0%A4%B2%E0%A4%A4%E0%A5%8B%E0%A4%AF/</link>
+				<pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/%E0%A4%AE%E0%A5%80-%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4-%E0%A4%AC%E0%A5%8B%E0%A4%B2%E0%A4%A4%E0%A5%8B%E0%A4%AF/</guid>
+				<description>&lt;p&gt;१५ ऑगस्ट चा दिवस होता. बरेचजण स्वातंत्र्यदिन साजरा करण्यासाठी कॉलेजमध्ये एकत्र आले होते. कोणीतरी भारताच्या नकाशाची आउटलाइन फळ्यावर काढायचा चांगला प्रयत्न केला होता. थोड्याच वेळात कार्यक्रम सुरु झाला आणि एक तासात संपला सुद्धा. मग सुरु झाली, ती दरवर्षीची गाणी.&#xA;” जहां डाल डाल पार सोने कि,&#xA;चिडिया करती हे बसेरा l&#xA;वो भारत देश हे मेरा,&#xA;वो भारत देश हे मेरा… ll ”&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,82 +1,87 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Technology on Clusters and Climate</title>
-    <link>https://clustersandclimate.com/categories/technology/</link>
-    <description>Recent content in Technology on Clusters and Climate</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/categories/technology/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cost Is Not Carbon: Why Cheap Systems Can Emit More</title>
-      <link>https://clustersandclimate.com/technology/cost-is-not-carbon-cheap-systems-emit-more/</link>
-      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/cost-is-not-carbon-cheap-systems-emit-more/</guid>
-      <description>&lt;p&gt;This article is for teams that have recently started implementing green cloud and are new to it. Optimizing for cost and optimizing for carbon are not the same thing. In many cases, they directly oppose each other.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Why Carbon-Aware Systems Can Cost More and Still Be the Right Choice</title>
-      <link>https://clustersandclimate.com/technology/why-carbon-aware-systems-can-cost-more-right-choice/</link>
-      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/why-carbon-aware-systems-can-cost-more-right-choice/</guid>
-      <description>&lt;p&gt;In the previous article, I made the case that cost and carbon are not the same thing — that cheap cloud infrastructure can emit significantly more carbon than slightly more expensive alternatives. The response I got from several readers and colleagues was some version of the same question:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Double Standard: Why AI-Assisted Writing Should Be Normalized Like AI-Assisted Coding</title>
-      <link>https://clustersandclimate.com/technology/ai-assisting-writing-normalizing-the-workflow/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/ai-assisting-writing-normalizing-the-workflow/</guid>
-      <description>&lt;h2 id=&#34;the-double-standard&#34;&gt;The Double Standard&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve noticed something strange in technical communities. The same engineer who proudly uses GitHub Copilot, who asks Claude to refactor their functions, who relies on AI to generate boilerplate code will turn around and criticize someone for using AI to help draft an article.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Implementing Green Cloud Systems: A Practical Guide to Change</title>
-      <link>https://clustersandclimate.com/technology/implementing-green-cloud-systems/</link>
-      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/implementing-green-cloud-systems/</guid>
-      <description>&lt;p&gt;I will be honest about something uncomfortable before diving into infrastructure patterns.&lt;/p&gt;&#xA;&lt;p&gt;As I write this, multiple active conflicts around the world are releasing carbon and doing pollution at a scale that makes any discussion of saving the climate/environment feel almost irrelevant. A sustained military operations can emits more carbon dioxide in a single week than all the data centers combined in a year. Environmental and climate damages by Wars takes decades to recover and Advocating for green cloud systems in that context can feel naive, or even morally hollow.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Quiet, Always-On: How Development and Test Clusters Accumulate Energy Use</title>
-      <link>https://clustersandclimate.com/technology/quiet-always-on-dev-test-clusters-energy/</link>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/quiet-always-on-dev-test-clusters-energy/</guid>
-      <description>&lt;p&gt;Production cluster systems are the most important since they serve customers. Most of the production clusters are overprovisioned with a “just in case” reason. However, their energy use is visible, accepted, and often defended as necessary.&#xA;But, not all the Kubernetes clusters are production clusters.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>From Climate Science to Virtual Cloud Systems : Designing Green Cloud Systems</title>
-      <link>https://clustersandclimate.com/technology/from-climate-science-to-virtual-cloud-systems/</link>
-      <pubDate>Thu, 05 Feb 2026 17:32:37 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/from-climate-science-to-virtual-cloud-systems/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Before I was involved with cloud infrastructure and distributed systems, I spent years studying the climate. I am a doctor by PhD — in climate science — and I have spent years understanding how Earth’s climate systems behave, how energy moves through the atmosphere and oceans, and how small imbalances accumulate into large, sometimes irreversible changes. Climate science teaches you patience, but it also teaches you discomfort. The thing about extreme climate events that I learned very early was that these do not arrive suddenly. They grow quietly, while everything still appears normal.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Kubernetes Disaster Recovery: Lessons from Natural Disasters</title>
-      <link>https://clustersandclimate.com/technology/kubernetes-disaster-recovery/</link>
-      <pubDate>Fri, 25 Jul 2025 00:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/technology/kubernetes-disaster-recovery/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Living in Japan for several years as a climate scientist taught me profound lessons about resilience—not just in natural systems, but in how we design and operate technology infrastructure. When you&amp;rsquo;ve experienced a 6.7 earthquake, felt the ground shake for almost minute, and watched earthquake warnings scroll across every screen, you gain a visceral understanding of what &amp;ldquo;disaster recovery&amp;rdquo; really means.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to Set Up Kafka on Kubernetes</title>
-      <link>https://clustersandclimate.com/technology/kafka-on-kubernetes/</link>
-      <pubDate>Mon, 07 Jul 2025 00:02:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/technology/kafka-on-kubernetes/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Apache Kafka is a powerful distributed event streaming platform. Running Kafka on Kubernetes allows you to leverage container orchestration for scalability and resilience. This article walks you through setting up Kafka on a local Kubernetes cluster using Minikube, with all the necessary tools and configuration manifests.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Getting Started with CSI on Azure Kubernetes Service</title>
-      <link>https://clustersandclimate.com/technology/azure-csi-driver/</link>
-      <pubDate>Mon, 07 Jul 2025 00:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/technology/azure-csi-driver/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The Container Storage Interface (CSI) is now the industry standard for connecting Kubernetes clusters to a variety of storage solutions. Whether you’re launching a new workload or modernizing an existing deployment, understanding how to leverage CSI is essential. This article provides a hands-on walkthrough for deploying the Azure Disk CSI driver on Azure Kubernetes Service (AKS), combining both conceptual background and practical steps.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>अर्का आणि अरुणिका : हवामान अंदाज आणि संशोधनातील झेप</title>
-      <link>https://clustersandclimate.com/climate/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%95%E0%A4%BE-%E0%A4%86%E0%A4%A3%E0%A4%BF-%E0%A4%85%E0%A4%B0%E0%A5%81%E0%A4%A3%E0%A4%BF%E0%A4%95%E0%A4%BE/</link>
-      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%95%E0%A4%BE-%E0%A4%86%E0%A4%A3%E0%A4%BF-%E0%A4%85%E0%A4%B0%E0%A5%81%E0%A4%A3%E0%A4%BF%E0%A4%95%E0%A4%BE/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;आकृती 1:&lt;/strong&gt; सुपर कॉम्पुटर अर्का चे उद्घाटन. सौजन्य: इंडियन इन्स्टिटय़ूट ऑफ ट्रॉपिकल मेटिऑरॉलॉजी (IITM)&lt;/p&gt;&#xA;&lt;p&gt;वैविध्यपूर्ण हवामान आणि चक्रीवादळ, उष्णतेच्या लाटा, अति मुसळधार पाऊस व दुष्काळ यांसारख्या नैसर्गिक आपत्तींना बळी पडणाऱ्या भारताला हवामान अंदाज तंत्रज्ञानातील प्रगतीचा लक्षणीय फायदा होतो. त्यात भर म्हणून हवामानातील बदलामुळे अशा घटनांमध्ये वाढ होत आहे. अशा वेळी, अचूक हवामान अंदाज आणि सर्वसमावेशक हवामान संशोधनाची गरज आजपेक्षा जास्त कधीच नव्हती. याच पार्श्वभूमीवर पुण्यातील पाषाण रोडच्या ‘इंडियन इन्स्टिटय़ूट ऑफ ट्रॉपिकल मेटिऑरॉलॉजी (IITM)’ येथे ‘अर्का’ नावाच्या नवीन उच्च-कार्यक्षमता संगणकीय प्रणालीचे (HPC) उदघाटन २६ सप्टेंबर २०२४ या दिवशी पृथ्वी विज्ञान मंत्रालयाने (MoES) केले.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Technology on Clusters and Climate</title>
+		<link>https://clustersandclimate.com/categories/technology/</link>
+		<description>Recent content in Technology on Clusters and Climate</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://clustersandclimate.com/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Cost Is Not Carbon: Why Cheap Systems Can Emit More</title>
+				<link>https://clustersandclimate.com/technology/cost-is-not-carbon-cheap-systems-emit-more/</link>
+				<pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/cost-is-not-carbon-cheap-systems-emit-more/</guid>
+				<description>&lt;p&gt;This article is for teams that have recently started implementing green cloud and are new to it. Optimizing for cost and optimizing for carbon are not the same thing. In many cases, they directly oppose each other.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Why Carbon-Aware Systems Can Cost More and Still Be the Right Choice</title>
+				<link>https://clustersandclimate.com/technology/why-carbon-aware-systems-can-cost-more-right-choice/</link>
+				<pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/why-carbon-aware-systems-can-cost-more-right-choice/</guid>
+				<description>&lt;p&gt;In the previous article, I made the case that cost and carbon are not the same thing — that cheap cloud infrastructure can emit significantly more carbon than slightly more expensive alternatives. The response I got from several readers and colleagues was some version of the same question:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>The Double Standard: Why AI-Assisted Writing Should Be Normalized Like AI-Assisted Coding</title>
+				<link>https://clustersandclimate.com/technology/ai-assisting-writing-normalizing-the-workflow/</link>
+				<pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/ai-assisting-writing-normalizing-the-workflow/</guid>
+				<description>&lt;h2 id=&#34;the-double-standard&#34;&gt;The Double Standard&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve noticed something strange in technical communities. The same engineer who proudly uses GitHub Copilot, who asks Claude to refactor their functions, who relies on AI to generate boilerplate code will turn around and criticize someone for using AI to help draft an article.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Implementing Green Cloud Systems: A Practical Guide to Change</title>
+				<link>https://clustersandclimate.com/technology/implementing-green-cloud-systems/</link>
+				<pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/implementing-green-cloud-systems/</guid>
+				<description>&lt;p&gt;I will be honest about something uncomfortable before diving into infrastructure patterns.&lt;/p&gt;&#xA;&lt;p&gt;As I write this, multiple active conflicts around the world are releasing carbon and doing pollution at a scale that makes any discussion of saving the climate/environment feel almost irrelevant. A sustained military operations can emits more carbon dioxide in a single week than all the data centers combined in a year. Environmental and climate damages by Wars takes decades to recover and Advocating for green cloud systems in that context can feel naive, or even morally hollow.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Quiet, Always-On: How Development and Test Clusters Accumulate Energy Use</title>
+				<link>https://clustersandclimate.com/technology/quiet-always-on-dev-test-clusters-energy/</link>
+				<pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/quiet-always-on-dev-test-clusters-energy/</guid>
+				<description>&lt;p&gt;Production cluster systems are the most important since they serve customers. Most of the production clusters are overprovisioned with a “just in case” reason. However, their energy use is visible, accepted, and often defended as necessary.&#xA;But, not all the Kubernetes clusters are production clusters.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>From Climate Science to Virtual Cloud Systems : Designing Green Cloud Systems</title>
+				<link>https://clustersandclimate.com/technology/from-climate-science-to-virtual-cloud-systems/</link>
+				<pubDate>Thu, 05 Feb 2026 17:32:37 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/from-climate-science-to-virtual-cloud-systems/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Before I was involved with cloud infrastructure and distributed systems, I spent years studying the climate. I am a doctor by PhD — in climate science — and I have spent years understanding how Earth’s climate systems behave, how energy moves through the atmosphere and oceans, and how small imbalances accumulate into large, sometimes irreversible changes. Climate science teaches you patience, but it also teaches you discomfort. The thing about extreme climate events that I learned very early was that these do not arrive suddenly. They grow quietly, while everything still appears normal.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Kubernetes Disaster Recovery: Lessons from Natural Disasters</title>
+				<link>https://clustersandclimate.com/technology/kubernetes-disaster-recovery/</link>
+				<pubDate>Fri, 25 Jul 2025 00:00:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/technology/kubernetes-disaster-recovery/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Living in Japan for several years as a climate scientist taught me profound lessons about resilience—not just in natural systems, but in how we design and operate technology infrastructure. When you&amp;rsquo;ve experienced a 6.7 earthquake, felt the ground shake for almost minute, and watched earthquake warnings scroll across every screen, you gain a visceral understanding of what &amp;ldquo;disaster recovery&amp;rdquo; really means.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>How to Set Up Kafka on Kubernetes</title>
+				<link>https://clustersandclimate.com/technology/kafka-on-kubernetes/</link>
+				<pubDate>Mon, 07 Jul 2025 00:02:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/technology/kafka-on-kubernetes/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Apache Kafka is a powerful distributed event streaming platform. Running Kafka on Kubernetes allows you to leverage container orchestration for scalability and resilience. This article walks you through setting up Kafka on a local Kubernetes cluster using Minikube, with all the necessary tools and configuration manifests.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Getting Started with CSI on Azure Kubernetes Service</title>
+				<link>https://clustersandclimate.com/technology/azure-csi-driver/</link>
+				<pubDate>Mon, 07 Jul 2025 00:00:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/technology/azure-csi-driver/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The Container Storage Interface (CSI) is now the industry standard for connecting Kubernetes clusters to a variety of storage solutions. Whether you’re launching a new workload or modernizing an existing deployment, understanding how to leverage CSI is essential. This article provides a hands-on walkthrough for deploying the Azure Disk CSI driver on Azure Kubernetes Service (AKS), combining both conceptual background and practical steps.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>अर्का आणि अरुणिका : हवामान अंदाज आणि संशोधनातील झेप</title>
+				<link>https://clustersandclimate.com/climate/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%95%E0%A4%BE-%E0%A4%86%E0%A4%A3%E0%A4%BF-%E0%A4%85%E0%A4%B0%E0%A5%81%E0%A4%A3%E0%A4%BF%E0%A4%95%E0%A4%BE/</link>
+				<pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%95%E0%A4%BE-%E0%A4%86%E0%A4%A3%E0%A4%BF-%E0%A4%85%E0%A4%B0%E0%A5%81%E0%A4%A3%E0%A4%BF%E0%A4%95%E0%A4%BE/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;आकृती 1:&lt;/strong&gt; सुपर कॉम्पुटर अर्का चे उद्घाटन. सौजन्य: इंडियन इन्स्टिटय़ूट ऑफ ट्रॉपिकल मेटिऑरॉलॉजी (IITM)&lt;/p&gt;&#xA;&lt;p&gt;वैविध्यपूर्ण हवामान आणि चक्रीवादळ, उष्णतेच्या लाटा, अति मुसळधार पाऊस व दुष्काळ यांसारख्या नैसर्गिक आपत्तींना बळी पडणाऱ्या भारताला हवामान अंदाज तंत्रज्ञानातील प्रगतीचा लक्षणीय फायदा होतो. त्यात भर म्हणून हवामानातील बदलामुळे अशा घटनांमध्ये वाढ होत आहे. अशा वेळी, अचूक हवामान अंदाज आणि सर्वसमावेशक हवामान संशोधनाची गरज आजपेक्षा जास्त कधीच नव्हती. याच पार्श्वभूमीवर पुण्यातील पाषाण रोडच्या ‘इंडियन इन्स्टिटय़ूट ऑफ ट्रॉपिकल मेटिऑरॉलॉजी (IITM)’ येथे ‘अर्का’ नावाच्या नवीन उच्च-कार्यक्षमता संगणकीय प्रणालीचे (HPC) उदघाटन २६ सप्टेंबर २०२४ या दिवशी पृथ्वी विज्ञान मंत्रालयाने (MoES) केले.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

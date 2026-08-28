@@ -1,348 +1,360 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Clusters and Climate</title>
-    <link>https://clustersandclimate.com/</link>
-    <description>Recent content on Clusters and Climate</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 30 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>El Niño and the Indian Monsoon — A Tug of War Across Oceans</title>
-      <link>https://clustersandclimate.com/climate/2026-05-1-el-nino-and-the-indian-monsoon/</link>
-      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/2026-05-1-el-nino-and-the-indian-monsoon/</guid>
-      <description>&lt;p&gt;The Indian Summer Monsoon Rainfall (ISMR) is not merely a weather pattern. It is the circulatory system of an entire civilisation. Between June and September, the monsoon delivers roughly 80% of India&amp;rsquo;s annual precipitation — filling reservoirs, recharging aquifers, and determining the fate of Kharif crops that feed over a billion people. The long-period average (LPA) for this June–September window is 868.6 mm, a number that anchors every seasonal forecast and every agricultural planning cycle. When the India Meteorological Department (IMD) classifies a season as &amp;ldquo;deficient&amp;rdquo; — defined as rainfall falling below 90% of LPA — the consequences ripple through food prices, rural incomes, and river flows for years.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cost Is Not Carbon: Why Cheap Systems Can Emit More</title>
-      <link>https://clustersandclimate.com/technology/cost-is-not-carbon-cheap-systems-emit-more/</link>
-      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/cost-is-not-carbon-cheap-systems-emit-more/</guid>
-      <description>&lt;p&gt;This article is for teams that have recently started implementing green cloud and are new to it. Optimizing for cost and optimizing for carbon are not the same thing. In many cases, they directly oppose each other.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Why Carbon-Aware Systems Can Cost More and Still Be the Right Choice</title>
-      <link>https://clustersandclimate.com/technology/why-carbon-aware-systems-can-cost-more-right-choice/</link>
-      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/why-carbon-aware-systems-can-cost-more-right-choice/</guid>
-      <description>&lt;p&gt;In the previous article, I made the case that cost and carbon are not the same thing — that cheap cloud infrastructure can emit significantly more carbon than slightly more expensive alternatives. The response I got from several readers and colleagues was some version of the same question:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Super El Niño 2026: Why the Positive Indian Ocean Dipole Offers Hope Against Drought</title>
-      <link>https://clustersandclimate.com/climate/2026-04-13-super-el-nino-positive-iod-forecast/</link>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/climate/2026-04-13-super-el-nino-positive-iod-forecast/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Climate forecasters worldwide are closely monitoring oceanic conditions as multiple climate models indicate the development of what could be a &amp;ldquo;Super El Niño&amp;rdquo; event in 2026. Historically, such strong El Niño events have been associated with reduced monsoon rainfall over parts of the Indian subcontinent—typically 10-20% below normal—with regional variations in drought impacts. However, this time there&amp;rsquo;s a crucial difference: concurrent forecasts show a strong positive Indian Ocean Dipole (IOD) developing simultaneously, which could significantly buffer India against the typical El Niño-induced rainfall reductions.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>महाराष्ट्राचा २०२६ पावसाळा: सुपर एल निनो आणि सकारात्मक IOD यांचा परिणाम</title>
-      <link>https://clustersandclimate.com/climate/maharashtra-monsoon-2026-super-el-nino-iod-marathi/</link>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/climate/maharashtra-monsoon-2026-super-el-nino-iod-marathi/</guid>
-      <description>&lt;p&gt;महाराष्ट्राच्या शेतकऱ्यांना, पाणीपुरवठा व्यवस्थापकांना आणि नागरिकांना २०२६ च्या पावसाळ्याबद्दल माहिती हवी आहे. यावर्षी एक विशेष परिस्थिती निर्माण झाली आहे: जगातील सर्वात शक्तिशाली &amp;ldquo;सुपर एल निनो&amp;rdquo; विकसित होत आहे, पण त्याच वेळी भारतीय महासागरातील सकारात्मक डिपोल (Positive IOD) देखील तयार होत आहे. या दोन्ही घटकांचा एकत्रित परिणाम महाराष्ट्राच्या पावसाळ्यावर कसा होणार आहे?&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Double Standard: Why AI-Assisted Writing Should Be Normalized Like AI-Assisted Coding</title>
-      <link>https://clustersandclimate.com/technology/ai-assisting-writing-normalizing-the-workflow/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/ai-assisting-writing-normalizing-the-workflow/</guid>
-      <description>&lt;h2 id=&#34;the-double-standard&#34;&gt;The Double Standard&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve noticed something strange in technical communities. The same engineer who proudly uses GitHub Copilot, who asks Claude to refactor their functions, who relies on AI to generate boilerplate code will turn around and criticize someone for using AI to help draft an article.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Implementing Green Cloud Systems: A Practical Guide to Change</title>
-      <link>https://clustersandclimate.com/technology/implementing-green-cloud-systems/</link>
-      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/implementing-green-cloud-systems/</guid>
-      <description>&lt;p&gt;I will be honest about something uncomfortable before diving into infrastructure patterns.&lt;/p&gt;&#xA;&lt;p&gt;As I write this, multiple active conflicts around the world are releasing carbon and doing pollution at a scale that makes any discussion of saving the climate/environment feel almost irrelevant. A sustained military operations can emits more carbon dioxide in a single week than all the data centers combined in a year. Environmental and climate damages by Wars takes decades to recover and Advocating for green cloud systems in that context can feel naive, or even morally hollow.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Quiet, Always-On: How Development and Test Clusters Accumulate Energy Use</title>
-      <link>https://clustersandclimate.com/technology/quiet-always-on-dev-test-clusters-energy/</link>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/quiet-always-on-dev-test-clusters-energy/</guid>
-      <description>&lt;p&gt;Production cluster systems are the most important since they serve customers. Most of the production clusters are overprovisioned with a “just in case” reason. However, their energy use is visible, accepted, and often defended as necessary.&#xA;But, not all the Kubernetes clusters are production clusters.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>From Climate Science to Virtual Cloud Systems : Designing Green Cloud Systems</title>
-      <link>https://clustersandclimate.com/technology/from-climate-science-to-virtual-cloud-systems/</link>
-      <pubDate>Thu, 05 Feb 2026 17:32:37 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/from-climate-science-to-virtual-cloud-systems/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Before I was involved with cloud infrastructure and distributed systems, I spent years studying the climate. I am a doctor by PhD — in climate science — and I have spent years understanding how Earth’s climate systems behave, how energy moves through the atmosphere and oceans, and how small imbalances accumulate into large, sometimes irreversible changes. Climate science teaches you patience, but it also teaches you discomfort. The thing about extreme climate events that I learned very early was that these do not arrive suddenly. They grow quietly, while everything still appears normal.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>CMIP6 म्हणजे काय? इतिहास आणि CMIP5ची माहिती</title>
-      <link>https://clustersandclimate.com/science/cmip6-marathi/</link>
-      <pubDate>Fri, 23 Jan 2026 11:58:00 +0900</pubDate>
-      <guid>https://clustersandclimate.com/science/cmip6-marathi/</guid>
-      <description>&lt;h2 id=&#34;cmip6-महणज-कय-इतहस-आण-cmip5च-महत&#34;&gt;CMIP6 म्हणजे काय? इतिहास आणि CMIP5ची माहिती&lt;/h2&gt;&#xA;&lt;p&gt;हवामान बदल समजून घेण्यासाठी वैज्ञानिक संगणकीय मॉडेल्स वापरतात. वेगवेगळ्या देशांतील संशोधन संस्था स्वतःची हवामान मॉडेल्स तयार करतात. पण प्रत्येक मॉडेल वेगळे असल्यामुळे त्यांच्या परिणामांची थेट तुलना करणे कठीण जाते. हाच अडथळा दूर करण्यासाठी &amp;ldquo;CMIP&amp;rdquo; — Coupled Model Intercomparison Project — ही जागतिक, समन्वित योजना तयार करण्यात आली. CMIP अंतर्गत सर्व प्रमुख हवामान मॉडेल्सना समान प्रयोग चालवायचे असतात, इनपुट्स/आउटपुट्स प्रमाणित (standardized) स्वरूपात द्यायचे असतात, आणि डेटा सार्वजनिकरित्या उपलब्ध करून द्यायचा असतो. यामुळे वेगवेगळ्या मॉडेल्समधील साम्य/फरक समजतो, आणि बहु-मॉडेल निष्कर्षांवर विश्वास वाढतो.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>चक्रीवादळे वळत आहेत — आपली धोरणे त्यानुसार वळणार का?</title>
-      <link>https://clustersandclimate.com/climate/bob-changing-tracks/</link>
-      <pubDate>Fri, 23 Jan 2026 00:01:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/climate/bob-changing-tracks/</guid>
-      <description>&lt;h2 id=&#34;चकरवदळ-वळत-आहत--आपल-धरण-तयनसर-वळणर-क&#34;&gt;चक्रीवादळे वळत आहेत — आपली धोरणे त्यानुसार वळणार का?&lt;/h2&gt;&#xA;&lt;h3 id=&#34;हवमन-बदलकड-पहणयच-आपल-सवय&#34;&gt;हवामान बदलाकडे पाहण्याची आपली सवय&lt;/h3&gt;&#xA;&lt;p&gt;हवामान बदलाबद्दल बोलताना आपण नेहमी आकड्यांच्या मागे धावतो. तापमान किती वाढले, पर्जन्यमान किती बदलले, चक्रीवादळांची संख्या वाढली की घटली — चर्चा याच चौकटीत अडकून राहते. ही चौकट सोयीची आहे, कारण ती मोजता येते, मांडता येते आणि शीर्षकात बसवता येते. पण हीच चौकट आपल्याला एक महत्त्वाचा बदल दिसू देत नाही.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>भारतातील हवामान बदल: जागतिक तापमानवाढीचे स्थानिक परिणाम</title>
-      <link>https://clustersandclimate.com/science/climate-change-india-local-impacts-marathi/</link>
-      <pubDate>Mon, 24 Nov 2025 10:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/science/climate-change-india-local-impacts-marathi/</guid>
-      <description>&lt;p&gt;हवामान बदल आता दूरच्या भविष्यातील भीती राहिली नाही; तो आपल्या देशाच्या हवामानावर, शेतीवर, आरोग्यावर आणि अर्थव्यवस्थेवर आजच परिणाम करू लागलाय. अलीकडे प्रकाशित झालेल्या ‘A post-AR6 update on observed and projected climate change in India’ या संशोधनातून भारतातील हवामान बदलाचं नविनतम वैज्ञानिक चित्र समोर आलं आहे. या लेखात आपण तापमानवाढ, मान्सून बदल, हिमालयातील वितळणाऱ्या हिमनद्या, भारतीय महासागरातील उष्णता आणि वाढता किनारी धोका — हे सर्व ताज्या आकडेवारीच्या आधारे समजून घेऊ.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Interstellar Visitors: What We Learn from Objects From Beyond Our Solar System</title>
-      <link>https://clustersandclimate.com/science/interstellar-visitors/</link>
-      <pubDate>Thu, 02 Oct 2025 12:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/science/interstellar-visitors/</guid>
-      <description>&lt;p&gt;Interstellar objects — bodies that originate outside our Solar System and pass through it — have captured astronomers&amp;rsquo; imaginations since 2017, when the first confirmed visitor, 1I/&amp;lsquo;Oumuamua, was discovered. These rare wanderers are natural laboratories: they carry material formed around other stars and let us test ideas about planet formation, the distribution of volatiles, and even the possibility of panspermia.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>एल निनो आणि भारतीय मान्सून : दुष्काळासोबत अतिवृष्टीची सावली</title>
-      <link>https://clustersandclimate.com/climate/el-nino-extreme-rains/</link>
-      <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/el-nino-extreme-rains/</guid>
-      <description>&lt;p&gt;भारतीय मान्सून हा आपल्या जीवनाचा अविभाज्य भाग आहे. चार महिन्यांच्या या पावसावर शेतकऱ्याचे भविष्य, शहरातील पाणीपुरवठा आणि संपूर्ण अर्थव्यवस्था उभी आहे. त्यामुळेच मान्सून किती आणि कसा पडतो हे समजून घेणे प्रत्येकासाठी महत्त्वाचे आहे. गेली शंभर वर्षे हवामानशास्त्रज्ञ एक गोष्ट वारंवार सांगत आले आहेत — &lt;strong&gt;एल निनो आला की भारतात पाऊस कमी पडतो.&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>एल निनो – ला निनाचा भारतीय हवामानावर परिणाम: बातम्यांपलीकडचे सत्य</title>
-      <link>https://clustersandclimate.com/climate/el-nino-la-nina-india-marathi/</link>
-      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/el-nino-la-nina-india-marathi/</guid>
-      <description>&lt;p&gt;भारतातील पावसाळा आणि हवामान हे नेहमीच चर्चेचे विषय असतात. दरवर्षी &amp;ldquo;एल निनो&amp;rdquo; किंवा &amp;ldquo;ला निना&amp;rdquo; या शब्दांचा उल्लेख बातम्यांमध्ये हमखास होतो. पण हे नेमके काय आहेत? आणि त्यांचा आपल्या पावसाळ्यावर, शेतीवर, आणि दैनंदिन जीवनावर कसा परिणाम होतो?&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Thank You for Subscribing!</title>
-      <link>https://clustersandclimate.com/thank-you/</link>
-      <pubDate>Thu, 31 Jul 2025 12:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/thank-you/</guid>
-      <description>&lt;h1 id=&#34;thank-you-&#34;&gt;Thank You! 🙏&lt;/h1&gt;&#xA;&lt;p&gt;Thank you for subscribing to &lt;strong&gt;Clusters and Climate&lt;/strong&gt;!&lt;/p&gt;&#xA;&lt;p&gt;You&amp;rsquo;ll receive updates about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Latest climate science research&lt;/li&gt;&#xA;&lt;li&gt;Outdoor adventures and nature photography&lt;/li&gt;&#xA;&lt;li&gt;Technology insights and tutorials&lt;/li&gt;&#xA;&lt;li&gt;Personal stories and diary entries&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s Next?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Check your email&lt;/strong&gt; for a confirmation (it might be in spam/promotions)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Follow us&lt;/strong&gt; on social media for daily updates&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Explore&lt;/strong&gt; our recent articles below&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;recent-articles&#34;&gt;Recent Articles&lt;/h2&gt;&#xA;&lt;p&gt;Browse our latest content while you wait for your first newsletter:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>डेंग्यू रोगाचे गतिशास्त्र आणि हवामान बदल: नवीन संशोधनाचे महत्त्वपूर्ण निष्कर्ष</title>
-      <link>https://clustersandclimate.com/science/dengue-dynamics-predictions-marathi/</link>
-      <pubDate>Mon, 28 Jul 2025 10:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/science/dengue-dynamics-predictions-marathi/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Read English article here:&lt;/strong&gt; &lt;a href=&#34;https://clustersandclimate.com/science/dengue-dynamics-predictions/&#34;&gt;Dengue Dynamics and Climate (English)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;जसजसा आपल्या पृथ्वीवरील हवामानाचा नमुना बदलत चालला आहे, तसतसे डेंग्यूसारख्या कीटकजन्य आजारांच्या पसरण्याच्या पद्धतीत आणि तीव्रतेत नाट्यमय बदल होत आहेत. &lt;em&gt;नेचर सायंटिफिक रिपोर्ट्स&lt;/em&gt; मध्ये प्रकाशित झालेल्या एका महत्त्वाच्या अभ्यासाने डेंग्यूच्या गतिशास्त्राबद्दल आणि भविष्यातील अंदाजांबद्दल नवीन माहिती दिली आहे जी भावी आजारांच्या उद्रेकांना तोंड देण्याची आणि त्यांना प्रतिसाद देण्याची आपली पद्धत पूर्णपणे बदलू शकते.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Kubernetes Disaster Recovery: Lessons from Natural Disasters</title>
-      <link>https://clustersandclimate.com/technology/kubernetes-disaster-recovery/</link>
-      <pubDate>Fri, 25 Jul 2025 00:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/technology/kubernetes-disaster-recovery/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Living in Japan for several years as a climate scientist taught me profound lessons about resilience—not just in natural systems, but in how we design and operate technology infrastructure. When you&amp;rsquo;ve experienced a 6.7 earthquake, felt the ground shake for almost minute, and watched earthquake warnings scroll across every screen, you gain a visceral understanding of what &amp;ldquo;disaster recovery&amp;rdquo; really means.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Changing Indian Monsoon: How Global Warming is Reshaping India&#39;s Lifeline</title>
-      <link>https://clustersandclimate.com/climate/2025-07-24-changing-indian-monsoon/</link>
-      <pubDate>Thu, 24 Jul 2025 00:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/climate/2025-07-24-changing-indian-monsoon/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The summer monsoon rains are the pulse of the Indian subcontinent. From June to September, these life-giving rains don&amp;rsquo;t just turn mountains green—they refill rivers, nourish crops, and provide fresh support to over a billion lives. However, in recent times, the monsoon has become increasingly erratic, with delayed onset, sudden extreme rainfall, and growing unpredictability. As global temperatures rise, Earth&amp;rsquo;s warming is transforming India&amp;rsquo;s most critical weather system, and the country is experiencing these changes firsthand.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to Set Up Kafka on Kubernetes</title>
-      <link>https://clustersandclimate.com/technology/kafka-on-kubernetes/</link>
-      <pubDate>Mon, 07 Jul 2025 00:02:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/technology/kafka-on-kubernetes/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Apache Kafka is a powerful distributed event streaming platform. Running Kafka on Kubernetes allows you to leverage container orchestration for scalability and resilience. This article walks you through setting up Kafka on a local Kubernetes cluster using Minikube, with all the necessary tools and configuration manifests.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Getting Started with CSI on Azure Kubernetes Service</title>
-      <link>https://clustersandclimate.com/technology/azure-csi-driver/</link>
-      <pubDate>Mon, 07 Jul 2025 00:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/technology/azure-csi-driver/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The Container Storage Interface (CSI) is now the industry standard for connecting Kubernetes clusters to a variety of storage solutions. Whether you’re launching a new workload or modernizing an existing deployment, understanding how to leverage CSI is essential. This article provides a hands-on walkthrough for deploying the Azure Disk CSI driver on Azure Kubernetes Service (AKS), combining both conceptual background and practical steps.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>A Walk Through Hokkaido Historical Village</title>
-      <link>https://clustersandclimate.com/life/hokkaido-historical-village/</link>
-      <pubDate>Sat, 05 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/life/hokkaido-historical-village/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Hokkaido historical village exhibits different types of buildings of Hokkaido built in Meiji and early Showa period, during the initial era of its development. All these buildings are categorized in four sections namely - Fishing village, farm village, town and mountain village.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About Me</title>
-      <link>https://clustersandclimate.com/about/</link>
-      <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/about/</guid>
-      <description>&lt;p&gt;Hello, I’m Vivek — a climate scientist turned technologist.&lt;/p&gt;&#xA;&lt;p&gt;I hold a PhD in Climate Science from &lt;a href=&#34;https://www.global.hokudai.ac.jp/&#34;&gt;Hokkaido University&lt;/a&gt;, Japan. My fascination with Earth&amp;rsquo;s systems and the forces that shape our environment continues to guide how I think and work today.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Indonesian Throughflow: River in the ocean that affects Indian Monsoon rainfall</title>
-      <link>https://clustersandclimate.com/climate/river-in-the-ocean/</link>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/river-in-the-ocean/</guid>
-      <description>&lt;p&gt;Climate is one of the most discussed and followed topics around the world. There are many climatic phenomena such as El Nino – La Nina, and their effects are well known worldwide. El Nino – La Nina has been significant for India since it affects the rainfall during monsoon season and, eventually, the water resources in the river and agricultural yield. It is common sense that rainfall affects the water resources in the river. &lt;strong&gt;However, this is the story of a river that can affect rainfall in India during monsoon season. Unlike the rivers on the land, this river flows in the ocean, and it is thousands of times bigger than any river that you know.&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>अर्का आणि अरुणिका : हवामान अंदाज आणि संशोधनातील झेप</title>
-      <link>https://clustersandclimate.com/climate/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%95%E0%A4%BE-%E0%A4%86%E0%A4%A3%E0%A4%BF-%E0%A4%85%E0%A4%B0%E0%A5%81%E0%A4%A3%E0%A4%BF%E0%A4%95%E0%A4%BE/</link>
-      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%95%E0%A4%BE-%E0%A4%86%E0%A4%A3%E0%A4%BF-%E0%A4%85%E0%A4%B0%E0%A5%81%E0%A4%A3%E0%A4%BF%E0%A4%95%E0%A4%BE/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;आकृती 1:&lt;/strong&gt; सुपर कॉम्पुटर अर्का चे उद्घाटन. सौजन्य: इंडियन इन्स्टिटय़ूट ऑफ ट्रॉपिकल मेटिऑरॉलॉजी (IITM)&lt;/p&gt;&#xA;&lt;p&gt;वैविध्यपूर्ण हवामान आणि चक्रीवादळ, उष्णतेच्या लाटा, अति मुसळधार पाऊस व दुष्काळ यांसारख्या नैसर्गिक आपत्तींना बळी पडणाऱ्या भारताला हवामान अंदाज तंत्रज्ञानातील प्रगतीचा लक्षणीय फायदा होतो. त्यात भर म्हणून हवामानातील बदलामुळे अशा घटनांमध्ये वाढ होत आहे. अशा वेळी, अचूक हवामान अंदाज आणि सर्वसमावेशक हवामान संशोधनाची गरज आजपेक्षा जास्त कधीच नव्हती. याच पार्श्वभूमीवर पुण्यातील पाषाण रोडच्या ‘इंडियन इन्स्टिटय़ूट ऑफ ट्रॉपिकल मेटिऑरॉलॉजी (IITM)’ येथे ‘अर्का’ नावाच्या नवीन उच्च-कार्यक्षमता संगणकीय प्रणालीचे (HPC) उदघाटन २६ सप्टेंबर २०२४ या दिवशी पृथ्वी विज्ञान मंत्रालयाने (MoES) केले.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>ढग पेरणी (cloud seeding)-हवामानाशी जोखमीचा खेळ</title>
-      <link>https://clustersandclimate.com/climate/%E0%A4%A2%E0%A4%97-%E0%A4%AA%E0%A5%87%E0%A4%B0%E0%A4%A3%E0%A5%80/</link>
-      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/%E0%A4%A2%E0%A4%97-%E0%A4%AA%E0%A5%87%E0%A4%B0%E0%A4%A3%E0%A5%80/</guid>
-      <description>&lt;p&gt;ढग पेरणी (क्लाउड सीडिंग) हे हवामान परिवर्तनाचे तंत्र आहे, ज्याचा पर्जन्यवृष्टीमध्ये बदल करण्यासाठी वापर होतो. बहुचर्चेत असलेले परिवर्तन म्हणजे पर्जन्यवृष्टी मध्ये वाढ करणे. पर्जन्यवृष्टी वाढविण्याच्या उद्देशाने काही पदार्थ, जे ढगांच्या पेरणीचे माध्यम (सीडींग एजंट्स) म्हणून ओळखले जातात, ढगांमध्ये सोडले जातात. ही प्रक्रिया संघनन किंवा घनीभवन तत्त्वावर आधारित आहे, जेथे पेरणीसाठीचे पदार्थ पाण्याच्या वाफेचे संघनन होण्यासाठी पृष्ठभाग म्हणून उपयोगात येतात, ज्यामुळे पाण्याचे थेंब किंवा बर्फाचे स्फटिक तयार होण्यास मदत होते. या हवामान परिवर्तनामुळे ढग निर्मिती आणि पर्जन्यवृष्टीच्या नैसर्गिक प्रक्रियेला चालना मिळते. कृषी उत्पादकतेला समर्थन देण्यासाठी, जलस्रोतांचे पुनरुज्जीवन करण्यासाठी आणि परिसंस्थेवरील दुष्काळाचे परिणाम कमी करण्यासाठी याचा खूप उपगोय होऊ शकतो.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>लिबियातील पूर संकटाचे  सर्वसमावेशक विश्लेषण</title>
-      <link>https://clustersandclimate.com/climate/%E0%A4%B2%E0%A4%BF%E0%A4%AC%E0%A4%BF%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%80%E0%A4%B2-%E0%A4%AA%E0%A5%82%E0%A4%B0/</link>
-      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/%E0%A4%B2%E0%A4%BF%E0%A4%AC%E0%A4%BF%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%80%E0%A4%B2-%E0%A4%AA%E0%A5%82%E0%A4%B0/</guid>
-      <description>&lt;p&gt;रविवारी, १० सप्टेंबर २०२३ रोजी लिबियाला धडकलेल्या डॅनियल वादळाने मुसळधार पाऊस आणला. मेडीकेन म्हणून ओळखल्या जाणार्‍या भूमध्यसागरीय चक्रीवादळासारख्या प्रणालीने २४ तासांच्या कालावधीत आफ्रिकेच्या उत्तर-पूर्व किनार्‍याच्या काही भागांमध्ये ४०० मि.मी. पेक्षा जास्त पाऊस पडला. ‘संपूर्ण सप्टेंबरमध्ये साधारणतः १.५ मि.मी. पाऊस पडणाऱ्या प्रदेशासाठी पावसाचा हा नवा विक्रम आहे.’ असे लिबियाच्या राष्ट्रीय हवामान केंद्राने देखील म्हटले आहे. खालील आकृती डॅनिअल वादळामुळे ९ सप्टेंबर ते ११ सप्टेंबर या ३ दिवसांच्या कालावधीत कोणत्या भागात किती (मि.मि.) पाऊस झाला असेल याचा अंदाज उपग्रहाने निरीक्षण केलेल्या माहितीवरून देते. पण प्रत्यक्षात जमिनीवर पडलेल्या पावसाचे प्रमाण खूप जास्त होते.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>महासागरीय प्रवाहांमधील मानवी हस्तक्षेपाचे परिणाम</title>
-      <link>https://clustersandclimate.com/climate/%E0%A4%AE%E0%A4%BE%E0%A4%A8%E0%A4%B5%E0%A5%80-%E0%A4%B9%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A5%87%E0%A4%AA/</link>
-      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/%E0%A4%AE%E0%A4%BE%E0%A4%A8%E0%A4%B5%E0%A5%80-%E0%A4%B9%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A5%87%E0%A4%AA/</guid>
-      <description>&lt;p&gt;महासागरीय प्रवाह पृथ्वीच्या हवामान प्रणालीमध्ये महत्त्वपूर्ण भूमिका बजावतात, जगभरात उष्णतावहन करतात आणि प्रादेशिक हवामानव्यवस्थेवर परिणाम करतात. मागील लेखांमध्ये, आपण महासागरातील प्रवाहांबाबतच्या मूलभूत गोष्टींसोबत समुद्रातील उष्णतावहनातील त्यांची भूमिका समजावून घेतली. त्याचबरोबर इंडोनेशियन प्रवाह आणि गल्फ स्ट्रीम सारख्या प्रवाहांची अधिक माहिती करून घेतली. तथापि, मानवी हस्तक्षेप या गुंतागुंतीच्या प्रणालींवर कसा परिणाम करू शकतो आणि त्यांच्या नाजूक समतोलामध्ये कसा व्यत्यय आणू शकतो हे समजून घेणे आवश्यक आहे. लेखमालेतील या शेवटच्या लेखात, आपण काही ऐतिहासिक उदाहरणे आणि आपल्या कृतींचे महासागरीय प्रवाहांवर होणारे व्यापक परिणाम तपासून पाहू.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>गल्फ स्ट्रीम: पृथ्वीच्या हवामानाला आकार देणारा शक्तिशाली प्रवाह</title>
-      <link>https://clustersandclimate.com/climate/%E0%A4%97%E0%A4%B2%E0%A5%8D%E0%A4%AB%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE/</link>
-      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/%E0%A4%97%E0%A4%B2%E0%A5%8D%E0%A4%AB%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE/</guid>
-      <description>&lt;p&gt;‘महासागरातील प्रवाह’ या लेखमालिकेतील गेल्या २ लेखांमध्ये आपण सागरी प्रवाहांचा परिचय करून घेतला आणि इंडोनेशियन प्रवाहाची संवादरूपाने अधिक माहिती मिळवली. मालिकेमधल्या तिसऱ्या लेखात आपण ‘गल्फ स्ट्रीम’ला प्रश्न विचारून त्याविषयी अधिक माहिती घेणार आहोत. तिसरा लेख हा ‘महासागरातील प्रवाह’ या लेखमालिकेतील दुसऱ्या लेखाचेच सातत्य आहे. (दुसऱ्या लेखाची लिंक :- &lt;a href=&#34;https://www.nature.com/nature/volumes/452/issues/7184&#34;&gt;https://t.ly/RjfXQ&lt;/a&gt;&#xA;मालिकेतल्या दुसऱ्या लेखात माणसाने इंडोनेशियन प्रवाहा (ITF) बरोबर चर्चा करून त्याबद्दल अधिक माहिती जाणून घेतली आणि अशीच चर्चा इतर विषयांवर व्हावी अशी इच्छा इंडोनेशियन प्रवाहाकडे बोलून दाखवली.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>इंडोनेशियन प्रवाह : महासागरातील नदी जी भारतीय मान्सूनच्या पावसावर परिणाम करते.</title>
-      <link>https://clustersandclimate.com/climate/%E0%A4%87%E0%A4%82%E0%A4%A1%E0%A5%8B%E0%A4%A8%E0%A5%87%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%A8-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%B9/</link>
-      <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/%E0%A4%87%E0%A4%82%E0%A4%A1%E0%A5%8B%E0%A4%A8%E0%A5%87%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%A8-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%B9/</guid>
-      <description>&lt;p&gt;हवामान हा जगभरात सर्वाधिक चर्चिला जाणारा आणि फॉलो केला जाणारा विषय आहे. एल निनो – ला निना सारख्या अनेक हवामानविषयक घटना आहेत आणि त्यांचे परिणाम जगभरात प्रसिद्ध आहेत. एल निनो – ला नीना भारतासाठी महत्त्वपूर्ण आहे कारण त्याचा मान्सून हंगामातील पावसावर आणि अखेरीस, नदीतील जलस्रोतांवर आणि शेतीच्या उत्पन्नावर परिणाम होतो. पावसाचा नदीतील जलस्रोतांवर परिणाम होतो हे सामान्य समज आहे. तथापि, ही एका नदीची कथा आहे जी पावसाळ्यात भारतातील पावसावर परिणाम करू शकते. जमिनीवरील नद्यांच्या विपरीत, ही नदी महासागरात वाहते आणि ती तुम्हाला माहीत असलेल्या कोणत्याही नदीपेक्षा हजारो पट मोठी आहे.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>महासागरीय प्रवाहाांचा परिचय भाग – १</title>
-      <link>https://clustersandclimate.com/climate/%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80%E0%A4%AF-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%B9%E0%A4%BE%E0%A4%BE%E0%A4%82%E0%A4%9A%E0%A4%BE-%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%9A%E0%A4%AF-%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A5%A7/</link>
-      <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80%E0%A4%AF-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%B9%E0%A4%BE%E0%A4%BE%E0%A4%82%E0%A4%9A%E0%A4%BE-%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%9A%E0%A4%AF-%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A5%A7/</guid>
-      <description>&lt;h3 id=&#34;महसगरच-महततव-आण-हवमनवरल-परभव&#34;&gt;महासागराचे महत्त्व आणि हवामानावरील प्रभाव&lt;/h3&gt;&#xA;&lt;p&gt;महासागर किंवा समुद्र हा खाऱ्या पाण्याचा संचय आहे जो पृथ्वीच्या पृष्ठभागाच्या अंदाजे 70.8% व्यापतो आणि पृथ्वीवरच्या एकूण पाणी साठ्यापैकी, 97% पाणी यात समाविष्ट आहे. महासागर हा पृथ्वीच्या जलमंडलाचा मुख्य घटक आहे आणि म्हणून पृथ्वीवरील जीवनाचा एक अविभाज्य घटक आहे. समुद्र उष्णतेचा एक मोठा साठा म्हणून कार्यरत असताना, हवामान, हवामानाची परिवर्तनशीलता, कार्बन चक्र आणि जलचक्र प्रभावित करतो. जसजसा समुद्र तापतो तसतसे तो वातावरणात उष्णता सोडतो आणि हवा गरम करतो. परिणामी हवामान नियंत्रित करतो. ही प्रक्रिया महासागर-वातावरण उष्णता विनिमय (heat exchange) म्हणून ओळखली जाते. महासागर मोठ्या प्रमाणात कार्बन डाय ऑक्साईड देखील साठवतो, हा एक प्रमुख हरितगृह वायू आहे, जो जागतिक तापमान मध्यम करण्यास मदत करतो.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Saturn and Jupiter&#39;s Great Conjunction: A Once-in-a-Lifetime Event?</title>
-      <link>https://clustersandclimate.com/science/the-great-conjunction/</link>
-      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/science/the-great-conjunction/</guid>
-      <description>&lt;p&gt;A lot has been said about the rare celestial event occurring on December 21, 2020—the Great Conjunction of Saturn and Jupiter. On this day, the two gas giants will pass within just 6 arcminutes (or 0.1 degrees) of each other—appearing almost as a single bright &amp;ldquo;star&amp;rdquo; to the naked eye.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How I Followed the Solar Eclipse</title>
-      <link>https://clustersandclimate.com/science/how-i-followed-the-solar-eclipse/</link>
-      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/science/how-i-followed-the-solar-eclipse/</guid>
-      <description>&lt;h2 id=&#34;2010--the-first-experience&#34;&gt;2010 – The First Experience&lt;/h2&gt;&#xA;&lt;p&gt;My 2010s kicked off with a bang: the longest annular solar eclipse of the millennium, on 15 January 2010. The annular phase lasted just over 11 minutes, with the moon covering about 91% of the Sun. I joined a group of fellow eclipse chasers and traveled more than 3000 km from Pune to Rameshwaram—just to catch those magical moments.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>When the Sun-Moon duo turned into the Ring of Fire</title>
-      <link>https://clustersandclimate.com/life/how-i-followed-the-solar-eclipse/</link>
-      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/life/how-i-followed-the-solar-eclipse/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Following article is written by one of the participants of solar eclipse expedition - Sania Rahigude. She pours out her journey and experience of Solar Eclipse Expedition through this article.&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Tengu&#39;s Walk on Fire: The Furubira Fire Festival</title>
-      <link>https://clustersandclimate.com/life/tengu-festival/</link>
-      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/life/tengu-festival/</guid>
-      <description>&lt;div style=&#34;display: flex; align-items: center; gap: 18px; margin-bottom: 18px;&#34;&gt;&#xA;  &lt;img src=&#34;https://clustersandclimate.com/images/life/chetna.jpeg&#34; alt=&#34;Chetna&#34; style=&#34;width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin: 0;&#34; /&gt;&#xA;  &lt;span style=&#34;font-size: 1.05em; color: #555;&#34;&gt;Chetna Sharma, the author of this article, shares her experience of the Furubira Fire Festival.&lt;/span&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;tengus-walk-on-fire&#34;&gt;Tengu&amp;rsquo;s Walk on Fire&lt;/h2&gt;&#xA;&lt;p&gt;Furubira is a place close to my heart. I have visited several times, and each visit is a new immersion into Japanese culture. Furubira is a small town in western Hokkaido, Japan. The simplicity of the people, humble landscapes, cleanliness, and purity of the atmosphere are truly satisfying.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>A Beginner’s Guide: Essential Camping Tools to Get Started</title>
-      <link>https://clustersandclimate.com/outdoor/camping-tools-beginners-guide/</link>
-      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/outdoor/camping-tools-beginners-guide/</guid>
-      <description>&lt;p&gt;The idea of camping is always exciting—if you’re well prepared. But camping can quickly turn sour if you forget the basics. Your enjoyment depends on your preparation, your adaptability to weather and conditions, and a few clever hacks. Even experienced campers sometimes forget a headlamp or matches, so don’t worry if you do too!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Wild Onsen near Mt. Shikaribetsu in Shikaoi, Hokkaido</title>
-      <link>https://clustersandclimate.com/outdoor/wild-onsen-mt-shikaribetsu/</link>
-      <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/outdoor/wild-onsen-mt-shikaribetsu/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Enjoying the wild onsen near Mt. Shikaribetsu&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Japan is world famous for its serene natural beauty, making it a paradise for bicycling, camping, and hiking. Camping in Japan’s forests is a unique experience—especially in Hokkaido, where the forests are home to bears. There are many places in Hokkaido where you can camp and enjoy a wild onsen for free.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Engaru Archaeological Centre: Tracing Hokkaido&#39;s Ancient Cultures</title>
-      <link>https://clustersandclimate.com/life/engaru-archaeological-centre/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/life/engaru-archaeological-centre/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;A land with the ruins speaks the history.&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Ruins are traces of life, telling us about the people and their ways in the past. These remnants help us understand how ancient people lived. Hokkaido, which only became part of Japan in 1868, was long home to the Ainu and other unique cultures. While rice cultivation began on the Japanese mainland at the end of the Jomon period (14,000 BC – 300 BC), Hokkaido&amp;rsquo;s people relied on the island&amp;rsquo;s rich natural environment and influences from surrounding regions, developing their own distinctive cultures: Zoku-Jomon (Post-Jomon), Satsumon, Okhotsk, and Ainu.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Quirky Quakes - A tale of Earthquakes</title>
-      <link>https://clustersandclimate.com/life/quirky-quakes/</link>
-      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/life/quirky-quakes/</guid>
-      <description>&lt;h2 id=&#34;life-in-sapporo&#34;&gt;Life in Sapporo&lt;/h2&gt;&#xA;&lt;p&gt;I’ve been living in Sapporo, the capital of Hokkaido, for many years now. Hokkaido is known for its pristine forests, breathtaking natural beauty, dairy products, and fresh seafood. &lt;strong&gt;What I love the most are the mountains surrounding Sapporo—and the sea is just 15 km away.&lt;/strong&gt; What more could one ask for? The combination of mountains and sea makes Sapporo a perfect place for hiking and camping.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lake Toya and Volcanic Wonders of Hokkaido</title>
-      <link>https://clustersandclimate.com/life/lake-toya-hokkaido/</link>
-      <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/life/lake-toya-hokkaido/</guid>
-      <description>&lt;p&gt;Japan is located at the junction of several tectonic plates, making it rich in volcanic mountains and calderas. With over 100 volcanic mountains—more than almost any other country—Japan is famous for its onsen (hot springs) and dramatic volcanic landscapes. While most people know that mountains form due to volcanic activity, fewer realize that lakes can also be born from volcanoes. These are called caldera lakes. One such gem in Hokkaido is Lake Toya (Toya-ko).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sapporo Jozankei Nature Village: A Campsite Guide</title>
-      <link>https://clustersandclimate.com/outdoor/sapporo-jozankei-nature-village/</link>
-      <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/outdoor/sapporo-jozankei-nature-village/</guid>
-      <description>&lt;p&gt;Sapporo Jozankei Nature Village is a campsite about 45 minutes by car from Sapporo, nestled in the deep Jozankei forest near Houheikyou Onsen and dam. It’s a perfect spot for novice campers, offering a range of lodging options—cottages, tent houses, and open tent sites. You can also bring your own camping gear and equipment.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Breathtaking Sunrise from the Top of Mt. Sapporo, Hokkaido</title>
-      <link>https://clustersandclimate.com/outdoor/breathtaking-sunrise-mt-sapporo/</link>
-      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/outdoor/breathtaking-sunrise-mt-sapporo/</guid>
-      <description>&lt;p&gt;Sapporo Dake trek in Sapporo, Japan, was my first night trek in a foreign country. My friend Tomo, an experienced mountaineer, joined me and knew the mountain well. Our goal: to witness a breathtaking sunrise and the sparkling city lights from the summit. At 1235 meters, with the base nearly at sea level, we planned a two-stage climb.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Night Trek to Sapporo Dake, Hokkaido</title>
-      <link>https://clustersandclimate.com/outdoor/night-trek-to-sapporo-dake-hokkaido/</link>
-      <pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/outdoor/night-trek-to-sapporo-dake-hokkaido/</guid>
-      <description>&lt;p&gt;Sapporo (札幌) is the vibrant capital of Hokkaido Island (北海道), a paradise for mountain lovers, ocean seekers, and anyone looking to escape the bustle of big cities. The region is dotted with small (やま) and medium (だけ) sized mountains, ranging from 300 to 1300 meters high. Among these, Sapporo Dake (札幌岳)—also known as Mt. Sapporo—stands out as a favorite for trekkers, rising to about 1250 meters.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>दिंडी (…शाळेमधली)</title>
-      <link>https://clustersandclimate.com/diary/%E0%A4%A6%E0%A4%BF%E0%A4%82%E0%A4%A1%E0%A5%80-%E0%A4%B6%E0%A4%BE%E0%A4%B3%E0%A5%87%E0%A4%AE%E0%A4%A7%E0%A4%B2%E0%A5%80/</link>
-      <pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/diary/%E0%A4%A6%E0%A4%BF%E0%A4%82%E0%A4%A1%E0%A5%80-%E0%A4%B6%E0%A4%BE%E0%A4%B3%E0%A5%87%E0%A4%AE%E0%A4%A7%E0%A4%B2%E0%A5%80/</guid>
-      <description>&lt;p&gt;आज रोजच्याप्रमाणे अभ्यासिकेत गेलो होतो.&#xA;नेहमीसारखाच—शांत, एकटा. अभ्यासात लक्ष लागलेलं. अर्धा-पाऊण तास झाला असेल, तोच अचानक बाहेरून दिंडीतल्या गाण्यांचा आवाज कानावर आदळला. खिडकी उघडीच होती, त्यामुळे आवाज सरळ डोक्यात घुसला.&#xA;जशी-जशी दिंडी जवळ येत गेली, तसा आवाजही वाढत गेला.&#xA;शेवटी सहनशक्तीचा अंत झाला आणि मी शिव्या देत उठलो.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>पहिली सिगारेट</title>
-      <link>https://clustersandclimate.com/diary/%E0%A4%AA%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A5%80-%E0%A4%B8%E0%A4%BF%E0%A4%97%E0%A4%BE%E0%A4%B0%E0%A5%87%E0%A4%9F/</link>
-      <pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/diary/%E0%A4%AA%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A5%80-%E0%A4%B8%E0%A4%BF%E0%A4%97%E0%A4%BE%E0%A4%B0%E0%A5%87%E0%A4%9F/</guid>
-      <description>&lt;p&gt;आज ताम्हीणीला जायची अजिबात इच्छा नव्हती.&lt;/p&gt;&#xA;&lt;p&gt;मी गेलो होतो ते फिरायला म्हणून नाही, तर जमीरने आग्रह केला म्हणून. पण खरं सांगायचं तर, अपेक्षा नसताना खूप मजा आली… आणि काही अनपेक्षित गोष्टीही घडल्या.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>मी भारत बोलतोय…</title>
-      <link>https://clustersandclimate.com/life/%E0%A4%AE%E0%A5%80-%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4-%E0%A4%AC%E0%A5%8B%E0%A4%B2%E0%A4%A4%E0%A5%8B%E0%A4%AF/</link>
-      <pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/life/%E0%A4%AE%E0%A5%80-%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4-%E0%A4%AC%E0%A5%8B%E0%A4%B2%E0%A4%A4%E0%A5%8B%E0%A4%AF/</guid>
-      <description>&lt;p&gt;१५ ऑगस्ट चा दिवस होता. बरेचजण स्वातंत्र्यदिन साजरा करण्यासाठी कॉलेजमध्ये एकत्र आले होते. कोणीतरी भारताच्या नकाशाची आउटलाइन फळ्यावर काढायचा चांगला प्रयत्न केला होता. थोड्याच वेळात कार्यक्रम सुरु झाला आणि एक तासात संपला सुद्धा. मग सुरु झाली, ती दरवर्षीची गाणी.&#xA;” जहां डाल डाल पार सोने कि,&#xA;चिडिया करती हे बसेरा l&#xA;वो भारत देश हे मेरा,&#xA;वो भारत देश हे मेरा… ll ”&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>रात बाकी, बात बाकी</title>
-      <link>https://clustersandclimate.com/diary/%E0%A4%B0%E0%A4%BE%E0%A4%A4-%E0%A4%AC%E0%A4%BE%E0%A4%95%E0%A5%80-%E0%A4%AC%E0%A4%BE%E0%A4%A4-%E0%A4%AC%E0%A4%BE%E0%A4%95%E0%A5%80/</link>
-      <pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/diary/%E0%A4%B0%E0%A4%BE%E0%A4%A4-%E0%A4%AC%E0%A4%BE%E0%A4%95%E0%A5%80-%E0%A4%AC%E0%A4%BE%E0%A4%A4-%E0%A4%AC%E0%A4%BE%E0%A4%95%E0%A5%80/</guid>
-      <description>&lt;p&gt;बी. एस्सी. च्या तिसऱ्या वर्षात असताना सुचलेल्या ओळी.&lt;/p&gt;&#xA;&lt;p&gt;रात बाकी, बात बाकी.&lt;/p&gt;&#xA;&lt;p&gt;प्रोजेक्ट हे बाकी, Journal भी हे बाकी.&lt;/p&gt;&#xA;&lt;p&gt;Pen मे सिर्फ २ बूंद स्याही बाकि,&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://clustersandclimate.com/climate/2025-08-20-%E0%A4%A7%E0%A4%B0%E0%A4%BE%E0%A4%B2%E0%A5%80-%E0%A4%97%E0%A4%BE%E0%A4%B5-%E0%A4%AD%E0%A5%82%E0%A4%B8%E0%A5%8D%E0%A4%96%E0%A4%B2%E0%A4%A8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/climate/2025-08-20-%E0%A4%A7%E0%A4%B0%E0%A4%BE%E0%A4%B2%E0%A5%80-%E0%A4%97%E0%A4%BE%E0%A4%B5-%E0%A4%AD%E0%A5%82%E0%A4%B8%E0%A5%8D%E0%A4%96%E0%A4%B2%E0%A4%A8/</guid>
-      <description></description>
-    </item>
-  </channel>
+	<channel>
+		<title>Clusters and Climate</title>
+		<link>https://clustersandclimate.com/</link>
+		<description>Recent content on Clusters and Climate</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 23 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://clustersandclimate.com/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>भीमाशंकर ते भोरगिरी — सँडल्स, जळवा आणि एक निवांत पावसाळी वेडेपणा</title>
+				<link>https://clustersandclimate.com/life/%E0%A4%AD%E0%A5%80%E0%A4%AE%E0%A4%BE%E0%A4%B6%E0%A4%82%E0%A4%95%E0%A4%B0-%E0%A4%A4%E0%A5%87-%E0%A4%AD%E0%A5%8B%E0%A4%B0%E0%A4%97%E0%A4%BF%E0%A4%B0%E0%A5%80-%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%95/</link>
+				<pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/%E0%A4%AD%E0%A5%80%E0%A4%AE%E0%A4%BE%E0%A4%B6%E0%A4%82%E0%A4%95%E0%A4%B0-%E0%A4%A4%E0%A5%87-%E0%A4%AD%E0%A5%8B%E0%A4%B0%E0%A4%97%E0%A4%BF%E0%A4%B0%E0%A5%80-%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%95/</guid>
+				<description>&lt;p&gt;काही ट्रेक्स &amp;ldquo;फिटनेससाठी&amp;rdquo; केले जातात, काही &amp;ldquo;इन्स्टाग्रामसाठी&amp;rdquo; — आणि काही ट्रेक्स असे असतात, जे फक्त &amp;ldquo;आपण जरा मोकळा श्वास घ्यावा&amp;rdquo; म्हणून केले जातात. भीमाशंकर ते भोरगिरी हा ट्रेक तिसऱ्या प्रकारातला. आणि तो पावसाळ्यात करायचा असेल, तर तयारी नुसतीच शारीरिक नाही, तर मानसिकही लागते — कारण इथे सह्याद्री तुम्हाला हवं तसं भिजवतो, आणि तुम्ही &amp;ldquo;आपणच हे ट्रेक करायचं ठरवलं&amp;rdquo; यावर एकदा तरी स्वतःशी हसता.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>El Niño and the Indian Monsoon — A Tug of War Across Oceans</title>
+				<link>https://clustersandclimate.com/climate/2026-05-1-el-nino-and-the-indian-monsoon/</link>
+				<pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/2026-05-1-el-nino-and-the-indian-monsoon/</guid>
+				<description>&lt;p&gt;The Indian Summer Monsoon Rainfall (ISMR) is not merely a weather pattern. It is the circulatory system of an entire civilisation. Between June and September, the monsoon delivers roughly 80% of India&amp;rsquo;s annual precipitation — filling reservoirs, recharging aquifers, and determining the fate of Kharif crops that feed over a billion people. The long-period average (LPA) for this June–September window is 868.6 mm, a number that anchors every seasonal forecast and every agricultural planning cycle. When the India Meteorological Department (IMD) classifies a season as &amp;ldquo;deficient&amp;rdquo; — defined as rainfall falling below 90% of LPA — the consequences ripple through food prices, rural incomes, and river flows for years.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Cost Is Not Carbon: Why Cheap Systems Can Emit More</title>
+				<link>https://clustersandclimate.com/technology/cost-is-not-carbon-cheap-systems-emit-more/</link>
+				<pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/cost-is-not-carbon-cheap-systems-emit-more/</guid>
+				<description>&lt;p&gt;This article is for teams that have recently started implementing green cloud and are new to it. Optimizing for cost and optimizing for carbon are not the same thing. In many cases, they directly oppose each other.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Why Carbon-Aware Systems Can Cost More and Still Be the Right Choice</title>
+				<link>https://clustersandclimate.com/technology/why-carbon-aware-systems-can-cost-more-right-choice/</link>
+				<pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/why-carbon-aware-systems-can-cost-more-right-choice/</guid>
+				<description>&lt;p&gt;In the previous article, I made the case that cost and carbon are not the same thing — that cheap cloud infrastructure can emit significantly more carbon than slightly more expensive alternatives. The response I got from several readers and colleagues was some version of the same question:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Super El Niño 2026: Why the Positive Indian Ocean Dipole Offers Hope Against Drought</title>
+				<link>https://clustersandclimate.com/climate/2026-04-13-super-el-nino-positive-iod-forecast/</link>
+				<pubDate>Mon, 13 Apr 2026 00:00:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/climate/2026-04-13-super-el-nino-positive-iod-forecast/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Climate forecasters worldwide are closely monitoring oceanic conditions as multiple climate models indicate the development of what could be a &amp;ldquo;Super El Niño&amp;rdquo; event in 2026. Historically, such strong El Niño events have been associated with reduced monsoon rainfall over parts of the Indian subcontinent—typically 10-20% below normal—with regional variations in drought impacts. However, this time there&amp;rsquo;s a crucial difference: concurrent forecasts show a strong positive Indian Ocean Dipole (IOD) developing simultaneously, which could significantly buffer India against the typical El Niño-induced rainfall reductions.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>महाराष्ट्राचा २०२६ पावसाळा: सुपर एल निनो आणि सकारात्मक IOD यांचा परिणाम</title>
+				<link>https://clustersandclimate.com/climate/maharashtra-monsoon-2026-super-el-nino-iod-marathi/</link>
+				<pubDate>Mon, 13 Apr 2026 00:00:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/climate/maharashtra-monsoon-2026-super-el-nino-iod-marathi/</guid>
+				<description>&lt;p&gt;महाराष्ट्राच्या शेतकऱ्यांना, पाणीपुरवठा व्यवस्थापकांना आणि नागरिकांना २०२६ च्या पावसाळ्याबद्दल माहिती हवी आहे. यावर्षी एक विशेष परिस्थिती निर्माण झाली आहे: जगातील सर्वात शक्तिशाली &amp;ldquo;सुपर एल निनो&amp;rdquo; विकसित होत आहे, पण त्याच वेळी भारतीय महासागरातील सकारात्मक डिपोल (Positive IOD) देखील तयार होत आहे. या दोन्ही घटकांचा एकत्रित परिणाम महाराष्ट्राच्या पावसाळ्यावर कसा होणार आहे?&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>The Double Standard: Why AI-Assisted Writing Should Be Normalized Like AI-Assisted Coding</title>
+				<link>https://clustersandclimate.com/technology/ai-assisting-writing-normalizing-the-workflow/</link>
+				<pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/ai-assisting-writing-normalizing-the-workflow/</guid>
+				<description>&lt;h2 id=&#34;the-double-standard&#34;&gt;The Double Standard&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve noticed something strange in technical communities. The same engineer who proudly uses GitHub Copilot, who asks Claude to refactor their functions, who relies on AI to generate boilerplate code will turn around and criticize someone for using AI to help draft an article.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Implementing Green Cloud Systems: A Practical Guide to Change</title>
+				<link>https://clustersandclimate.com/technology/implementing-green-cloud-systems/</link>
+				<pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/implementing-green-cloud-systems/</guid>
+				<description>&lt;p&gt;I will be honest about something uncomfortable before diving into infrastructure patterns.&lt;/p&gt;&#xA;&lt;p&gt;As I write this, multiple active conflicts around the world are releasing carbon and doing pollution at a scale that makes any discussion of saving the climate/environment feel almost irrelevant. A sustained military operations can emits more carbon dioxide in a single week than all the data centers combined in a year. Environmental and climate damages by Wars takes decades to recover and Advocating for green cloud systems in that context can feel naive, or even morally hollow.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Quiet, Always-On: How Development and Test Clusters Accumulate Energy Use</title>
+				<link>https://clustersandclimate.com/technology/quiet-always-on-dev-test-clusters-energy/</link>
+				<pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/quiet-always-on-dev-test-clusters-energy/</guid>
+				<description>&lt;p&gt;Production cluster systems are the most important since they serve customers. Most of the production clusters are overprovisioned with a “just in case” reason. However, their energy use is visible, accepted, and often defended as necessary.&#xA;But, not all the Kubernetes clusters are production clusters.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>From Climate Science to Virtual Cloud Systems : Designing Green Cloud Systems</title>
+				<link>https://clustersandclimate.com/technology/from-climate-science-to-virtual-cloud-systems/</link>
+				<pubDate>Thu, 05 Feb 2026 17:32:37 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/from-climate-science-to-virtual-cloud-systems/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Before I was involved with cloud infrastructure and distributed systems, I spent years studying the climate. I am a doctor by PhD — in climate science — and I have spent years understanding how Earth’s climate systems behave, how energy moves through the atmosphere and oceans, and how small imbalances accumulate into large, sometimes irreversible changes. Climate science teaches you patience, but it also teaches you discomfort. The thing about extreme climate events that I learned very early was that these do not arrive suddenly. They grow quietly, while everything still appears normal.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>CMIP6 म्हणजे काय? इतिहास आणि CMIP5ची माहिती</title>
+				<link>https://clustersandclimate.com/science/cmip6-marathi/</link>
+				<pubDate>Fri, 23 Jan 2026 11:58:00 +0900</pubDate>
+				<guid>https://clustersandclimate.com/science/cmip6-marathi/</guid>
+				<description>&lt;h2 id=&#34;cmip6-महणज-कय-इतहस-आण-cmip5च-महत&#34;&gt;CMIP6 म्हणजे काय? इतिहास आणि CMIP5ची माहिती&lt;/h2&gt;&#xA;&lt;p&gt;हवामान बदल समजून घेण्यासाठी वैज्ञानिक संगणकीय मॉडेल्स वापरतात. वेगवेगळ्या देशांतील संशोधन संस्था स्वतःची हवामान मॉडेल्स तयार करतात. पण प्रत्येक मॉडेल वेगळे असल्यामुळे त्यांच्या परिणामांची थेट तुलना करणे कठीण जाते. हाच अडथळा दूर करण्यासाठी &amp;ldquo;CMIP&amp;rdquo; — Coupled Model Intercomparison Project — ही जागतिक, समन्वित योजना तयार करण्यात आली. CMIP अंतर्गत सर्व प्रमुख हवामान मॉडेल्सना समान प्रयोग चालवायचे असतात, इनपुट्स/आउटपुट्स प्रमाणित (standardized) स्वरूपात द्यायचे असतात, आणि डेटा सार्वजनिकरित्या उपलब्ध करून द्यायचा असतो. यामुळे वेगवेगळ्या मॉडेल्समधील साम्य/फरक समजतो, आणि बहु-मॉडेल निष्कर्षांवर विश्वास वाढतो.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>चक्रीवादळे वळत आहेत — आपली धोरणे त्यानुसार वळणार का?</title>
+				<link>https://clustersandclimate.com/climate/bob-changing-tracks/</link>
+				<pubDate>Fri, 23 Jan 2026 00:01:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/climate/bob-changing-tracks/</guid>
+				<description>&lt;h2 id=&#34;चकरवदळ-वळत-आहत--आपल-धरण-तयनसर-वळणर-क&#34;&gt;चक्रीवादळे वळत आहेत — आपली धोरणे त्यानुसार वळणार का?&lt;/h2&gt;&#xA;&lt;h3 id=&#34;हवमन-बदलकड-पहणयच-आपल-सवय&#34;&gt;हवामान बदलाकडे पाहण्याची आपली सवय&lt;/h3&gt;&#xA;&lt;p&gt;हवामान बदलाबद्दल बोलताना आपण नेहमी आकड्यांच्या मागे धावतो. तापमान किती वाढले, पर्जन्यमान किती बदलले, चक्रीवादळांची संख्या वाढली की घटली — चर्चा याच चौकटीत अडकून राहते. ही चौकट सोयीची आहे, कारण ती मोजता येते, मांडता येते आणि शीर्षकात बसवता येते. पण हीच चौकट आपल्याला एक महत्त्वाचा बदल दिसू देत नाही.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>भारतातील हवामान बदल: जागतिक तापमानवाढीचे स्थानिक परिणाम</title>
+				<link>https://clustersandclimate.com/science/climate-change-india-local-impacts-marathi/</link>
+				<pubDate>Mon, 24 Nov 2025 10:00:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/science/climate-change-india-local-impacts-marathi/</guid>
+				<description>&lt;p&gt;हवामान बदल आता दूरच्या भविष्यातील भीती राहिली नाही; तो आपल्या देशाच्या हवामानावर, शेतीवर, आरोग्यावर आणि अर्थव्यवस्थेवर आजच परिणाम करू लागलाय. अलीकडे प्रकाशित झालेल्या ‘A post-AR6 update on observed and projected climate change in India’ या संशोधनातून भारतातील हवामान बदलाचं नविनतम वैज्ञानिक चित्र समोर आलं आहे. या लेखात आपण तापमानवाढ, मान्सून बदल, हिमालयातील वितळणाऱ्या हिमनद्या, भारतीय महासागरातील उष्णता आणि वाढता किनारी धोका — हे सर्व ताज्या आकडेवारीच्या आधारे समजून घेऊ.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Interstellar Visitors: What We Learn from Objects From Beyond Our Solar System</title>
+				<link>https://clustersandclimate.com/science/interstellar-visitors/</link>
+				<pubDate>Thu, 02 Oct 2025 12:00:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/science/interstellar-visitors/</guid>
+				<description>&lt;p&gt;Interstellar objects — bodies that originate outside our Solar System and pass through it — have captured astronomers&amp;rsquo; imaginations since 2017, when the first confirmed visitor, 1I/&amp;lsquo;Oumuamua, was discovered. These rare wanderers are natural laboratories: they carry material formed around other stars and let us test ideas about planet formation, the distribution of volatiles, and even the possibility of panspermia.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>एल निनो आणि भारतीय मान्सून : दुष्काळासोबत अतिवृष्टीची सावली</title>
+				<link>https://clustersandclimate.com/climate/el-nino-extreme-rains/</link>
+				<pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/el-nino-extreme-rains/</guid>
+				<description>&lt;p&gt;भारतीय मान्सून हा आपल्या जीवनाचा अविभाज्य भाग आहे. चार महिन्यांच्या या पावसावर शेतकऱ्याचे भविष्य, शहरातील पाणीपुरवठा आणि संपूर्ण अर्थव्यवस्था उभी आहे. त्यामुळेच मान्सून किती आणि कसा पडतो हे समजून घेणे प्रत्येकासाठी महत्त्वाचे आहे. गेली शंभर वर्षे हवामानशास्त्रज्ञ एक गोष्ट वारंवार सांगत आले आहेत — &lt;strong&gt;एल निनो आला की भारतात पाऊस कमी पडतो.&lt;/strong&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>एल निनो – ला निनाचा भारतीय हवामानावर परिणाम: बातम्यांपलीकडचे सत्य</title>
+				<link>https://clustersandclimate.com/climate/el-nino-la-nina-india-marathi/</link>
+				<pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/el-nino-la-nina-india-marathi/</guid>
+				<description>&lt;p&gt;भारतातील पावसाळा आणि हवामान हे नेहमीच चर्चेचे विषय असतात. दरवर्षी &amp;ldquo;एल निनो&amp;rdquo; किंवा &amp;ldquo;ला निना&amp;rdquo; या शब्दांचा उल्लेख बातम्यांमध्ये हमखास होतो. पण हे नेमके काय आहेत? आणि त्यांचा आपल्या पावसाळ्यावर, शेतीवर, आणि दैनंदिन जीवनावर कसा परिणाम होतो?&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Thank You for Subscribing!</title>
+				<link>https://clustersandclimate.com/thank-you/</link>
+				<pubDate>Thu, 31 Jul 2025 12:00:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/thank-you/</guid>
+				<description>&lt;h1 id=&#34;thank-you-&#34;&gt;Thank You! 🙏&lt;/h1&gt;&#xA;&lt;p&gt;Thank you for subscribing to &lt;strong&gt;Clusters and Climate&lt;/strong&gt;!&lt;/p&gt;&#xA;&lt;p&gt;You&amp;rsquo;ll receive updates about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Latest climate science research&lt;/li&gt;&#xA;&lt;li&gt;Outdoor adventures and nature photography&lt;/li&gt;&#xA;&lt;li&gt;Technology insights and tutorials&lt;/li&gt;&#xA;&lt;li&gt;Personal stories and diary entries&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s Next?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Check your email&lt;/strong&gt; for a confirmation (it might be in spam/promotions)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Follow us&lt;/strong&gt; on social media for daily updates&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Explore&lt;/strong&gt; our recent articles below&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;recent-articles&#34;&gt;Recent Articles&lt;/h2&gt;&#xA;&lt;p&gt;Browse our latest content while you wait for your first newsletter:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>डेंग्यू रोगाचे गतिशास्त्र आणि हवामान बदल: नवीन संशोधनाचे महत्त्वपूर्ण निष्कर्ष</title>
+				<link>https://clustersandclimate.com/science/dengue-dynamics-predictions-marathi/</link>
+				<pubDate>Mon, 28 Jul 2025 10:00:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/science/dengue-dynamics-predictions-marathi/</guid>
+				<description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Read English article here:&lt;/strong&gt; &lt;a href=&#34;https://clustersandclimate.com/science/dengue-dynamics-predictions/&#34;&gt;Dengue Dynamics and Climate (English)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;जसजसा आपल्या पृथ्वीवरील हवामानाचा नमुना बदलत चालला आहे, तसतसे डेंग्यूसारख्या कीटकजन्य आजारांच्या पसरण्याच्या पद्धतीत आणि तीव्रतेत नाट्यमय बदल होत आहेत. &lt;em&gt;नेचर सायंटिफिक रिपोर्ट्स&lt;/em&gt; मध्ये प्रकाशित झालेल्या एका महत्त्वाच्या अभ्यासाने डेंग्यूच्या गतिशास्त्राबद्दल आणि भविष्यातील अंदाजांबद्दल नवीन माहिती दिली आहे जी भावी आजारांच्या उद्रेकांना तोंड देण्याची आणि त्यांना प्रतिसाद देण्याची आपली पद्धत पूर्णपणे बदलू शकते.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Kubernetes Disaster Recovery: Lessons from Natural Disasters</title>
+				<link>https://clustersandclimate.com/technology/kubernetes-disaster-recovery/</link>
+				<pubDate>Fri, 25 Jul 2025 00:00:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/technology/kubernetes-disaster-recovery/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Living in Japan for several years as a climate scientist taught me profound lessons about resilience—not just in natural systems, but in how we design and operate technology infrastructure. When you&amp;rsquo;ve experienced a 6.7 earthquake, felt the ground shake for almost minute, and watched earthquake warnings scroll across every screen, you gain a visceral understanding of what &amp;ldquo;disaster recovery&amp;rdquo; really means.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>The Changing Indian Monsoon: How Global Warming is Reshaping India&#39;s Lifeline</title>
+				<link>https://clustersandclimate.com/climate/2025-07-24-changing-indian-monsoon/</link>
+				<pubDate>Thu, 24 Jul 2025 00:00:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/climate/2025-07-24-changing-indian-monsoon/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The summer monsoon rains are the pulse of the Indian subcontinent. From June to September, these life-giving rains don&amp;rsquo;t just turn mountains green—they refill rivers, nourish crops, and provide fresh support to over a billion lives. However, in recent times, the monsoon has become increasingly erratic, with delayed onset, sudden extreme rainfall, and growing unpredictability. As global temperatures rise, Earth&amp;rsquo;s warming is transforming India&amp;rsquo;s most critical weather system, and the country is experiencing these changes firsthand.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>How to Set Up Kafka on Kubernetes</title>
+				<link>https://clustersandclimate.com/technology/kafka-on-kubernetes/</link>
+				<pubDate>Mon, 07 Jul 2025 00:02:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/technology/kafka-on-kubernetes/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Apache Kafka is a powerful distributed event streaming platform. Running Kafka on Kubernetes allows you to leverage container orchestration for scalability and resilience. This article walks you through setting up Kafka on a local Kubernetes cluster using Minikube, with all the necessary tools and configuration manifests.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Getting Started with CSI on Azure Kubernetes Service</title>
+				<link>https://clustersandclimate.com/technology/azure-csi-driver/</link>
+				<pubDate>Mon, 07 Jul 2025 00:00:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/technology/azure-csi-driver/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The Container Storage Interface (CSI) is now the industry standard for connecting Kubernetes clusters to a variety of storage solutions. Whether you’re launching a new workload or modernizing an existing deployment, understanding how to leverage CSI is essential. This article provides a hands-on walkthrough for deploying the Azure Disk CSI driver on Azure Kubernetes Service (AKS), combining both conceptual background and practical steps.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>A Walk Through Hokkaido Historical Village</title>
+				<link>https://clustersandclimate.com/life/hokkaido-historical-village/</link>
+				<pubDate>Sat, 05 Jul 2025 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/hokkaido-historical-village/</guid>
+				<description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Hokkaido historical village exhibits different types of buildings of Hokkaido built in Meiji and early Showa period, during the initial era of its development. All these buildings are categorized in four sections namely - Fishing village, farm village, town and mountain village.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>About Me</title>
+				<link>https://clustersandclimate.com/about/</link>
+				<pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/about/</guid>
+				<description>&lt;p&gt;Hello, I’m Vivek — a climate scientist turned technologist.&lt;/p&gt;&#xA;&lt;p&gt;I hold a PhD in Climate Science from &lt;a href=&#34;https://www.global.hokudai.ac.jp/&#34;&gt;Hokkaido University&lt;/a&gt;, Japan. My fascination with Earth&amp;rsquo;s systems and the forces that shape our environment continues to guide how I think and work today.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Indonesian Throughflow: River in the ocean that affects Indian Monsoon rainfall</title>
+				<link>https://clustersandclimate.com/climate/river-in-the-ocean/</link>
+				<pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/river-in-the-ocean/</guid>
+				<description>&lt;p&gt;Climate is one of the most discussed and followed topics around the world. There are many climatic phenomena such as El Nino – La Nina, and their effects are well known worldwide. El Nino – La Nina has been significant for India since it affects the rainfall during monsoon season and, eventually, the water resources in the river and agricultural yield. It is common sense that rainfall affects the water resources in the river. &lt;strong&gt;However, this is the story of a river that can affect rainfall in India during monsoon season. Unlike the rivers on the land, this river flows in the ocean, and it is thousands of times bigger than any river that you know.&lt;/strong&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>अर्का आणि अरुणिका : हवामान अंदाज आणि संशोधनातील झेप</title>
+				<link>https://clustersandclimate.com/climate/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%95%E0%A4%BE-%E0%A4%86%E0%A4%A3%E0%A4%BF-%E0%A4%85%E0%A4%B0%E0%A5%81%E0%A4%A3%E0%A4%BF%E0%A4%95%E0%A4%BE/</link>
+				<pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%95%E0%A4%BE-%E0%A4%86%E0%A4%A3%E0%A4%BF-%E0%A4%85%E0%A4%B0%E0%A5%81%E0%A4%A3%E0%A4%BF%E0%A4%95%E0%A4%BE/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;आकृती 1:&lt;/strong&gt; सुपर कॉम्पुटर अर्का चे उद्घाटन. सौजन्य: इंडियन इन्स्टिटय़ूट ऑफ ट्रॉपिकल मेटिऑरॉलॉजी (IITM)&lt;/p&gt;&#xA;&lt;p&gt;वैविध्यपूर्ण हवामान आणि चक्रीवादळ, उष्णतेच्या लाटा, अति मुसळधार पाऊस व दुष्काळ यांसारख्या नैसर्गिक आपत्तींना बळी पडणाऱ्या भारताला हवामान अंदाज तंत्रज्ञानातील प्रगतीचा लक्षणीय फायदा होतो. त्यात भर म्हणून हवामानातील बदलामुळे अशा घटनांमध्ये वाढ होत आहे. अशा वेळी, अचूक हवामान अंदाज आणि सर्वसमावेशक हवामान संशोधनाची गरज आजपेक्षा जास्त कधीच नव्हती. याच पार्श्वभूमीवर पुण्यातील पाषाण रोडच्या ‘इंडियन इन्स्टिटय़ूट ऑफ ट्रॉपिकल मेटिऑरॉलॉजी (IITM)’ येथे ‘अर्का’ नावाच्या नवीन उच्च-कार्यक्षमता संगणकीय प्रणालीचे (HPC) उदघाटन २६ सप्टेंबर २०२४ या दिवशी पृथ्वी विज्ञान मंत्रालयाने (MoES) केले.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>ढग पेरणी (cloud seeding)-हवामानाशी जोखमीचा खेळ</title>
+				<link>https://clustersandclimate.com/climate/%E0%A4%A2%E0%A4%97-%E0%A4%AA%E0%A5%87%E0%A4%B0%E0%A4%A3%E0%A5%80/</link>
+				<pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/%E0%A4%A2%E0%A4%97-%E0%A4%AA%E0%A5%87%E0%A4%B0%E0%A4%A3%E0%A5%80/</guid>
+				<description>&lt;p&gt;ढग पेरणी (क्लाउड सीडिंग) हे हवामान परिवर्तनाचे तंत्र आहे, ज्याचा पर्जन्यवृष्टीमध्ये बदल करण्यासाठी वापर होतो. बहुचर्चेत असलेले परिवर्तन म्हणजे पर्जन्यवृष्टी मध्ये वाढ करणे. पर्जन्यवृष्टी वाढविण्याच्या उद्देशाने काही पदार्थ, जे ढगांच्या पेरणीचे माध्यम (सीडींग एजंट्स) म्हणून ओळखले जातात, ढगांमध्ये सोडले जातात. ही प्रक्रिया संघनन किंवा घनीभवन तत्त्वावर आधारित आहे, जेथे पेरणीसाठीचे पदार्थ पाण्याच्या वाफेचे संघनन होण्यासाठी पृष्ठभाग म्हणून उपयोगात येतात, ज्यामुळे पाण्याचे थेंब किंवा बर्फाचे स्फटिक तयार होण्यास मदत होते. या हवामान परिवर्तनामुळे ढग निर्मिती आणि पर्जन्यवृष्टीच्या नैसर्गिक प्रक्रियेला चालना मिळते. कृषी उत्पादकतेला समर्थन देण्यासाठी, जलस्रोतांचे पुनरुज्जीवन करण्यासाठी आणि परिसंस्थेवरील दुष्काळाचे परिणाम कमी करण्यासाठी याचा खूप उपगोय होऊ शकतो.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>लिबियातील पूर संकटाचे  सर्वसमावेशक विश्लेषण</title>
+				<link>https://clustersandclimate.com/climate/%E0%A4%B2%E0%A4%BF%E0%A4%AC%E0%A4%BF%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%80%E0%A4%B2-%E0%A4%AA%E0%A5%82%E0%A4%B0/</link>
+				<pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/%E0%A4%B2%E0%A4%BF%E0%A4%AC%E0%A4%BF%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%80%E0%A4%B2-%E0%A4%AA%E0%A5%82%E0%A4%B0/</guid>
+				<description>&lt;p&gt;रविवारी, १० सप्टेंबर २०२३ रोजी लिबियाला धडकलेल्या डॅनियल वादळाने मुसळधार पाऊस आणला. मेडीकेन म्हणून ओळखल्या जाणार्‍या भूमध्यसागरीय चक्रीवादळासारख्या प्रणालीने २४ तासांच्या कालावधीत आफ्रिकेच्या उत्तर-पूर्व किनार्‍याच्या काही भागांमध्ये ४०० मि.मी. पेक्षा जास्त पाऊस पडला. ‘संपूर्ण सप्टेंबरमध्ये साधारणतः १.५ मि.मी. पाऊस पडणाऱ्या प्रदेशासाठी पावसाचा हा नवा विक्रम आहे.’ असे लिबियाच्या राष्ट्रीय हवामान केंद्राने देखील म्हटले आहे. खालील आकृती डॅनिअल वादळामुळे ९ सप्टेंबर ते ११ सप्टेंबर या ३ दिवसांच्या कालावधीत कोणत्या भागात किती (मि.मि.) पाऊस झाला असेल याचा अंदाज उपग्रहाने निरीक्षण केलेल्या माहितीवरून देते. पण प्रत्यक्षात जमिनीवर पडलेल्या पावसाचे प्रमाण खूप जास्त होते.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>महासागरीय प्रवाहांमधील मानवी हस्तक्षेपाचे परिणाम</title>
+				<link>https://clustersandclimate.com/climate/%E0%A4%AE%E0%A4%BE%E0%A4%A8%E0%A4%B5%E0%A5%80-%E0%A4%B9%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A5%87%E0%A4%AA/</link>
+				<pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/%E0%A4%AE%E0%A4%BE%E0%A4%A8%E0%A4%B5%E0%A5%80-%E0%A4%B9%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A5%87%E0%A4%AA/</guid>
+				<description>&lt;p&gt;महासागरीय प्रवाह पृथ्वीच्या हवामान प्रणालीमध्ये महत्त्वपूर्ण भूमिका बजावतात, जगभरात उष्णतावहन करतात आणि प्रादेशिक हवामानव्यवस्थेवर परिणाम करतात. मागील लेखांमध्ये, आपण महासागरातील प्रवाहांबाबतच्या मूलभूत गोष्टींसोबत समुद्रातील उष्णतावहनातील त्यांची भूमिका समजावून घेतली. त्याचबरोबर इंडोनेशियन प्रवाह आणि गल्फ स्ट्रीम सारख्या प्रवाहांची अधिक माहिती करून घेतली. तथापि, मानवी हस्तक्षेप या गुंतागुंतीच्या प्रणालींवर कसा परिणाम करू शकतो आणि त्यांच्या नाजूक समतोलामध्ये कसा व्यत्यय आणू शकतो हे समजून घेणे आवश्यक आहे. लेखमालेतील या शेवटच्या लेखात, आपण काही ऐतिहासिक उदाहरणे आणि आपल्या कृतींचे महासागरीय प्रवाहांवर होणारे व्यापक परिणाम तपासून पाहू.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>गल्फ स्ट्रीम: पृथ्वीच्या हवामानाला आकार देणारा शक्तिशाली प्रवाह</title>
+				<link>https://clustersandclimate.com/climate/%E0%A4%97%E0%A4%B2%E0%A5%8D%E0%A4%AB%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE/</link>
+				<pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/%E0%A4%97%E0%A4%B2%E0%A5%8D%E0%A4%AB%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE/</guid>
+				<description>&lt;p&gt;‘महासागरातील प्रवाह’ या लेखमालिकेतील गेल्या २ लेखांमध्ये आपण सागरी प्रवाहांचा परिचय करून घेतला आणि इंडोनेशियन प्रवाहाची संवादरूपाने अधिक माहिती मिळवली. मालिकेमधल्या तिसऱ्या लेखात आपण ‘गल्फ स्ट्रीम’ला प्रश्न विचारून त्याविषयी अधिक माहिती घेणार आहोत. तिसरा लेख हा ‘महासागरातील प्रवाह’ या लेखमालिकेतील दुसऱ्या लेखाचेच सातत्य आहे. (दुसऱ्या लेखाची लिंक :- &lt;a href=&#34;https://www.nature.com/nature/volumes/452/issues/7184&#34;&gt;https://t.ly/RjfXQ&lt;/a&gt;&#xA;मालिकेतल्या दुसऱ्या लेखात माणसाने इंडोनेशियन प्रवाहा (ITF) बरोबर चर्चा करून त्याबद्दल अधिक माहिती जाणून घेतली आणि अशीच चर्चा इतर विषयांवर व्हावी अशी इच्छा इंडोनेशियन प्रवाहाकडे बोलून दाखवली.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>इंडोनेशियन प्रवाह : महासागरातील नदी जी भारतीय मान्सूनच्या पावसावर परिणाम करते.</title>
+				<link>https://clustersandclimate.com/climate/%E0%A4%87%E0%A4%82%E0%A4%A1%E0%A5%8B%E0%A4%A8%E0%A5%87%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%A8-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%B9/</link>
+				<pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/%E0%A4%87%E0%A4%82%E0%A4%A1%E0%A5%8B%E0%A4%A8%E0%A5%87%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%A8-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%B9/</guid>
+				<description>&lt;p&gt;हवामान हा जगभरात सर्वाधिक चर्चिला जाणारा आणि फॉलो केला जाणारा विषय आहे. एल निनो – ला निना सारख्या अनेक हवामानविषयक घटना आहेत आणि त्यांचे परिणाम जगभरात प्रसिद्ध आहेत. एल निनो – ला नीना भारतासाठी महत्त्वपूर्ण आहे कारण त्याचा मान्सून हंगामातील पावसावर आणि अखेरीस, नदीतील जलस्रोतांवर आणि शेतीच्या उत्पन्नावर परिणाम होतो. पावसाचा नदीतील जलस्रोतांवर परिणाम होतो हे सामान्य समज आहे. तथापि, ही एका नदीची कथा आहे जी पावसाळ्यात भारतातील पावसावर परिणाम करू शकते. जमिनीवरील नद्यांच्या विपरीत, ही नदी महासागरात वाहते आणि ती तुम्हाला माहीत असलेल्या कोणत्याही नदीपेक्षा हजारो पट मोठी आहे.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>महासागरीय प्रवाहाांचा परिचय भाग – १</title>
+				<link>https://clustersandclimate.com/climate/%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80%E0%A4%AF-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%B9%E0%A4%BE%E0%A4%BE%E0%A4%82%E0%A4%9A%E0%A4%BE-%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%9A%E0%A4%AF-%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A5%A7/</link>
+				<pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80%E0%A4%AF-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%B9%E0%A4%BE%E0%A4%BE%E0%A4%82%E0%A4%9A%E0%A4%BE-%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%9A%E0%A4%AF-%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A5%A7/</guid>
+				<description>&lt;h3 id=&#34;महसगरच-महततव-आण-हवमनवरल-परभव&#34;&gt;महासागराचे महत्त्व आणि हवामानावरील प्रभाव&lt;/h3&gt;&#xA;&lt;p&gt;महासागर किंवा समुद्र हा खाऱ्या पाण्याचा संचय आहे जो पृथ्वीच्या पृष्ठभागाच्या अंदाजे 70.8% व्यापतो आणि पृथ्वीवरच्या एकूण पाणी साठ्यापैकी, 97% पाणी यात समाविष्ट आहे. महासागर हा पृथ्वीच्या जलमंडलाचा मुख्य घटक आहे आणि म्हणून पृथ्वीवरील जीवनाचा एक अविभाज्य घटक आहे. समुद्र उष्णतेचा एक मोठा साठा म्हणून कार्यरत असताना, हवामान, हवामानाची परिवर्तनशीलता, कार्बन चक्र आणि जलचक्र प्रभावित करतो. जसजसा समुद्र तापतो तसतसे तो वातावरणात उष्णता सोडतो आणि हवा गरम करतो. परिणामी हवामान नियंत्रित करतो. ही प्रक्रिया महासागर-वातावरण उष्णता विनिमय (heat exchange) म्हणून ओळखली जाते. महासागर मोठ्या प्रमाणात कार्बन डाय ऑक्साईड देखील साठवतो, हा एक प्रमुख हरितगृह वायू आहे, जो जागतिक तापमान मध्यम करण्यास मदत करतो.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Saturn and Jupiter&#39;s Great Conjunction: A Once-in-a-Lifetime Event?</title>
+				<link>https://clustersandclimate.com/science/the-great-conjunction/</link>
+				<pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/science/the-great-conjunction/</guid>
+				<description>&lt;p&gt;A lot has been said about the rare celestial event occurring on December 21, 2020—the Great Conjunction of Saturn and Jupiter. On this day, the two gas giants will pass within just 6 arcminutes (or 0.1 degrees) of each other—appearing almost as a single bright &amp;ldquo;star&amp;rdquo; to the naked eye.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>How I Followed the Solar Eclipse</title>
+				<link>https://clustersandclimate.com/science/how-i-followed-the-solar-eclipse/</link>
+				<pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/science/how-i-followed-the-solar-eclipse/</guid>
+				<description>&lt;h2 id=&#34;2010--the-first-experience&#34;&gt;2010 – The First Experience&lt;/h2&gt;&#xA;&lt;p&gt;My 2010s kicked off with a bang: the longest annular solar eclipse of the millennium, on 15 January 2010. The annular phase lasted just over 11 minutes, with the moon covering about 91% of the Sun. I joined a group of fellow eclipse chasers and traveled more than 3000 km from Pune to Rameshwaram—just to catch those magical moments.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>When the Sun-Moon duo turned into the Ring of Fire</title>
+				<link>https://clustersandclimate.com/life/how-i-followed-the-solar-eclipse/</link>
+				<pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/how-i-followed-the-solar-eclipse/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Following article is written by one of the participants of solar eclipse expedition - Sania Rahigude. She pours out her journey and experience of Solar Eclipse Expedition through this article.&lt;/strong&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Tengu&#39;s Walk on Fire: The Furubira Fire Festival</title>
+				<link>https://clustersandclimate.com/life/tengu-festival/</link>
+				<pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/tengu-festival/</guid>
+				<description>&lt;div style=&#34;display: flex; align-items: center; gap: 18px; margin-bottom: 18px;&#34;&gt;&#xA;  &lt;img src=&#34;https://clustersandclimate.com/images/life/chetna.jpeg&#34; alt=&#34;Chetna&#34; style=&#34;width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin: 0;&#34; /&gt;&#xA;  &lt;span style=&#34;font-size: 1.05em; color: #555;&#34;&gt;Chetna Sharma, the author of this article, shares her experience of the Furubira Fire Festival.&lt;/span&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;tengus-walk-on-fire&#34;&gt;Tengu&amp;rsquo;s Walk on Fire&lt;/h2&gt;&#xA;&lt;p&gt;Furubira is a place close to my heart. I have visited several times, and each visit is a new immersion into Japanese culture. Furubira is a small town in western Hokkaido, Japan. The simplicity of the people, humble landscapes, cleanliness, and purity of the atmosphere are truly satisfying.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>A Beginner’s Guide: Essential Camping Tools to Get Started</title>
+				<link>https://clustersandclimate.com/outdoor/camping-tools-beginners-guide/</link>
+				<pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/outdoor/camping-tools-beginners-guide/</guid>
+				<description>&lt;p&gt;The idea of camping is always exciting—if you’re well prepared. But camping can quickly turn sour if you forget the basics. Your enjoyment depends on your preparation, your adaptability to weather and conditions, and a few clever hacks. Even experienced campers sometimes forget a headlamp or matches, so don’t worry if you do too!&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Wild Onsen near Mt. Shikaribetsu in Shikaoi, Hokkaido</title>
+				<link>https://clustersandclimate.com/outdoor/wild-onsen-mt-shikaribetsu/</link>
+				<pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/outdoor/wild-onsen-mt-shikaribetsu/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Enjoying the wild onsen near Mt. Shikaribetsu&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Japan is world famous for its serene natural beauty, making it a paradise for bicycling, camping, and hiking. Camping in Japan’s forests is a unique experience—especially in Hokkaido, where the forests are home to bears. There are many places in Hokkaido where you can camp and enjoy a wild onsen for free.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Engaru Archaeological Centre: Tracing Hokkaido&#39;s Ancient Cultures</title>
+				<link>https://clustersandclimate.com/life/engaru-archaeological-centre/</link>
+				<pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/engaru-archaeological-centre/</guid>
+				<description>&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;A land with the ruins speaks the history.&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Ruins are traces of life, telling us about the people and their ways in the past. These remnants help us understand how ancient people lived. Hokkaido, which only became part of Japan in 1868, was long home to the Ainu and other unique cultures. While rice cultivation began on the Japanese mainland at the end of the Jomon period (14,000 BC – 300 BC), Hokkaido&amp;rsquo;s people relied on the island&amp;rsquo;s rich natural environment and influences from surrounding regions, developing their own distinctive cultures: Zoku-Jomon (Post-Jomon), Satsumon, Okhotsk, and Ainu.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Quirky Quakes - A tale of Earthquakes</title>
+				<link>https://clustersandclimate.com/life/quirky-quakes/</link>
+				<pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/quirky-quakes/</guid>
+				<description>&lt;h2 id=&#34;life-in-sapporo&#34;&gt;Life in Sapporo&lt;/h2&gt;&#xA;&lt;p&gt;I’ve been living in Sapporo, the capital of Hokkaido, for many years now. Hokkaido is known for its pristine forests, breathtaking natural beauty, dairy products, and fresh seafood. &lt;strong&gt;What I love the most are the mountains surrounding Sapporo—and the sea is just 15 km away.&lt;/strong&gt; What more could one ask for? The combination of mountains and sea makes Sapporo a perfect place for hiking and camping.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Lake Toya and Volcanic Wonders of Hokkaido</title>
+				<link>https://clustersandclimate.com/life/lake-toya-hokkaido/</link>
+				<pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/lake-toya-hokkaido/</guid>
+				<description>&lt;p&gt;Japan is located at the junction of several tectonic plates, making it rich in volcanic mountains and calderas. With over 100 volcanic mountains—more than almost any other country—Japan is famous for its onsen (hot springs) and dramatic volcanic landscapes. While most people know that mountains form due to volcanic activity, fewer realize that lakes can also be born from volcanoes. These are called caldera lakes. One such gem in Hokkaido is Lake Toya (Toya-ko).&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Sapporo Jozankei Nature Village: A Campsite Guide</title>
+				<link>https://clustersandclimate.com/outdoor/sapporo-jozankei-nature-village/</link>
+				<pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/outdoor/sapporo-jozankei-nature-village/</guid>
+				<description>&lt;p&gt;Sapporo Jozankei Nature Village is a campsite about 45 minutes by car from Sapporo, nestled in the deep Jozankei forest near Houheikyou Onsen and dam. It’s a perfect spot for novice campers, offering a range of lodging options—cottages, tent houses, and open tent sites. You can also bring your own camping gear and equipment.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Breathtaking Sunrise from the Top of Mt. Sapporo, Hokkaido</title>
+				<link>https://clustersandclimate.com/outdoor/breathtaking-sunrise-mt-sapporo/</link>
+				<pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/outdoor/breathtaking-sunrise-mt-sapporo/</guid>
+				<description>&lt;p&gt;Sapporo Dake trek in Sapporo, Japan, was my first night trek in a foreign country. My friend Tomo, an experienced mountaineer, joined me and knew the mountain well. Our goal: to witness a breathtaking sunrise and the sparkling city lights from the summit. At 1235 meters, with the base nearly at sea level, we planned a two-stage climb.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Night Trek to Sapporo Dake, Hokkaido</title>
+				<link>https://clustersandclimate.com/outdoor/night-trek-to-sapporo-dake-hokkaido/</link>
+				<pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/outdoor/night-trek-to-sapporo-dake-hokkaido/</guid>
+				<description>&lt;p&gt;Sapporo (札幌) is the vibrant capital of Hokkaido Island (北海道), a paradise for mountain lovers, ocean seekers, and anyone looking to escape the bustle of big cities. The region is dotted with small (やま) and medium (だけ) sized mountains, ranging from 300 to 1300 meters high. Among these, Sapporo Dake (札幌岳)—also known as Mt. Sapporo—stands out as a favorite for trekkers, rising to about 1250 meters.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>दिंडी (…शाळेमधली)</title>
+				<link>https://clustersandclimate.com/diary/%E0%A4%A6%E0%A4%BF%E0%A4%82%E0%A4%A1%E0%A5%80-%E0%A4%B6%E0%A4%BE%E0%A4%B3%E0%A5%87%E0%A4%AE%E0%A4%A7%E0%A4%B2%E0%A5%80/</link>
+				<pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/diary/%E0%A4%A6%E0%A4%BF%E0%A4%82%E0%A4%A1%E0%A5%80-%E0%A4%B6%E0%A4%BE%E0%A4%B3%E0%A5%87%E0%A4%AE%E0%A4%A7%E0%A4%B2%E0%A5%80/</guid>
+				<description>&lt;p&gt;आज रोजच्याप्रमाणे अभ्यासिकेत गेलो होतो.&#xA;नेहमीसारखाच—शांत, एकटा. अभ्यासात लक्ष लागलेलं. अर्धा-पाऊण तास झाला असेल, तोच अचानक बाहेरून दिंडीतल्या गाण्यांचा आवाज कानावर आदळला. खिडकी उघडीच होती, त्यामुळे आवाज सरळ डोक्यात घुसला.&#xA;जशी-जशी दिंडी जवळ येत गेली, तसा आवाजही वाढत गेला.&#xA;शेवटी सहनशक्तीचा अंत झाला आणि मी शिव्या देत उठलो.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>पहिली सिगारेट</title>
+				<link>https://clustersandclimate.com/diary/%E0%A4%AA%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A5%80-%E0%A4%B8%E0%A4%BF%E0%A4%97%E0%A4%BE%E0%A4%B0%E0%A5%87%E0%A4%9F/</link>
+				<pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/diary/%E0%A4%AA%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A5%80-%E0%A4%B8%E0%A4%BF%E0%A4%97%E0%A4%BE%E0%A4%B0%E0%A5%87%E0%A4%9F/</guid>
+				<description>&lt;p&gt;आज ताम्हीणीला जायची अजिबात इच्छा नव्हती.&lt;/p&gt;&#xA;&lt;p&gt;मी गेलो होतो ते फिरायला म्हणून नाही, तर जमीरने आग्रह केला म्हणून. पण खरं सांगायचं तर, अपेक्षा नसताना खूप मजा आली… आणि काही अनपेक्षित गोष्टीही घडल्या.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>मी भारत बोलतोय…</title>
+				<link>https://clustersandclimate.com/life/%E0%A4%AE%E0%A5%80-%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4-%E0%A4%AC%E0%A5%8B%E0%A4%B2%E0%A4%A4%E0%A5%8B%E0%A4%AF/</link>
+				<pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/life/%E0%A4%AE%E0%A5%80-%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4-%E0%A4%AC%E0%A5%8B%E0%A4%B2%E0%A4%A4%E0%A5%8B%E0%A4%AF/</guid>
+				<description>&lt;p&gt;१५ ऑगस्ट चा दिवस होता. बरेचजण स्वातंत्र्यदिन साजरा करण्यासाठी कॉलेजमध्ये एकत्र आले होते. कोणीतरी भारताच्या नकाशाची आउटलाइन फळ्यावर काढायचा चांगला प्रयत्न केला होता. थोड्याच वेळात कार्यक्रम सुरु झाला आणि एक तासात संपला सुद्धा. मग सुरु झाली, ती दरवर्षीची गाणी.&#xA;” जहां डाल डाल पार सोने कि,&#xA;चिडिया करती हे बसेरा l&#xA;वो भारत देश हे मेरा,&#xA;वो भारत देश हे मेरा… ll ”&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>रात बाकी, बात बाकी</title>
+				<link>https://clustersandclimate.com/diary/%E0%A4%B0%E0%A4%BE%E0%A4%A4-%E0%A4%AC%E0%A4%BE%E0%A4%95%E0%A5%80-%E0%A4%AC%E0%A4%BE%E0%A4%A4-%E0%A4%AC%E0%A4%BE%E0%A4%95%E0%A5%80/</link>
+				<pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/diary/%E0%A4%B0%E0%A4%BE%E0%A4%A4-%E0%A4%AC%E0%A4%BE%E0%A4%95%E0%A5%80-%E0%A4%AC%E0%A4%BE%E0%A4%A4-%E0%A4%AC%E0%A4%BE%E0%A4%95%E0%A5%80/</guid>
+				<description>&lt;p&gt;बी. एस्सी. च्या तिसऱ्या वर्षात असताना सुचलेल्या ओळी.&lt;/p&gt;&#xA;&lt;p&gt;रात बाकी, बात बाकी.&lt;/p&gt;&#xA;&lt;p&gt;प्रोजेक्ट हे बाकी, Journal भी हे बाकी.&lt;/p&gt;&#xA;&lt;p&gt;Pen मे सिर्फ २ बूंद स्याही बाकि,&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://clustersandclimate.com/climate/2025-08-20-%E0%A4%A7%E0%A4%B0%E0%A4%BE%E0%A4%B2%E0%A5%80-%E0%A4%97%E0%A4%BE%E0%A4%B5-%E0%A4%AD%E0%A5%82%E0%A4%B8%E0%A5%8D%E0%A4%96%E0%A4%B2%E0%A4%A8/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/climate/2025-08-20-%E0%A4%A7%E0%A4%B0%E0%A4%BE%E0%A4%B2%E0%A5%80-%E0%A4%97%E0%A4%BE%E0%A4%B5-%E0%A4%AD%E0%A5%82%E0%A4%B8%E0%A5%8D%E0%A4%96%E0%A4%B2%E0%A4%A8/</guid>
+				<description></description>
+			</item>
+	</channel>
 </rss>

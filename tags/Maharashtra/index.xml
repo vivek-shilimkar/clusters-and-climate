@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Maharashtra on Clusters and Climate</title>
-    <link>https://clustersandclimate.com/tags/Maharashtra/</link>
-    <description>Recent content in Maharashtra on Clusters and Climate</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 13 Apr 2026 00:00:00 +0530</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/tags/Maharashtra/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>महाराष्ट्राचा २०२६ पावसाळा: सुपर एल निनो आणि सकारात्मक IOD यांचा परिणाम</title>
-      <link>https://clustersandclimate.com/climate/maharashtra-monsoon-2026-super-el-nino-iod-marathi/</link>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0530</pubDate>
-      <guid>https://clustersandclimate.com/climate/maharashtra-monsoon-2026-super-el-nino-iod-marathi/</guid>
-      <description>&lt;p&gt;महाराष्ट्राच्या शेतकऱ्यांना, पाणीपुरवठा व्यवस्थापकांना आणि नागरिकांना २०२६ च्या पावसाळ्याबद्दल माहिती हवी आहे. यावर्षी एक विशेष परिस्थिती निर्माण झाली आहे: जगातील सर्वात शक्तिशाली &amp;ldquo;सुपर एल निनो&amp;rdquo; विकसित होत आहे, पण त्याच वेळी भारतीय महासागरातील सकारात्मक डिपोल (Positive IOD) देखील तयार होत आहे. या दोन्ही घटकांचा एकत्रित परिणाम महाराष्ट्राच्या पावसाळ्यावर कसा होणार आहे?&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Maharashtra on Clusters and Climate</title>
+		<link>https://clustersandclimate.com/tags/Maharashtra/</link>
+		<description>Recent content in Maharashtra on Clusters and Climate</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 13 Apr 2026 00:00:00 +0530</lastBuildDate>
+		
+			<atom:link href="https://clustersandclimate.com/tags/Maharashtra/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>महाराष्ट्राचा २०२६ पावसाळा: सुपर एल निनो आणि सकारात्मक IOD यांचा परिणाम</title>
+				<link>https://clustersandclimate.com/climate/maharashtra-monsoon-2026-super-el-nino-iod-marathi/</link>
+				<pubDate>Mon, 13 Apr 2026 00:00:00 +0530</pubDate>
+				<guid>https://clustersandclimate.com/climate/maharashtra-monsoon-2026-super-el-nino-iod-marathi/</guid>
+				<description>&lt;p&gt;महाराष्ट्राच्या शेतकऱ्यांना, पाणीपुरवठा व्यवस्थापकांना आणि नागरिकांना २०२६ च्या पावसाळ्याबद्दल माहिती हवी आहे. यावर्षी एक विशेष परिस्थिती निर्माण झाली आहे: जगातील सर्वात शक्तिशाली &amp;ldquo;सुपर एल निनो&amp;rdquo; विकसित होत आहे, पण त्याच वेळी भारतीय महासागरातील सकारात्मक डिपोल (Positive IOD) देखील तयार होत आहे. या दोन्ही घटकांचा एकत्रित परिणाम महाराष्ट्राच्या पावसाळ्यावर कसा होणार आहे?&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

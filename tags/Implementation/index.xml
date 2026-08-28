@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Implementation on Clusters and Climate</title>
-    <link>https://clustersandclimate.com/tags/Implementation/</link>
-    <description>Recent content in Implementation on Clusters and Climate</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/tags/Implementation/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Implementing Green Cloud Systems: A Practical Guide to Change</title>
-      <link>https://clustersandclimate.com/technology/implementing-green-cloud-systems/</link>
-      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/technology/implementing-green-cloud-systems/</guid>
-      <description>&lt;p&gt;I will be honest about something uncomfortable before diving into infrastructure patterns.&lt;/p&gt;&#xA;&lt;p&gt;As I write this, multiple active conflicts around the world are releasing carbon and doing pollution at a scale that makes any discussion of saving the climate/environment feel almost irrelevant. A sustained military operations can emits more carbon dioxide in a single week than all the data centers combined in a year. Environmental and climate damages by Wars takes decades to recover and Advocating for green cloud systems in that context can feel naive, or even morally hollow.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Implementation on Clusters and Climate</title>
+		<link>https://clustersandclimate.com/tags/Implementation/</link>
+		<description>Recent content in Implementation on Clusters and Climate</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://clustersandclimate.com/tags/Implementation/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Implementing Green Cloud Systems: A Practical Guide to Change</title>
+				<link>https://clustersandclimate.com/technology/implementing-green-cloud-systems/</link>
+				<pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/technology/implementing-green-cloud-systems/</guid>
+				<description>&lt;p&gt;I will be honest about something uncomfortable before diving into infrastructure patterns.&lt;/p&gt;&#xA;&lt;p&gt;As I write this, multiple active conflicts around the world are releasing carbon and doing pollution at a scale that makes any discussion of saving the climate/environment feel almost irrelevant. A sustained military operations can emits more carbon dioxide in a single week than all the data centers combined in a year. Environmental and climate damages by Wars takes decades to recover and Advocating for green cloud systems in that context can feel naive, or even morally hollow.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,47 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Outdoors on Clusters and Climate</title>
-    <link>https://clustersandclimate.com/outdoor/</link>
-    <description>Recent content in Outdoors on Clusters and Climate</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 17 Dec 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://clustersandclimate.com/outdoor/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>A Beginner’s Guide: Essential Camping Tools to Get Started</title>
-      <link>https://clustersandclimate.com/outdoor/camping-tools-beginners-guide/</link>
-      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/outdoor/camping-tools-beginners-guide/</guid>
-      <description>&lt;p&gt;The idea of camping is always exciting—if you’re well prepared. But camping can quickly turn sour if you forget the basics. Your enjoyment depends on your preparation, your adaptability to weather and conditions, and a few clever hacks. Even experienced campers sometimes forget a headlamp or matches, so don’t worry if you do too!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Wild Onsen near Mt. Shikaribetsu in Shikaoi, Hokkaido</title>
-      <link>https://clustersandclimate.com/outdoor/wild-onsen-mt-shikaribetsu/</link>
-      <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/outdoor/wild-onsen-mt-shikaribetsu/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Enjoying the wild onsen near Mt. Shikaribetsu&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Japan is world famous for its serene natural beauty, making it a paradise for bicycling, camping, and hiking. Camping in Japan’s forests is a unique experience—especially in Hokkaido, where the forests are home to bears. There are many places in Hokkaido where you can camp and enjoy a wild onsen for free.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sapporo Jozankei Nature Village: A Campsite Guide</title>
-      <link>https://clustersandclimate.com/outdoor/sapporo-jozankei-nature-village/</link>
-      <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/outdoor/sapporo-jozankei-nature-village/</guid>
-      <description>&lt;p&gt;Sapporo Jozankei Nature Village is a campsite about 45 minutes by car from Sapporo, nestled in the deep Jozankei forest near Houheikyou Onsen and dam. It’s a perfect spot for novice campers, offering a range of lodging options—cottages, tent houses, and open tent sites. You can also bring your own camping gear and equipment.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Breathtaking Sunrise from the Top of Mt. Sapporo, Hokkaido</title>
-      <link>https://clustersandclimate.com/outdoor/breathtaking-sunrise-mt-sapporo/</link>
-      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/outdoor/breathtaking-sunrise-mt-sapporo/</guid>
-      <description>&lt;p&gt;Sapporo Dake trek in Sapporo, Japan, was my first night trek in a foreign country. My friend Tomo, an experienced mountaineer, joined me and knew the mountain well. Our goal: to witness a breathtaking sunrise and the sparkling city lights from the summit. At 1235 meters, with the base nearly at sea level, we planned a two-stage climb.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Night Trek to Sapporo Dake, Hokkaido</title>
-      <link>https://clustersandclimate.com/outdoor/night-trek-to-sapporo-dake-hokkaido/</link>
-      <pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>https://clustersandclimate.com/outdoor/night-trek-to-sapporo-dake-hokkaido/</guid>
-      <description>&lt;p&gt;Sapporo (札幌) is the vibrant capital of Hokkaido Island (北海道), a paradise for mountain lovers, ocean seekers, and anyone looking to escape the bustle of big cities. The region is dotted with small (やま) and medium (だけ) sized mountains, ranging from 300 to 1300 meters high. Among these, Sapporo Dake (札幌岳)—also known as Mt. Sapporo—stands out as a favorite for trekkers, rising to about 1250 meters.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Outdoors on Clusters and Climate</title>
+		<link>https://clustersandclimate.com/outdoor/</link>
+		<description>Recent content in Outdoors on Clusters and Climate</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 17 Dec 2018 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://clustersandclimate.com/outdoor/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>A Beginner’s Guide: Essential Camping Tools to Get Started</title>
+				<link>https://clustersandclimate.com/outdoor/camping-tools-beginners-guide/</link>
+				<pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/outdoor/camping-tools-beginners-guide/</guid>
+				<description>&lt;p&gt;The idea of camping is always exciting—if you’re well prepared. But camping can quickly turn sour if you forget the basics. Your enjoyment depends on your preparation, your adaptability to weather and conditions, and a few clever hacks. Even experienced campers sometimes forget a headlamp or matches, so don’t worry if you do too!&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Wild Onsen near Mt. Shikaribetsu in Shikaoi, Hokkaido</title>
+				<link>https://clustersandclimate.com/outdoor/wild-onsen-mt-shikaribetsu/</link>
+				<pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/outdoor/wild-onsen-mt-shikaribetsu/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Enjoying the wild onsen near Mt. Shikaribetsu&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Japan is world famous for its serene natural beauty, making it a paradise for bicycling, camping, and hiking. Camping in Japan’s forests is a unique experience—especially in Hokkaido, where the forests are home to bears. There are many places in Hokkaido where you can camp and enjoy a wild onsen for free.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Sapporo Jozankei Nature Village: A Campsite Guide</title>
+				<link>https://clustersandclimate.com/outdoor/sapporo-jozankei-nature-village/</link>
+				<pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/outdoor/sapporo-jozankei-nature-village/</guid>
+				<description>&lt;p&gt;Sapporo Jozankei Nature Village is a campsite about 45 minutes by car from Sapporo, nestled in the deep Jozankei forest near Houheikyou Onsen and dam. It’s a perfect spot for novice campers, offering a range of lodging options—cottages, tent houses, and open tent sites. You can also bring your own camping gear and equipment.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Breathtaking Sunrise from the Top of Mt. Sapporo, Hokkaido</title>
+				<link>https://clustersandclimate.com/outdoor/breathtaking-sunrise-mt-sapporo/</link>
+				<pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/outdoor/breathtaking-sunrise-mt-sapporo/</guid>
+				<description>&lt;p&gt;Sapporo Dake trek in Sapporo, Japan, was my first night trek in a foreign country. My friend Tomo, an experienced mountaineer, joined me and knew the mountain well. Our goal: to witness a breathtaking sunrise and the sparkling city lights from the summit. At 1235 meters, with the base nearly at sea level, we planned a two-stage climb.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Night Trek to Sapporo Dake, Hokkaido</title>
+				<link>https://clustersandclimate.com/outdoor/night-trek-to-sapporo-dake-hokkaido/</link>
+				<pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
+				<guid>https://clustersandclimate.com/outdoor/night-trek-to-sapporo-dake-hokkaido/</guid>
+				<description>&lt;p&gt;Sapporo (札幌) is the vibrant capital of Hokkaido Island (北海道), a paradise for mountain lovers, ocean seekers, and anyone looking to escape the bustle of big cities. The region is dotted with small (やま) and medium (だけ) sized mountains, ranging from 300 to 1300 meters high. Among these, Sapporo Dake (札幌岳)—also known as Mt. Sapporo—stands out as a favorite for trekkers, rising to about 1250 meters.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
