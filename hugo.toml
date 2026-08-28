@@ -8,7 +8,7 @@ removePathAccents = false
 summaryLength = '20' # <- 20 words are approximately 160 characters
 
 # Analytics Configuration (choose one)
-googleAnalytics = 'G-W43KWS3B37' # <- Your Google Analytics 4 measurement ID
+googleAnalytics = 'G-RDRXXZ3KPN' # <- Your Google Analytics 4 measurement ID
 
 [params]
 	# Meta description, not exceeding 160 characters, used for the meta description within the HTML head
